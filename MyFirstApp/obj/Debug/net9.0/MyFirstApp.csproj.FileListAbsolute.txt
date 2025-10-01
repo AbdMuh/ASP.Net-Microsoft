@@ -1,0 +1,17 @@
+C:\Users\hp\Desktop\Coursera\.NET-Course\MyFirstApp\bin\Debug\net9.0\MyFirstApp.exe
+C:\Users\hp\Desktop\Coursera\.NET-Course\MyFirstApp\bin\Debug\net9.0\MyFirstApp.deps.json
+C:\Users\hp\Desktop\Coursera\.NET-Course\MyFirstApp\bin\Debug\net9.0\MyFirstApp.runtimeconfig.json
+C:\Users\hp\Desktop\Coursera\.NET-Course\MyFirstApp\bin\Debug\net9.0\MyFirstApp.dll
+C:\Users\hp\Desktop\Coursera\.NET-Course\MyFirstApp\bin\Debug\net9.0\MyFirstApp.pdb
+C:\Users\hp\Desktop\Coursera\.NET-Course\MyFirstApp\obj\Debug\net9.0\MyFirstApp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\hp\Desktop\Coursera\.NET-Course\MyFirstApp\obj\Debug\net9.0\MyFirstApp.AssemblyInfoInputs.cache
+C:\Users\hp\Desktop\Coursera\.NET-Course\MyFirstApp\obj\Debug\net9.0\MyFirstApp.AssemblyInfo.cs
+C:\Users\hp\Desktop\Coursera\.NET-Course\MyFirstApp\obj\Debug\net9.0\MyFirstApp.csproj.CoreCompileInputs.cache
+C:\Users\hp\Desktop\Coursera\.NET-Course\MyFirstApp\obj\Debug\net9.0\MyFirstApp.dll
+C:\Users\hp\Desktop\Coursera\.NET-Course\MyFirstApp\obj\Debug\net9.0\refint\MyFirstApp.dll
+C:\Users\hp\Desktop\Coursera\.NET-Course\MyFirstApp\obj\Debug\net9.0\MyFirstApp.pdb
+C:\Users\hp\Desktop\Coursera\.NET-Course\MyFirstApp\obj\Debug\net9.0\MyFirstApp.genruntimeconfig.cache
+C:\Users\hp\Desktop\Coursera\.NET-Course\MyFirstApp\obj\Debug\net9.0\ref\MyFirstApp.dll
+C:\Users\hp\Desktop\Coursera\.NET-Course\MyFirstApp\bin\Debug\net9.0\Newtonsoft.Json.dll
+C:\Users\hp\Desktop\Coursera\.NET-Course\MyFirstApp\obj\Debug\net9.0\MyFirstApp.csproj.AssemblyReference.cache
+C:\Users\hp\Desktop\Coursera\.NET-Course\MyFirstApp\obj\Debug\net9.0\MyFirstApp.csproj.Up2Date

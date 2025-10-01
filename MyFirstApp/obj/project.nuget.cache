@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "JF7z3YCFCp8=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\hp\\Desktop\\Coursera\\.NET-Course\\MyFirstApp\\MyFirstApp.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\hp\\.nuget\\packages\\newtonsoft.json\\13.0.4\\newtonsoft.json.13.0.4.nupkg.sha512"
+  ],
+  "logs": []
+}
