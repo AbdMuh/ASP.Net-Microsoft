@@ -18,3 +18,23 @@ Content-Type: application/json
 "Apple Juice"
 
 ###
+
+GET {{MyFirstApi_HostAddress}}/minimal/10
+Content-Type: application/json
+###
+
+GET {{MyFirstApi_HostAddress}}/minimal/10/John
+Content-Type: application/json  
+###
+
+GET {{MyFirstApi_HostAddress}}/minimal
+Content-Type: application/json
+###
+
+GET {{MyFirstApi_HostAddress}}/minimal/file/images/photo.jpg
+Content-Type: application/json
+###
+
+GET {{MyFirstApi_HostAddress}}/minimal/store/electronic/laptop/101?inStock=true
+Content-Type: application/json
+###

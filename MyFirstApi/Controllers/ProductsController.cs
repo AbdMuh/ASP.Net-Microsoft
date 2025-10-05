@@ -1,9 +1,9 @@
 using Microsoft.AspNetCore.Mvc;
 
 using System.Collections.Generic;
+using MyFirstApi.Models;
 
 namespace MyFirstApi.Controllers
-
 {
 
     [ApiController]
@@ -13,45 +13,64 @@ namespace MyFirstApi.Controllers
     public class ProductsController : ControllerBase
 
     {
+        public static List<Product> Products = new List<Product>
+        {
+            new Product { Id = 1, Name = "Apple Juice", Price = 2.5M },
+            new Product { Id = 2, Name = "Banana Juice", Price = 2.0M },
+            new Product { Id = 3, Name = "Orange Juice", Price = 3.0M }
+        };
+
 
         [HttpGet]
-
-        public ActionResult<List<string>> Get()
-
+        public ActionResult<List<Product>> GetProducts()
         {
+            return Ok(Products);
+        }
 
-            var products = new List<string> { "Apple", "Banana", "Orange" };
-            return Ok(products);
-
+        [HttpGet("{id}")]
+        public ActionResult<Product> GetProduct(int id)
+        {
+            var product = Products.FirstOrDefault(p => p.Id == id);
+            if (product == null)
+            {
+                return NotFound();
+            }
+            return Ok(product);
         }
 
         [HttpPost]
-
-        public ActionResult<string> Post([FromBody] string product)
-
+        public ActionResult<Product> CreateProduct([FromBody] Product product)
         {
-
-            return CreatedAtAction(nameof(Get), new { id = 1 }, product);
-
+            product.Id = Products.Max(p => p.Id) + 1;
+            Products.Add(product);
+            return CreatedAtAction(nameof(GetProduct), new { id = product.Id }, product);
         }
 
         [HttpPut("{id}")]
-        public ActionResult<string> Put(int id, [FromBody] string product)
-
+        public ActionResult UpdateProduct(int id, [FromBody] Product updatedProduct)
         {
-
-            return Ok($"Updated product {id} to: {product}");
-
+            var product = Products.FirstOrDefault(p => p.Id == id);
+            if (product == null)
+            {
+                return NotFound();
+            }
+            product.Name = updatedProduct.Name;
+            product.Price = updatedProduct.Price;
+            return NoContent();
         }
 
-        [HttpDelete("{id:int}")]
-
-        public ActionResult<string> Delete(int id)
+        [HttpDelete("{id}")]
+        public ActionResult DeleteProduct(int id)
         {
-            return Ok($"Deleted product with id: {id}");
-        }   
-
+            var product = Products.FirstOrDefault(p => p.Id == id);
+            if (product == null)
+            {
+                return NotFound();
+            }
+            Products.Remove(product);
+            return NoContent();
         }
+    }
 
     }
 
