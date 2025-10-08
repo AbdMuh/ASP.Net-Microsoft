@@ -24,6 +24,10 @@ namespace MyFirstApi.Controllers
         [HttpGet]
         public ActionResult<List<Product>> GetProducts()
         {
+            if(!Products.Any())
+            {
+                return NotFound();
+            }
             return Ok(Products);
         }
 
@@ -49,6 +53,7 @@ namespace MyFirstApi.Controllers
         [HttpPut("{id}")]
         public ActionResult UpdateProduct(int id, [FromBody] Product updatedProduct)
         {
+            //[FromBody], automatically deserializes the JSON payload from the request body into a Product C# object.
             var product = Products.FirstOrDefault(p => p.Id == id);
             if (product == null)
             {

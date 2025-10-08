@@ -3,7 +3,7 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 
 builder.Services.AddControllers();
-
+builder.Services.AddHttpLogging((options) => { });
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
@@ -15,6 +15,22 @@ var app = builder.Build();
 app.UseAuthorization();
 
 app.MapControllers();
+
+app.Use(async (context, next) =>
+{
+    Console.WriteLine($"Request: {context.Request.Method} {context.Request.Path}");
+    await next();
+    Console.WriteLine($"Response: {context.Response.StatusCode}");
+});
+
+app.Use(async (context, next) =>
+{
+    Console.WriteLine("Custom Middleware 1: Before next()");
+    await next();
+    Console.WriteLine("Custom Middleware 1: After next()");
+});
+
+app.UseHttpLogging();
 
 app.MapGet("/minimal/{id:int}", (int id) => $"Hello Minimal API {id}");
 app.MapGet("/minimal/{id:int:min(2)}/{name}", (int id, string name) => $"Hello Minimal API {id} {name}");
