@@ -19,6 +19,12 @@ namespace MyFirstApi.Controllers
             new Product { Id = 2, Name = "Banana Juice", Price = 2.0M },
             new Product { Id = 3, Name = "Orange Juice", Price = 3.0M }
         };
+        private readonly ILogger<ProductsController> _logger;
+        public ProductsController(ILogger<ProductsController> logger)
+        //No need to register ILogger in DI, it's built-in, automatic DI support
+        {
+            _logger = logger;
+        }
 
 
         [HttpGet]
@@ -28,17 +34,24 @@ namespace MyFirstApi.Controllers
             {
                 return NotFound();
             }
+            _logger.LogInformation("Fetched all products, count: {Count}", Products.Count);
             return Ok(Products);
         }
 
         [HttpGet("{id}")]
         public ActionResult<Product> GetProduct(int id)
         {
+            if (id < 0)
+            {
+                // return BadRequest("Invalid product ID."); not an exception, just an error response
+                throw new ArgumentException("Invalid product ID."); //exception forcefully thrown
+            }
             var product = Products.FirstOrDefault(p => p.Id == id);
             if (product == null)
             {
                 return NotFound();
             }
+            _logger.LogInformation("Fetched product details, Id: {Id}", id);
             return Ok(product);
         }
 

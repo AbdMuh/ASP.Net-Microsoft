@@ -1,6 +1,6 @@
 @MyFirstApi_HostAddress = http://localhost:5065
 
-GET {{MyFirstApi_HostAddress}}/api/products
+GET {{MyFirstApi_HostAddress}}/api/products/-1
 Accept: application/json
 
 ###
@@ -8,14 +8,21 @@ Accept: application/json
 POST {{MyFirstApi_HostAddress}}/api/products
 Content-Type: application/json
 
-"Banana Juice"
+{
+  "id": 1,
+  "name": "Apple Juice",
+  "price": 3.99
+}
 
 ###
 
 PUT {{MyFirstApi_HostAddress}}/api/products/1
 Content-Type: application/json
 
-"Apple Juice"
+{
+  "name": "Orange Juice",
+  "price": 4.95
+}
 
 ###
 
