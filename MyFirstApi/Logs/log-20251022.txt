@@ -1,0 +1,456 @@
+2025-10-22 02:44:55.086 +05:00 [INF] Now listening on: http://localhost:5065
+2025-10-22 02:44:55.118 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-10-22 02:44:55.118 +05:00 [INF] Hosting environment: Development
+2025-10-22 02:44:55.118 +05:00 [INF] Content root path: C:\Users\hp\Desktop\Coursera\.NET-Course\MyFirstApi
+2025-10-22 02:44:55.249 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5065/api/products - null null
+2025-10-22 02:44:55.283 +05:00 [INF] Executing endpoint 'MyFirstApi.Controllers.ProductsController.GetProducts (MyFirstApi)'
+2025-10-22 02:44:55.295 +05:00 [INF] Route matched with {action = "GetProducts", controller = "Products"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[MyFirstApi.Models.Product]] GetProducts() on controller MyFirstApi.Controllers.ProductsController (MyFirstApi).
+2025-10-22 02:44:55.299 +05:00 [INF] Fetched all products, count: 3
+2025-10-22 02:44:55.313 +05:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[MyFirstApi.Models.Product, MyFirstApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-10-22 02:44:55.350 +05:00 [INF] Executed action MyFirstApi.Controllers.ProductsController.GetProducts (MyFirstApi) in 50.824ms
+2025-10-22 02:44:55.360 +05:00 [INF] Executed endpoint 'MyFirstApi.Controllers.ProductsController.GetProducts (MyFirstApi)'
+2025-10-22 02:44:55.362 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5065/api/products - 200 null application/json; charset=utf-8 114.3221ms
+2025-10-22 02:45:02.919 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5065/manual-json - null null
+2025-10-22 02:45:02.924 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5065/manual-json - 404 0 null 5.2773ms
+2025-10-22 02:45:02.925 +05:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5065/manual-json, Response status code: 404
+2025-10-22 02:45:48.560 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5065/custom-json - null null
+2025-10-22 02:45:48.562 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5065/custom-json - 404 0 null 1.9289ms
+2025-10-22 02:45:48.562 +05:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5065/custom-json, Response status code: 404
+2025-10-22 02:45:50.807 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5065/auto - null null
+2025-10-22 02:45:50.807 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5065/auto - 404 0 null 0.4481ms
+2025-10-22 02:45:50.807 +05:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5065/auto, Response status code: 404
+2025-10-22 02:45:56.438 +05:00 [INF] Application is shutting down...
+2025-10-22 02:46:13.114 +05:00 [INF] Now listening on: http://localhost:5065
+2025-10-22 02:46:13.147 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-10-22 02:46:13.147 +05:00 [INF] Hosting environment: Development
+2025-10-22 02:46:13.147 +05:00 [INF] Content root path: C:\Users\hp\Desktop\Coursera\.NET-Course\MyFirstApi
+2025-10-22 02:46:13.300 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5065/api/products - null null
+2025-10-22 02:46:13.346 +05:00 [INF] Executing endpoint 'MyFirstApi.Controllers.ProductsController.GetProducts (MyFirstApi)'
+2025-10-22 02:46:13.355 +05:00 [INF] Route matched with {action = "GetProducts", controller = "Products"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[MyFirstApi.Models.Product]] GetProducts() on controller MyFirstApi.Controllers.ProductsController (MyFirstApi).
+2025-10-22 02:46:13.358 +05:00 [INF] Fetched all products, count: 3
+2025-10-22 02:46:13.376 +05:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[MyFirstApi.Models.Product, MyFirstApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-10-22 02:46:13.401 +05:00 [INF] Executed action MyFirstApi.Controllers.ProductsController.GetProducts (MyFirstApi) in 40.2754ms
+2025-10-22 02:46:13.417 +05:00 [INF] Executed endpoint 'MyFirstApi.Controllers.ProductsController.GetProducts (MyFirstApi)'
+2025-10-22 02:46:13.419 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5065/api/products - 200 null application/json; charset=utf-8 120.8551ms
+2025-10-22 02:46:18.536 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5065/manual-json - null null
+2025-10-22 02:46:18.537 +05:00 [INF] Executing endpoint 'HTTP: GET /manual-json'
+2025-10-22 02:46:18.550 +05:00 [INF] Write content with HTTP Response ContentType of application/json
+2025-10-22 02:46:18.551 +05:00 [INF] Executed endpoint 'HTTP: GET /manual-json'
+2025-10-22 02:46:18.551 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5065/manual-json - 200 26 application/json 15.9358ms
+2025-10-22 02:46:43.596 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5065/custom-json - null null
+2025-10-22 02:46:43.598 +05:00 [INF] Executing endpoint 'HTTP: GET /custom-json'
+2025-10-22 02:46:43.599 +05:00 [INF] Write content with HTTP Response ContentType of application/json
+2025-10-22 02:46:43.599 +05:00 [INF] Executed endpoint 'HTTP: GET /custom-json'
+2025-10-22 02:46:43.600 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5065/custom-json - 200 38 application/json 3.2688ms
+2025-10-22 02:46:46.604 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5065/manual-json - null null
+2025-10-22 02:46:46.604 +05:00 [INF] Executing endpoint 'HTTP: GET /manual-json'
+2025-10-22 02:46:46.604 +05:00 [INF] Write content with HTTP Response ContentType of application/json
+2025-10-22 02:46:46.604 +05:00 [INF] Executed endpoint 'HTTP: GET /manual-json'
+2025-10-22 02:46:46.604 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5065/manual-json - 200 26 application/json 0.9236ms
+2025-10-22 02:47:01.350 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5065/manual-json - null null
+2025-10-22 02:47:01.351 +05:00 [INF] Executing endpoint 'HTTP: GET /manual-json'
+2025-10-22 02:47:01.352 +05:00 [INF] Write content with HTTP Response ContentType of application/json
+2025-10-22 02:47:01.352 +05:00 [INF] Executed endpoint 'HTTP: GET /manual-json'
+2025-10-22 02:47:01.352 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5065/manual-json - 200 26 application/json 2.6482ms
+2025-10-22 02:47:04.075 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5065/custom-json - null null
+2025-10-22 02:47:04.077 +05:00 [INF] Executing endpoint 'HTTP: GET /custom-json'
+2025-10-22 02:47:04.078 +05:00 [INF] Write content with HTTP Response ContentType of application/json
+2025-10-22 02:47:04.078 +05:00 [INF] Executed endpoint 'HTTP: GET /custom-json'
+2025-10-22 02:47:04.078 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5065/custom-json - 200 38 application/json 3.1087ms
+2025-10-22 02:47:58.906 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5065/auto - null null
+2025-10-22 02:47:58.907 +05:00 [INF] Executing endpoint 'HTTP: GET /auto'
+2025-10-22 02:47:58.917 +05:00 [INF] Executed endpoint 'HTTP: GET /auto'
+2025-10-22 02:47:58.917 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5065/auto - 200 null application/json; charset=utf-8 10.8266ms
+2025-10-22 02:48:03.554 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5065/manual-json - null null
+2025-10-22 02:48:03.554 +05:00 [INF] Executing endpoint 'HTTP: GET /manual-json'
+2025-10-22 02:48:03.555 +05:00 [INF] Write content with HTTP Response ContentType of application/json
+2025-10-22 02:48:03.555 +05:00 [INF] Executed endpoint 'HTTP: GET /manual-json'
+2025-10-22 02:48:03.555 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5065/manual-json - 200 26 application/json 0.9513ms
+2025-10-22 02:48:05.071 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5065/auto - null null
+2025-10-22 02:48:05.072 +05:00 [INF] Executing endpoint 'HTTP: GET /auto'
+2025-10-22 02:48:05.072 +05:00 [INF] Executed endpoint 'HTTP: GET /auto'
+2025-10-22 02:48:05.072 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5065/auto - 200 null application/json; charset=utf-8 0.976ms
+2025-10-22 02:48:32.533 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5065/auto - null null
+2025-10-22 02:48:32.533 +05:00 [INF] Executing endpoint 'HTTP: GET /auto'
+2025-10-22 02:48:32.534 +05:00 [INF] Executed endpoint 'HTTP: GET /auto'
+2025-10-22 02:48:32.534 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5065/auto - 200 null application/json; charset=utf-8 0.7859ms
+2025-10-22 02:48:34.870 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5065/custom-json - null null
+2025-10-22 02:48:34.871 +05:00 [INF] Executing endpoint 'HTTP: GET /custom-json'
+2025-10-22 02:48:34.871 +05:00 [INF] Write content with HTTP Response ContentType of application/json
+2025-10-22 02:48:34.871 +05:00 [INF] Executed endpoint 'HTTP: GET /custom-json'
+2025-10-22 02:48:34.871 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5065/custom-json - 200 38 application/json 0.8183ms
+2025-10-22 02:48:52.041 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5065/json - null null
+2025-10-22 02:48:52.041 +05:00 [INF] Executing endpoint 'HTTP: GET /json'
+2025-10-22 02:48:52.049 +05:00 [INF] Writing value of type 'Person' as Json.
+2025-10-22 02:48:52.049 +05:00 [INF] Executed endpoint 'HTTP: GET /json'
+2025-10-22 02:48:52.049 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5065/json - 200 null application/json; charset=utf-8 8.562ms
+2025-10-22 02:48:56.650 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5065/json - null null
+2025-10-22 02:48:56.651 +05:00 [INF] Executing endpoint 'HTTP: GET /json'
+2025-10-22 02:48:56.651 +05:00 [INF] Writing value of type 'Person' as Json.
+2025-10-22 02:48:56.651 +05:00 [INF] Executed endpoint 'HTTP: GET /json'
+2025-10-22 02:48:56.651 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5065/json - 200 null application/json; charset=utf-8 1.0728ms
+2025-10-22 02:48:58.317 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5065/auto - null null
+2025-10-22 02:48:58.318 +05:00 [INF] Executing endpoint 'HTTP: GET /auto'
+2025-10-22 02:48:58.318 +05:00 [INF] Executed endpoint 'HTTP: GET /auto'
+2025-10-22 02:48:58.318 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5065/auto - 200 null application/json; charset=utf-8 0.8205ms
+2025-10-22 02:49:07.611 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5065/xml - null null
+2025-10-22 02:49:07.611 +05:00 [INF] Executing endpoint 'HTTP: GET /xml'
+2025-10-22 02:49:07.661 +05:00 [INF] Write content with HTTP Response ContentType of application/xml
+2025-10-22 02:49:07.661 +05:00 [INF] Executed endpoint 'HTTP: GET /xml'
+2025-10-22 02:49:07.661 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5065/xml - 200 198 application/xml 49.6409ms
+2025-10-22 03:36:02.829 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5065/api/products/1 - null null
+2025-10-22 03:36:02.829 +05:00 [INF] Executing endpoint 'MyFirstApi.Controllers.ProductsController.GetProduct (MyFirstApi)'
+2025-10-22 03:36:02.835 +05:00 [INF] Route matched with {action = "GetProduct", controller = "Products"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[MyFirstApi.Models.Product] GetProduct(Int32) on controller MyFirstApi.Controllers.ProductsController (MyFirstApi).
+2025-10-22 03:36:02.839 +05:00 [INF] Fetched product details, Id: 1
+2025-10-22 03:36:02.839 +05:00 [INF] Executing OkObjectResult, writing value of type 'MyFirstApi.Models.Product'.
+2025-10-22 03:36:02.840 +05:00 [INF] Executed action MyFirstApi.Controllers.ProductsController.GetProduct (MyFirstApi) in 5.4116ms
+2025-10-22 03:36:02.840 +05:00 [INF] Executed endpoint 'MyFirstApi.Controllers.ProductsController.GetProduct (MyFirstApi)'
+2025-10-22 03:36:02.840 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5065/api/products/1 - 200 null application/json; charset=utf-8 11.7395ms
+2025-10-22 03:36:08.407 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5065/api/products/5 - null null
+2025-10-22 03:36:08.408 +05:00 [INF] Executing endpoint 'MyFirstApi.Controllers.ProductsController.GetProduct (MyFirstApi)'
+2025-10-22 03:36:08.408 +05:00 [INF] Route matched with {action = "GetProduct", controller = "Products"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[MyFirstApi.Models.Product] GetProduct(Int32) on controller MyFirstApi.Controllers.ProductsController (MyFirstApi).
+2025-10-22 03:36:08.409 +05:00 [INF] Executing NotFoundObjectResult, writing value of type 'System.String'.
+2025-10-22 03:36:08.409 +05:00 [INF] Executed action MyFirstApi.Controllers.ProductsController.GetProduct (MyFirstApi) in 0.8913ms
+2025-10-22 03:36:08.409 +05:00 [INF] Executed endpoint 'MyFirstApi.Controllers.ProductsController.GetProduct (MyFirstApi)'
+2025-10-22 03:36:08.409 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5065/api/products/5 - 404 null application/json; charset=utf-8 2.5775ms
+2025-10-22 04:06:26.602 +05:00 [INF] Application is shutting down...
+2025-10-22 04:10:59.690 +05:00 [INF] Now listening on: http://localhost:5065
+2025-10-22 04:10:59.726 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-10-22 04:10:59.726 +05:00 [INF] Hosting environment: Development
+2025-10-22 04:10:59.726 +05:00 [INF] Content root path: C:\Users\hp\Desktop\Coursera\.NET-Course\MyFirstApi
+2025-10-22 04:10:59.866 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5065/api/products - null null
+2025-10-22 04:10:59.909 +05:00 [INF] Executing endpoint 'MyFirstApi.Controllers.ProductsController.GetProducts (MyFirstApi)'
+2025-10-22 04:10:59.917 +05:00 [INF] Route matched with {action = "GetProducts", controller = "Products"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[MyFirstApi.Models.Product]] GetProducts() on controller MyFirstApi.Controllers.ProductsController (MyFirstApi).
+2025-10-22 04:10:59.921 +05:00 [INF] Fetched all products, count: 3
+2025-10-22 04:10:59.935 +05:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[MyFirstApi.Models.Product, MyFirstApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-10-22 04:10:59.962 +05:00 [INF] Executed action MyFirstApi.Controllers.ProductsController.GetProducts (MyFirstApi) in 42.1118ms
+2025-10-22 04:10:59.975 +05:00 [INF] Executed endpoint 'MyFirstApi.Controllers.ProductsController.GetProducts (MyFirstApi)'
+2025-10-22 04:10:59.977 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5065/api/products - 200 null application/json; charset=utf-8 112.7509ms
+2025-10-22 04:11:05.154 +05:00 [INF] Request starting HTTP/1.1 POST http://localhost:5065/auto - null 0
+2025-10-22 04:11:05.158 +05:00 [INF] Executing endpoint 'HTTP: POST /auto'
+2025-10-22 04:11:05.160 +05:00 [INF] Executed endpoint 'HTTP: POST /auto'
+2025-10-22 04:11:05.160 +05:00 [ERR] An error occurred while processing the request.
+Microsoft.AspNetCore.Http.BadHttpRequestException: Implicit body inferred for parameter "person" but no body was provided. Did you mean to use a Service instead?
+   at lambda_method17(Closure, Object, HttpContext, Object)
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.<>c__DisplayClass101_2.<<HandleRequestBodyAndCompileRequestDelegateForJson>b__2>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Program.<>c.<<<Main>$>b__0_0>d.MoveNext() in C:\Users\hp\Desktop\Coursera\.NET-Course\MyFirstApi\Program.cs:line 47
+2025-10-22 04:11:05.181 +05:00 [INF] Request finished HTTP/1.1 POST http://localhost:5065/auto - 500 null null 27.4185ms
+2025-10-22 04:11:43.680 +05:00 [INF] Request starting HTTP/1.1 POST http://localhost:5065/auto - null 35
+2025-10-22 04:11:43.682 +05:00 [INF] Executing endpoint 'HTTP: POST /auto'
+2025-10-22 04:11:43.683 +05:00 [INF] Executed endpoint 'HTTP: POST /auto'
+2025-10-22 04:11:43.683 +05:00 [ERR] An error occurred while processing the request.
+Microsoft.AspNetCore.Http.BadHttpRequestException: Expected a supported JSON media type but got "".
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.Log.UnexpectedJsonContentType(HttpContext httpContext, String contentType, Boolean shouldThrow)
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.<HandleRequestBodyAndCompileRequestDelegateForJson>g__TryReadBodyAsync|101_0(HttpContext httpContext, Type bodyType, String parameterTypeName, String parameterName, Boolean allowEmptyRequestBody, Boolean throwOnBadRequest, JsonTypeInfo jsonTypeInfo)
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.<>c__DisplayClass101_2.<<HandleRequestBodyAndCompileRequestDelegateForJson>b__2>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Program.<>c.<<<Main>$>b__0_0>d.MoveNext() in C:\Users\hp\Desktop\Coursera\.NET-Course\MyFirstApi\Program.cs:line 47
+2025-10-22 04:11:43.693 +05:00 [INF] Request finished HTTP/1.1 POST http://localhost:5065/auto - 500 null null 12.5583ms
+2025-10-22 04:11:45.440 +05:00 [INF] Request starting HTTP/1.1 POST http://localhost:5065/auto - null 35
+2025-10-22 04:11:45.441 +05:00 [INF] Executing endpoint 'HTTP: POST /auto'
+2025-10-22 04:11:45.441 +05:00 [INF] Executed endpoint 'HTTP: POST /auto'
+2025-10-22 04:11:45.441 +05:00 [ERR] An error occurred while processing the request.
+Microsoft.AspNetCore.Http.BadHttpRequestException: Expected a supported JSON media type but got "".
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.Log.UnexpectedJsonContentType(HttpContext httpContext, String contentType, Boolean shouldThrow)
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.<HandleRequestBodyAndCompileRequestDelegateForJson>g__TryReadBodyAsync|101_0(HttpContext httpContext, Type bodyType, String parameterTypeName, String parameterName, Boolean allowEmptyRequestBody, Boolean throwOnBadRequest, JsonTypeInfo jsonTypeInfo)
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.<>c__DisplayClass101_2.<<HandleRequestBodyAndCompileRequestDelegateForJson>b__2>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Program.<>c.<<<Main>$>b__0_0>d.MoveNext() in C:\Users\hp\Desktop\Coursera\.NET-Course\MyFirstApi\Program.cs:line 47
+2025-10-22 04:11:45.442 +05:00 [INF] Request finished HTTP/1.1 POST http://localhost:5065/auto - 500 null null 1.6236ms
+2025-10-22 04:12:31.214 +05:00 [INF] Request starting HTTP/1.1 POST http://localhost:5065/auto - null 35
+2025-10-22 04:12:31.214 +05:00 [INF] Executing endpoint 'HTTP: POST /auto'
+2025-10-22 04:12:31.215 +05:00 [INF] Executed endpoint 'HTTP: POST /auto'
+2025-10-22 04:12:31.215 +05:00 [ERR] An error occurred while processing the request.
+Microsoft.AspNetCore.Http.BadHttpRequestException: Expected a supported JSON media type but got "".
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.Log.UnexpectedJsonContentType(HttpContext httpContext, String contentType, Boolean shouldThrow)
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.<HandleRequestBodyAndCompileRequestDelegateForJson>g__TryReadBodyAsync|101_0(HttpContext httpContext, Type bodyType, String parameterTypeName, String parameterName, Boolean allowEmptyRequestBody, Boolean throwOnBadRequest, JsonTypeInfo jsonTypeInfo)
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.<>c__DisplayClass101_2.<<HandleRequestBodyAndCompileRequestDelegateForJson>b__2>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Program.<>c.<<<Main>$>b__0_0>d.MoveNext() in C:\Users\hp\Desktop\Coursera\.NET-Course\MyFirstApi\Program.cs:line 47
+2025-10-22 04:12:31.216 +05:00 [INF] Request finished HTTP/1.1 POST http://localhost:5065/auto - 500 null null 1.9458ms
+2025-10-22 04:12:32.230 +05:00 [INF] Request starting HTTP/1.1 POST http://localhost:5065/auto - null 35
+2025-10-22 04:12:32.231 +05:00 [INF] Executing endpoint 'HTTP: POST /auto'
+2025-10-22 04:12:32.231 +05:00 [INF] Executed endpoint 'HTTP: POST /auto'
+2025-10-22 04:12:32.231 +05:00 [ERR] An error occurred while processing the request.
+Microsoft.AspNetCore.Http.BadHttpRequestException: Expected a supported JSON media type but got "".
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.Log.UnexpectedJsonContentType(HttpContext httpContext, String contentType, Boolean shouldThrow)
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.<HandleRequestBodyAndCompileRequestDelegateForJson>g__TryReadBodyAsync|101_0(HttpContext httpContext, Type bodyType, String parameterTypeName, String parameterName, Boolean allowEmptyRequestBody, Boolean throwOnBadRequest, JsonTypeInfo jsonTypeInfo)
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.<>c__DisplayClass101_2.<<HandleRequestBodyAndCompileRequestDelegateForJson>b__2>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Program.<>c.<<<Main>$>b__0_0>d.MoveNext() in C:\Users\hp\Desktop\Coursera\.NET-Course\MyFirstApi\Program.cs:line 47
+2025-10-22 04:12:32.232 +05:00 [INF] Request finished HTTP/1.1 POST http://localhost:5065/auto - 500 null null 2.5836ms
+2025-10-22 04:12:35.261 +05:00 [INF] Request starting HTTP/1.1 POST http://localhost:5065/auto - null 35
+2025-10-22 04:12:35.261 +05:00 [INF] Executing endpoint 'HTTP: POST /auto'
+2025-10-22 04:12:35.261 +05:00 [INF] Executed endpoint 'HTTP: POST /auto'
+2025-10-22 04:12:35.261 +05:00 [ERR] An error occurred while processing the request.
+Microsoft.AspNetCore.Http.BadHttpRequestException: Expected a supported JSON media type but got "".
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.Log.UnexpectedJsonContentType(HttpContext httpContext, String contentType, Boolean shouldThrow)
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.<HandleRequestBodyAndCompileRequestDelegateForJson>g__TryReadBodyAsync|101_0(HttpContext httpContext, Type bodyType, String parameterTypeName, String parameterName, Boolean allowEmptyRequestBody, Boolean throwOnBadRequest, JsonTypeInfo jsonTypeInfo)
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.<>c__DisplayClass101_2.<<HandleRequestBodyAndCompileRequestDelegateForJson>b__2>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Program.<>c.<<<Main>$>b__0_0>d.MoveNext() in C:\Users\hp\Desktop\Coursera\.NET-Course\MyFirstApi\Program.cs:line 47
+2025-10-22 04:12:35.262 +05:00 [INF] Request finished HTTP/1.1 POST http://localhost:5065/auto - 500 null null 1.7138ms
+2025-10-22 04:12:36.157 +05:00 [INF] Request starting HTTP/1.1 POST http://localhost:5065/auto - null 35
+2025-10-22 04:12:36.158 +05:00 [INF] Executing endpoint 'HTTP: POST /auto'
+2025-10-22 04:12:36.158 +05:00 [INF] Executed endpoint 'HTTP: POST /auto'
+2025-10-22 04:12:36.158 +05:00 [ERR] An error occurred while processing the request.
+Microsoft.AspNetCore.Http.BadHttpRequestException: Expected a supported JSON media type but got "".
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.Log.UnexpectedJsonContentType(HttpContext httpContext, String contentType, Boolean shouldThrow)
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.<HandleRequestBodyAndCompileRequestDelegateForJson>g__TryReadBodyAsync|101_0(HttpContext httpContext, Type bodyType, String parameterTypeName, String parameterName, Boolean allowEmptyRequestBody, Boolean throwOnBadRequest, JsonTypeInfo jsonTypeInfo)
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.<>c__DisplayClass101_2.<<HandleRequestBodyAndCompileRequestDelegateForJson>b__2>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Program.<>c.<<<Main>$>b__0_0>d.MoveNext() in C:\Users\hp\Desktop\Coursera\.NET-Course\MyFirstApi\Program.cs:line 47
+2025-10-22 04:12:36.158 +05:00 [INF] Request finished HTTP/1.1 POST http://localhost:5065/auto - 500 null null 1.4742ms
+2025-10-22 04:12:36.656 +05:00 [INF] Request starting HTTP/1.1 POST http://localhost:5065/auto - null 35
+2025-10-22 04:12:36.656 +05:00 [INF] Executing endpoint 'HTTP: POST /auto'
+2025-10-22 04:12:36.656 +05:00 [INF] Executed endpoint 'HTTP: POST /auto'
+2025-10-22 04:12:36.656 +05:00 [ERR] An error occurred while processing the request.
+Microsoft.AspNetCore.Http.BadHttpRequestException: Expected a supported JSON media type but got "".
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.Log.UnexpectedJsonContentType(HttpContext httpContext, String contentType, Boolean shouldThrow)
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.<HandleRequestBodyAndCompileRequestDelegateForJson>g__TryReadBodyAsync|101_0(HttpContext httpContext, Type bodyType, String parameterTypeName, String parameterName, Boolean allowEmptyRequestBody, Boolean throwOnBadRequest, JsonTypeInfo jsonTypeInfo)
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.<>c__DisplayClass101_2.<<HandleRequestBodyAndCompileRequestDelegateForJson>b__2>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Program.<>c.<<<Main>$>b__0_0>d.MoveNext() in C:\Users\hp\Desktop\Coursera\.NET-Course\MyFirstApi\Program.cs:line 47
+2025-10-22 04:12:36.657 +05:00 [INF] Request finished HTTP/1.1 POST http://localhost:5065/auto - 500 null null 1.2753ms
+2025-10-22 04:12:37.027 +05:00 [INF] Request starting HTTP/1.1 POST http://localhost:5065/auto - null 35
+2025-10-22 04:12:37.028 +05:00 [INF] Executing endpoint 'HTTP: POST /auto'
+2025-10-22 04:12:37.028 +05:00 [INF] Executed endpoint 'HTTP: POST /auto'
+2025-10-22 04:12:37.028 +05:00 [ERR] An error occurred while processing the request.
+Microsoft.AspNetCore.Http.BadHttpRequestException: Expected a supported JSON media type but got "".
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.Log.UnexpectedJsonContentType(HttpContext httpContext, String contentType, Boolean shouldThrow)
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.<HandleRequestBodyAndCompileRequestDelegateForJson>g__TryReadBodyAsync|101_0(HttpContext httpContext, Type bodyType, String parameterTypeName, String parameterName, Boolean allowEmptyRequestBody, Boolean throwOnBadRequest, JsonTypeInfo jsonTypeInfo)
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.<>c__DisplayClass101_2.<<HandleRequestBodyAndCompileRequestDelegateForJson>b__2>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Program.<>c.<<<Main>$>b__0_0>d.MoveNext() in C:\Users\hp\Desktop\Coursera\.NET-Course\MyFirstApi\Program.cs:line 47
+2025-10-22 04:12:37.029 +05:00 [INF] Request finished HTTP/1.1 POST http://localhost:5065/auto - 500 null null 1.2883ms
+2025-10-22 04:12:37.274 +05:00 [INF] Request starting HTTP/1.1 POST http://localhost:5065/auto - null 35
+2025-10-22 04:12:37.275 +05:00 [INF] Executing endpoint 'HTTP: POST /auto'
+2025-10-22 04:12:37.275 +05:00 [INF] Executed endpoint 'HTTP: POST /auto'
+2025-10-22 04:12:37.275 +05:00 [ERR] An error occurred while processing the request.
+Microsoft.AspNetCore.Http.BadHttpRequestException: Expected a supported JSON media type but got "".
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.Log.UnexpectedJsonContentType(HttpContext httpContext, String contentType, Boolean shouldThrow)
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.<HandleRequestBodyAndCompileRequestDelegateForJson>g__TryReadBodyAsync|101_0(HttpContext httpContext, Type bodyType, String parameterTypeName, String parameterName, Boolean allowEmptyRequestBody, Boolean throwOnBadRequest, JsonTypeInfo jsonTypeInfo)
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.<>c__DisplayClass101_2.<<HandleRequestBodyAndCompileRequestDelegateForJson>b__2>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Program.<>c.<<<Main>$>b__0_0>d.MoveNext() in C:\Users\hp\Desktop\Coursera\.NET-Course\MyFirstApi\Program.cs:line 47
+2025-10-22 04:12:37.276 +05:00 [INF] Request finished HTTP/1.1 POST http://localhost:5065/auto - 500 null null 1.537ms
+2025-10-22 04:12:37.428 +05:00 [INF] Request starting HTTP/1.1 POST http://localhost:5065/auto - null 35
+2025-10-22 04:12:37.428 +05:00 [INF] Executing endpoint 'HTTP: POST /auto'
+2025-10-22 04:12:37.428 +05:00 [INF] Executed endpoint 'HTTP: POST /auto'
+2025-10-22 04:12:37.428 +05:00 [ERR] An error occurred while processing the request.
+Microsoft.AspNetCore.Http.BadHttpRequestException: Expected a supported JSON media type but got "".
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.Log.UnexpectedJsonContentType(HttpContext httpContext, String contentType, Boolean shouldThrow)
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.<HandleRequestBodyAndCompileRequestDelegateForJson>g__TryReadBodyAsync|101_0(HttpContext httpContext, Type bodyType, String parameterTypeName, String parameterName, Boolean allowEmptyRequestBody, Boolean throwOnBadRequest, JsonTypeInfo jsonTypeInfo)
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.<>c__DisplayClass101_2.<<HandleRequestBodyAndCompileRequestDelegateForJson>b__2>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Program.<>c.<<<Main>$>b__0_0>d.MoveNext() in C:\Users\hp\Desktop\Coursera\.NET-Course\MyFirstApi\Program.cs:line 47
+2025-10-22 04:12:37.429 +05:00 [INF] Request finished HTTP/1.1 POST http://localhost:5065/auto - 500 null null 0.8623ms
+2025-10-22 04:12:37.595 +05:00 [INF] Request starting HTTP/1.1 POST http://localhost:5065/auto - null 35
+2025-10-22 04:12:37.596 +05:00 [INF] Executing endpoint 'HTTP: POST /auto'
+2025-10-22 04:12:37.596 +05:00 [INF] Executed endpoint 'HTTP: POST /auto'
+2025-10-22 04:12:37.596 +05:00 [ERR] An error occurred while processing the request.
+Microsoft.AspNetCore.Http.BadHttpRequestException: Expected a supported JSON media type but got "".
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.Log.UnexpectedJsonContentType(HttpContext httpContext, String contentType, Boolean shouldThrow)
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.<HandleRequestBodyAndCompileRequestDelegateForJson>g__TryReadBodyAsync|101_0(HttpContext httpContext, Type bodyType, String parameterTypeName, String parameterName, Boolean allowEmptyRequestBody, Boolean throwOnBadRequest, JsonTypeInfo jsonTypeInfo)
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.<>c__DisplayClass101_2.<<HandleRequestBodyAndCompileRequestDelegateForJson>b__2>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Program.<>c.<<<Main>$>b__0_0>d.MoveNext() in C:\Users\hp\Desktop\Coursera\.NET-Course\MyFirstApi\Program.cs:line 47
+2025-10-22 04:12:37.597 +05:00 [INF] Request finished HTTP/1.1 POST http://localhost:5065/auto - 500 null null 1.5747ms
+2025-10-22 04:12:37.746 +05:00 [INF] Request starting HTTP/1.1 POST http://localhost:5065/auto - null 35
+2025-10-22 04:12:37.746 +05:00 [INF] Executing endpoint 'HTTP: POST /auto'
+2025-10-22 04:12:37.746 +05:00 [INF] Executed endpoint 'HTTP: POST /auto'
+2025-10-22 04:12:37.747 +05:00 [ERR] An error occurred while processing the request.
+Microsoft.AspNetCore.Http.BadHttpRequestException: Expected a supported JSON media type but got "".
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.Log.UnexpectedJsonContentType(HttpContext httpContext, String contentType, Boolean shouldThrow)
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.<HandleRequestBodyAndCompileRequestDelegateForJson>g__TryReadBodyAsync|101_0(HttpContext httpContext, Type bodyType, String parameterTypeName, String parameterName, Boolean allowEmptyRequestBody, Boolean throwOnBadRequest, JsonTypeInfo jsonTypeInfo)
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.<>c__DisplayClass101_2.<<HandleRequestBodyAndCompileRequestDelegateForJson>b__2>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Program.<>c.<<<Main>$>b__0_0>d.MoveNext() in C:\Users\hp\Desktop\Coursera\.NET-Course\MyFirstApi\Program.cs:line 47
+2025-10-22 04:12:37.747 +05:00 [INF] Request finished HTTP/1.1 POST http://localhost:5065/auto - 500 null null 1.2998ms
+2025-10-22 04:12:37.922 +05:00 [INF] Request starting HTTP/1.1 POST http://localhost:5065/auto - null 35
+2025-10-22 04:12:37.923 +05:00 [INF] Executing endpoint 'HTTP: POST /auto'
+2025-10-22 04:12:37.923 +05:00 [INF] Executed endpoint 'HTTP: POST /auto'
+2025-10-22 04:12:37.923 +05:00 [ERR] An error occurred while processing the request.
+Microsoft.AspNetCore.Http.BadHttpRequestException: Expected a supported JSON media type but got "".
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.Log.UnexpectedJsonContentType(HttpContext httpContext, String contentType, Boolean shouldThrow)
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.<HandleRequestBodyAndCompileRequestDelegateForJson>g__TryReadBodyAsync|101_0(HttpContext httpContext, Type bodyType, String parameterTypeName, String parameterName, Boolean allowEmptyRequestBody, Boolean throwOnBadRequest, JsonTypeInfo jsonTypeInfo)
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.<>c__DisplayClass101_2.<<HandleRequestBodyAndCompileRequestDelegateForJson>b__2>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Program.<>c.<<<Main>$>b__0_0>d.MoveNext() in C:\Users\hp\Desktop\Coursera\.NET-Course\MyFirstApi\Program.cs:line 47
+2025-10-22 04:12:37.923 +05:00 [INF] Request finished HTTP/1.1 POST http://localhost:5065/auto - 500 null null 0.9453ms
+2025-10-22 04:12:38.065 +05:00 [INF] Request starting HTTP/1.1 POST http://localhost:5065/auto - null 35
+2025-10-22 04:12:38.065 +05:00 [INF] Executing endpoint 'HTTP: POST /auto'
+2025-10-22 04:12:38.065 +05:00 [INF] Executed endpoint 'HTTP: POST /auto'
+2025-10-22 04:12:38.066 +05:00 [ERR] An error occurred while processing the request.
+Microsoft.AspNetCore.Http.BadHttpRequestException: Expected a supported JSON media type but got "".
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.Log.UnexpectedJsonContentType(HttpContext httpContext, String contentType, Boolean shouldThrow)
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.<HandleRequestBodyAndCompileRequestDelegateForJson>g__TryReadBodyAsync|101_0(HttpContext httpContext, Type bodyType, String parameterTypeName, String parameterName, Boolean allowEmptyRequestBody, Boolean throwOnBadRequest, JsonTypeInfo jsonTypeInfo)
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.<>c__DisplayClass101_2.<<HandleRequestBodyAndCompileRequestDelegateForJson>b__2>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Program.<>c.<<<Main>$>b__0_0>d.MoveNext() in C:\Users\hp\Desktop\Coursera\.NET-Course\MyFirstApi\Program.cs:line 47
+2025-10-22 04:12:38.066 +05:00 [INF] Request finished HTTP/1.1 POST http://localhost:5065/auto - 500 null null 1.0945ms
+2025-10-22 04:14:45.073 +05:00 [INF] Request starting HTTP/1.1 POST http://localhost:5065/auto - application/json 35
+2025-10-22 04:14:45.074 +05:00 [INF] Executing endpoint 'HTTP: POST /auto'
+2025-10-22 04:14:45.089 +05:00 [INF] Setting HTTP status code 200.
+2025-10-22 04:14:45.089 +05:00 [INF] Writing value of type 'Person' as Json.
+2025-10-22 04:14:45.091 +05:00 [INF] Executed endpoint 'HTTP: POST /auto'
+2025-10-22 04:14:45.091 +05:00 [INF] Request finished HTTP/1.1 POST http://localhost:5065/auto - 200 null application/json; charset=utf-8 18.2137ms
+2025-10-22 04:15:06.400 +05:00 [INF] Request starting HTTP/1.1 POST http://localhost:5065/auto - application/json 35
+2025-10-22 04:15:06.401 +05:00 [INF] Executing endpoint 'HTTP: POST /auto'
+2025-10-22 04:15:06.402 +05:00 [INF] Setting HTTP status code 200.
+2025-10-22 04:15:06.402 +05:00 [INF] Writing value of type 'Person' as Json.
+2025-10-22 04:15:06.402 +05:00 [INF] Executed endpoint 'HTTP: POST /auto'
+2025-10-22 04:15:06.403 +05:00 [INF] Request finished HTTP/1.1 POST http://localhost:5065/auto - 200 null application/json; charset=utf-8 2.2868ms
+2025-10-22 04:15:07.437 +05:00 [INF] Request starting HTTP/1.1 POST http://localhost:5065/auto - application/json 35
+2025-10-22 04:15:07.437 +05:00 [INF] Executing endpoint 'HTTP: POST /auto'
+2025-10-22 04:15:07.438 +05:00 [INF] Setting HTTP status code 200.
+2025-10-22 04:15:07.438 +05:00 [INF] Writing value of type 'Person' as Json.
+2025-10-22 04:15:07.438 +05:00 [INF] Executed endpoint 'HTTP: POST /auto'
+2025-10-22 04:15:07.438 +05:00 [INF] Request finished HTTP/1.1 POST http://localhost:5065/auto - 200 null application/json; charset=utf-8 1.0439ms
+2025-10-22 04:15:07.995 +05:00 [INF] Request starting HTTP/1.1 POST http://localhost:5065/auto - application/json 35
+2025-10-22 04:15:07.995 +05:00 [INF] Executing endpoint 'HTTP: POST /auto'
+2025-10-22 04:15:07.995 +05:00 [INF] Setting HTTP status code 200.
+2025-10-22 04:15:07.995 +05:00 [INF] Writing value of type 'Person' as Json.
+2025-10-22 04:15:07.995 +05:00 [INF] Executed endpoint 'HTTP: POST /auto'
+2025-10-22 04:15:07.995 +05:00 [INF] Request finished HTTP/1.1 POST http://localhost:5065/auto - 200 null application/json; charset=utf-8 0.7722ms
+2025-10-22 04:15:13.848 +05:00 [INF] Request starting HTTP/1.1 POST http://localhost:5065/auto - application/json 35
+2025-10-22 04:15:13.848 +05:00 [INF] Executing endpoint 'HTTP: POST /auto'
+2025-10-22 04:15:13.849 +05:00 [INF] Setting HTTP status code 200.
+2025-10-22 04:15:13.849 +05:00 [INF] Writing value of type 'Person' as Json.
+2025-10-22 04:15:13.849 +05:00 [INF] Executed endpoint 'HTTP: POST /auto'
+2025-10-22 04:15:13.849 +05:00 [INF] Request finished HTTP/1.1 POST http://localhost:5065/auto - 200 null application/json; charset=utf-8 0.6867ms
+2025-10-22 04:15:14.498 +05:00 [INF] Request starting HTTP/1.1 POST http://localhost:5065/auto - application/json 35
+2025-10-22 04:15:14.498 +05:00 [INF] Executing endpoint 'HTTP: POST /auto'
+2025-10-22 04:15:14.498 +05:00 [INF] Setting HTTP status code 200.
+2025-10-22 04:15:14.498 +05:00 [INF] Writing value of type 'Person' as Json.
+2025-10-22 04:15:14.499 +05:00 [INF] Executed endpoint 'HTTP: POST /auto'
+2025-10-22 04:15:14.499 +05:00 [INF] Request finished HTTP/1.1 POST http://localhost:5065/auto - 200 null application/json; charset=utf-8 0.7811ms
+2025-10-22 04:15:16.846 +05:00 [INF] Request starting HTTP/1.1 POST http://localhost:5065/auto - application/json 35
+2025-10-22 04:15:16.846 +05:00 [INF] Executing endpoint 'HTTP: POST /auto'
+2025-10-22 04:15:16.846 +05:00 [INF] Setting HTTP status code 200.
+2025-10-22 04:15:16.846 +05:00 [INF] Writing value of type 'Person' as Json.
+2025-10-22 04:15:16.846 +05:00 [INF] Executed endpoint 'HTTP: POST /auto'
+2025-10-22 04:15:16.847 +05:00 [INF] Request finished HTTP/1.1 POST http://localhost:5065/auto - 200 null application/json; charset=utf-8 0.6794ms
+2025-10-22 04:15:30.531 +05:00 [INF] Request starting HTTP/1.1 POST http://localhost:5065/json - application/json 35
+2025-10-22 04:15:30.531 +05:00 [INF] Executing endpoint 'HTTP: POST /json'
+2025-10-22 04:15:30.534 +05:00 [INF] Writing value of type 'Person' as Json.
+2025-10-22 04:15:30.534 +05:00 [INF] Executed endpoint 'HTTP: POST /json'
+2025-10-22 04:15:30.534 +05:00 [INF] Request finished HTTP/1.1 POST http://localhost:5065/json - 200 null application/json; charset=utf-8 2.9275ms
+2025-10-22 04:15:44.921 +05:00 [INF] Request starting HTTP/1.1 POST http://localhost:5065/json - application/json 39
+2025-10-22 04:15:44.921 +05:00 [INF] Executing endpoint 'HTTP: POST /json'
+2025-10-22 04:15:44.921 +05:00 [INF] Writing value of type 'Person' as Json.
+2025-10-22 04:15:44.921 +05:00 [INF] Executed endpoint 'HTTP: POST /json'
+2025-10-22 04:15:44.921 +05:00 [INF] Request finished HTTP/1.1 POST http://localhost:5065/json - 200 null application/json; charset=utf-8 0.6802ms
+2025-10-22 04:15:45.555 +05:00 [INF] Request starting HTTP/1.1 POST http://localhost:5065/json - application/json 39
+2025-10-22 04:15:45.556 +05:00 [INF] Executing endpoint 'HTTP: POST /json'
+2025-10-22 04:15:45.556 +05:00 [INF] Writing value of type 'Person' as Json.
+2025-10-22 04:15:45.556 +05:00 [INF] Executed endpoint 'HTTP: POST /json'
+2025-10-22 04:15:45.556 +05:00 [INF] Request finished HTTP/1.1 POST http://localhost:5065/json - 200 null application/json; charset=utf-8 0.9054ms
+2025-10-22 04:15:45.790 +05:00 [INF] Request starting HTTP/1.1 POST http://localhost:5065/json - application/json 39
+2025-10-22 04:15:45.790 +05:00 [INF] Executing endpoint 'HTTP: POST /json'
+2025-10-22 04:15:45.791 +05:00 [INF] Writing value of type 'Person' as Json.
+2025-10-22 04:15:45.791 +05:00 [INF] Executed endpoint 'HTTP: POST /json'
+2025-10-22 04:15:45.792 +05:00 [INF] Request finished HTTP/1.1 POST http://localhost:5065/json - 200 null application/json; charset=utf-8 1.6986ms
+2025-10-22 04:15:46.005 +05:00 [INF] Request starting HTTP/1.1 POST http://localhost:5065/json - application/json 39
+2025-10-22 04:15:46.005 +05:00 [INF] Executing endpoint 'HTTP: POST /json'
+2025-10-22 04:15:46.005 +05:00 [INF] Writing value of type 'Person' as Json.
+2025-10-22 04:15:46.005 +05:00 [INF] Executed endpoint 'HTTP: POST /json'
+2025-10-22 04:15:46.006 +05:00 [INF] Request finished HTTP/1.1 POST http://localhost:5065/json - 200 null application/json; charset=utf-8 1.0215ms
+2025-10-22 04:21:31.247 +05:00 [INF] Request starting HTTP/1.1 POST http://localhost:5065/custom-json - application/json 62
+2025-10-22 04:21:31.249 +05:00 [INF] Executing endpoint '405 HTTP Method Not Supported'
+2025-10-22 04:21:31.249 +05:00 [INF] Executed endpoint '405 HTTP Method Not Supported'
+2025-10-22 04:21:31.249 +05:00 [INF] Request finished HTTP/1.1 POST http://localhost:5065/custom-json - 405 0 null 1.4894ms
+2025-10-22 04:22:03.046 +05:00 [INF] Now listening on: http://localhost:5065
+2025-10-22 04:22:03.083 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-10-22 04:22:03.083 +05:00 [INF] Hosting environment: Development
+2025-10-22 04:22:03.083 +05:00 [INF] Content root path: C:\Users\hp\Desktop\Coursera\.NET-Course\MyFirstApi
+2025-10-22 04:22:03.213 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5065/api/products - null null
+2025-10-22 04:22:03.259 +05:00 [INF] Executing endpoint 'MyFirstApi.Controllers.ProductsController.GetProducts (MyFirstApi)'
+2025-10-22 04:22:03.267 +05:00 [INF] Route matched with {action = "GetProducts", controller = "Products"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[MyFirstApi.Models.Product]] GetProducts() on controller MyFirstApi.Controllers.ProductsController (MyFirstApi).
+2025-10-22 04:22:03.270 +05:00 [INF] Fetched all products, count: 3
+2025-10-22 04:22:03.287 +05:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[MyFirstApi.Models.Product, MyFirstApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-10-22 04:22:03.318 +05:00 [INF] Executed action MyFirstApi.Controllers.ProductsController.GetProducts (MyFirstApi) in 46.151ms
+2025-10-22 04:22:03.331 +05:00 [INF] Executed endpoint 'MyFirstApi.Controllers.ProductsController.GetProducts (MyFirstApi)'
+2025-10-22 04:22:03.333 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5065/api/products - 200 null application/json; charset=utf-8 121.7297ms
+2025-10-22 04:22:09.914 +05:00 [INF] Request starting HTTP/1.1 POST http://localhost:5065/json - application/json 62
+2025-10-22 04:22:09.917 +05:00 [INF] Executing endpoint 'HTTP: POST /json'
+2025-10-22 04:22:09.925 +05:00 [INF] Writing value of type 'Person' as Json.
+2025-10-22 04:22:09.927 +05:00 [INF] Executed endpoint 'HTTP: POST /json'
+2025-10-22 04:22:09.928 +05:00 [INF] Request finished HTTP/1.1 POST http://localhost:5065/json - 200 null application/json; charset=utf-8 15.1649ms
+2025-10-22 04:22:17.149 +05:00 [INF] Request starting HTTP/1.1 POST http://localhost:5065/custom-json - application/json 62
+2025-10-22 04:22:17.151 +05:00 [INF] Executing endpoint 'HTTP: POST /custom-json'
+2025-10-22 04:22:17.165 +05:00 [INF] Executed endpoint 'HTTP: POST /custom-json'
+2025-10-22 04:22:17.165 +05:00 [ERR] An error occurred while processing the request.
+System.Text.Json.JsonException: The JSON property 'Name' could not be mapped to any .NET member contained in type 'Person'.
+   at System.Text.Json.ThrowHelper.ThrowJsonException_UnmappedJsonProperty(Type type, String unmappedPropertyName)
+   at System.Text.Json.JsonSerializer.LookupProperty(Object obj, ReadOnlySpan`1 unescapedPropertyName, ReadStack& state, JsonSerializerOptions options, Boolean& useExtensionProperty, Boolean createExtensionProperty)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value)
+   at System.Text.Json.Serialization.JsonConverter`1.TryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value, Boolean& isPopulatedValue)
+   at System.Text.Json.Serialization.JsonConverter`1.ReadCore(Utf8JsonReader& reader, T& value, JsonSerializerOptions options, ReadStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.ContinueDeserialize(ReadBufferState& bufferState, JsonReaderState& jsonReaderState, ReadStack& readStack, T& value)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.DeserializeAsync(Stream utf8Json, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Http.HttpRequestJsonExtensions.ReadFromJsonAsync[TValue](HttpRequest request, JsonSerializerOptions options, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Http.HttpRequestJsonExtensions.ReadFromJsonAsync[TValue](HttpRequest request, JsonSerializerOptions options, CancellationToken cancellationToken)
+   at Program.<>c.<<<Main>$>b__0_10>d.MoveNext() in C:\Users\hp\Desktop\Coursera\.NET-Course\MyFirstApi\Program.cs:line 135
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.ExecuteTaskResult[T](Task`1 task, HttpContext httpContext)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Program.<>c.<<<Main>$>b__0_0>d.MoveNext() in C:\Users\hp\Desktop\Coursera\.NET-Course\MyFirstApi\Program.cs:line 48
+2025-10-22 04:22:17.189 +05:00 [INF] Request finished HTTP/1.1 POST http://localhost:5065/custom-json - 500 null null 39.4844ms
+2025-10-22 04:30:52.116 +05:00 [INF] Request starting HTTP/1.1 POST http://localhost:5065/xml - application/xml 55
+2025-10-22 04:30:52.118 +05:00 [INF] Executing endpoint '405 HTTP Method Not Supported'
+2025-10-22 04:30:52.118 +05:00 [INF] Executed endpoint '405 HTTP Method Not Supported'
+2025-10-22 04:30:52.118 +05:00 [INF] Request finished HTTP/1.1 POST http://localhost:5065/xml - 405 0 null 2.4203ms
+2025-10-22 04:31:05.939 +05:00 [INF] Now listening on: http://localhost:5065
+2025-10-22 04:31:05.983 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-10-22 04:31:05.984 +05:00 [INF] Hosting environment: Development
+2025-10-22 04:31:05.984 +05:00 [INF] Content root path: C:\Users\hp\Desktop\Coursera\.NET-Course\MyFirstApi
+2025-10-22 04:31:06.088 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5065/api/products - null null
+2025-10-22 04:31:06.130 +05:00 [INF] Executing endpoint 'MyFirstApi.Controllers.ProductsController.GetProducts (MyFirstApi)'
+2025-10-22 04:31:06.136 +05:00 [INF] Route matched with {action = "GetProducts", controller = "Products"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[MyFirstApi.Models.Product]] GetProducts() on controller MyFirstApi.Controllers.ProductsController (MyFirstApi).
+2025-10-22 04:31:06.138 +05:00 [INF] Fetched all products, count: 3
+2025-10-22 04:31:06.152 +05:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[MyFirstApi.Models.Product, MyFirstApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-10-22 04:31:06.178 +05:00 [INF] Executed action MyFirstApi.Controllers.ProductsController.GetProducts (MyFirstApi) in 39.377ms
+2025-10-22 04:31:06.190 +05:00 [INF] Executed endpoint 'MyFirstApi.Controllers.ProductsController.GetProducts (MyFirstApi)'
+2025-10-22 04:31:06.193 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5065/api/products - 200 null application/json; charset=utf-8 107.8896ms
+2025-10-22 04:31:12.398 +05:00 [INF] Request starting HTTP/1.1 POST http://localhost:5065/xml - application/xml 55
+2025-10-22 04:31:12.401 +05:00 [INF] Executing endpoint 'HTTP: POST /xml'
+2025-10-22 04:31:12.433 +05:00 [INF] Setting HTTP status code 200.
+2025-10-22 04:31:12.434 +05:00 [INF] Writing value of type 'Person' as Json.
+2025-10-22 04:31:12.436 +05:00 [INF] Executed endpoint 'HTTP: POST /xml'
+2025-10-22 04:31:12.436 +05:00 [INF] Request finished HTTP/1.1 POST http://localhost:5065/xml - 200 null application/json; charset=utf-8 38.3112ms
+2025-10-22 04:33:23.616 +05:00 [INF] Request starting HTTP/1.1 POST http://localhost:5065/xml - application/xml 55
+2025-10-22 04:33:23.618 +05:00 [INF] Executing endpoint 'HTTP: POST /xml'
+2025-10-22 04:33:23.619 +05:00 [INF] Setting HTTP status code 200.
+2025-10-22 04:33:23.619 +05:00 [INF] Writing value of type 'Person' as Json.
+2025-10-22 04:33:23.619 +05:00 [INF] Executed endpoint 'HTTP: POST /xml'
+2025-10-22 04:33:23.619 +05:00 [INF] Request finished HTTP/1.1 POST http://localhost:5065/xml - 200 null application/json; charset=utf-8 3.3092ms
+2025-10-22 04:33:24.776 +05:00 [INF] Request starting HTTP/1.1 POST http://localhost:5065/xml - application/xml 55
+2025-10-22 04:33:24.776 +05:00 [INF] Executing endpoint 'HTTP: POST /xml'
+2025-10-22 04:33:24.777 +05:00 [INF] Setting HTTP status code 200.
+2025-10-22 04:33:24.777 +05:00 [INF] Writing value of type 'Person' as Json.
+2025-10-22 04:33:24.777 +05:00 [INF] Executed endpoint 'HTTP: POST /xml'
+2025-10-22 04:33:24.777 +05:00 [INF] Request finished HTTP/1.1 POST http://localhost:5065/xml - 200 null application/json; charset=utf-8 1.3691ms
+2025-10-22 04:33:25.450 +05:00 [INF] Request starting HTTP/1.1 POST http://localhost:5065/xml - application/xml 55
+2025-10-22 04:33:25.451 +05:00 [INF] Executing endpoint 'HTTP: POST /xml'
+2025-10-22 04:33:25.451 +05:00 [INF] Setting HTTP status code 200.
+2025-10-22 04:33:25.451 +05:00 [INF] Writing value of type 'Person' as Json.
+2025-10-22 04:33:25.451 +05:00 [INF] Executed endpoint 'HTTP: POST /xml'
+2025-10-22 04:33:25.451 +05:00 [INF] Request finished HTTP/1.1 POST http://localhost:5065/xml - 200 null application/json; charset=utf-8 1.0823ms
+2025-10-22 04:46:28.493 +05:00 [INF] Application is shutting down...

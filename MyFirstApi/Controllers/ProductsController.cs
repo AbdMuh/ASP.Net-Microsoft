@@ -49,7 +49,7 @@ namespace MyFirstApi.Controllers
             var product = Products.FirstOrDefault(p => p.Id == id);
             if (product == null)
             {
-                return NotFound();
+                return NotFound("No Product found with the given ID.");
             }
             _logger.LogInformation("Fetched product details, Id: {Id}", id);
             return Ok(product);

@@ -41,3 +41,4 @@ C:\Users\hp\Desktop\Coursera\.NET-Course\MyFirstApi\bin\Debug\net9.0\Serilog.Set
 C:\Users\hp\Desktop\Coursera\.NET-Course\MyFirstApi\bin\Debug\net9.0\Serilog.Sinks.Console.dll
 C:\Users\hp\Desktop\Coursera\.NET-Course\MyFirstApi\bin\Debug\net9.0\Serilog.Sinks.Debug.dll
 C:\Users\hp\Desktop\Coursera\.NET-Course\MyFirstApi\bin\Debug\net9.0\Serilog.Sinks.File.dll
+C:\Users\hp\Desktop\Coursera\.NET-Course\MyFirstApi\obj\Debug\net9.0\MyFirstApi.sourcelink.json

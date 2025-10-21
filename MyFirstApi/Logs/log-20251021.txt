@@ -1,0 +1,92 @@
+2025-10-21 22:23:37.809 +05:00 [INF] Now listening on: http://localhost:5065
+2025-10-21 22:23:37.846 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-10-21 22:23:37.846 +05:00 [INF] Hosting environment: Development
+2025-10-21 22:23:37.846 +05:00 [INF] Content root path: C:\Users\hp\Desktop\Coursera\.NET-Course\MyFirstApi
+2025-10-21 22:23:38.007 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5065/api/products - null null
+2025-10-21 22:23:38.048 +05:00 [INF] Executing endpoint 'MyFirstApi.Controllers.ProductsController.GetProducts (MyFirstApi)'
+2025-10-21 22:23:38.055 +05:00 [INF] Route matched with {action = "GetProducts", controller = "Products"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[MyFirstApi.Models.Product]] GetProducts() on controller MyFirstApi.Controllers.ProductsController (MyFirstApi).
+2025-10-21 22:23:38.060 +05:00 [INF] Fetched all products, count: 3
+2025-10-21 22:23:38.071 +05:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[MyFirstApi.Models.Product, MyFirstApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-10-21 22:23:38.104 +05:00 [INF] Executed action MyFirstApi.Controllers.ProductsController.GetProducts (MyFirstApi) in 45.4659ms
+2025-10-21 22:23:38.116 +05:00 [INF] Executed endpoint 'MyFirstApi.Controllers.ProductsController.GetProducts (MyFirstApi)'
+2025-10-21 22:23:38.118 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5065/api/products - 200 null application/json; charset=utf-8 113.4424ms
+2025-10-21 22:23:38.195 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5065/favicon.ico - null null
+2025-10-21 22:23:38.199 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5065/favicon.ico - 404 0 null 4.6546ms
+2025-10-21 22:23:38.199 +05:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5065/favicon.ico, Response status code: 404
+2025-10-21 22:26:40.860 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5065/api/products/-1 - null null
+2025-10-21 22:26:40.862 +05:00 [INF] Executing endpoint 'MyFirstApi.Controllers.ProductsController.GetProduct (MyFirstApi)'
+2025-10-21 22:26:40.869 +05:00 [INF] Route matched with {action = "GetProduct", controller = "Products"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[MyFirstApi.Models.Product] GetProduct(Int32) on controller MyFirstApi.Controllers.ProductsController (MyFirstApi).
+2025-10-21 22:26:40.878 +05:00 [INF] Executed action MyFirstApi.Controllers.ProductsController.GetProduct (MyFirstApi) in 8.1865ms
+2025-10-21 22:26:40.879 +05:00 [INF] Executed endpoint 'MyFirstApi.Controllers.ProductsController.GetProduct (MyFirstApi)'
+2025-10-21 22:26:40.880 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5065/api/products/-1 - 500 null null 19.6208ms
+2025-10-21 22:33:32.229 +05:00 [INF] Request starting HTTP/1.1 POST http://localhost:5065/api/products - application/json 59
+2025-10-21 22:33:32.230 +05:00 [INF] Executing endpoint 'MyFirstApi.Controllers.ProductsController.CreateProduct (MyFirstApi)'
+2025-10-21 22:33:32.233 +05:00 [INF] Route matched with {action = "CreateProduct", controller = "Products"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[MyFirstApi.Models.Product] CreateProduct(MyFirstApi.Models.Product) on controller MyFirstApi.Controllers.ProductsController (MyFirstApi).
+2025-10-21 22:33:32.259 +05:00 [INF] Executing CreatedAtActionResult, writing value of type 'MyFirstApi.Models.Product'.
+2025-10-21 22:33:32.275 +05:00 [INF] Executed action MyFirstApi.Controllers.ProductsController.CreateProduct (MyFirstApi) in 41.8091ms
+2025-10-21 22:33:32.275 +05:00 [INF] Executed endpoint 'MyFirstApi.Controllers.ProductsController.CreateProduct (MyFirstApi)'
+2025-10-21 22:33:32.275 +05:00 [INF] Request finished HTTP/1.1 POST http://localhost:5065/api/products - 201 null application/json; charset=utf-8 46.1899ms
+2025-10-21 22:33:53.406 +05:00 [INF] Request starting HTTP/1.1 POST http://localhost:5065/api/products - application/json 59
+2025-10-21 22:33:53.407 +05:00 [INF] Executing endpoint 'MyFirstApi.Controllers.ProductsController.CreateProduct (MyFirstApi)'
+2025-10-21 22:33:53.408 +05:00 [INF] Route matched with {action = "CreateProduct", controller = "Products"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[MyFirstApi.Models.Product] CreateProduct(MyFirstApi.Models.Product) on controller MyFirstApi.Controllers.ProductsController (MyFirstApi).
+2025-10-21 22:33:53.411 +05:00 [INF] Executing CreatedAtActionResult, writing value of type 'MyFirstApi.Models.Product'.
+2025-10-21 22:33:53.412 +05:00 [INF] Executed action MyFirstApi.Controllers.ProductsController.CreateProduct (MyFirstApi) in 3.6486ms
+2025-10-21 22:33:53.413 +05:00 [INF] Executed endpoint 'MyFirstApi.Controllers.ProductsController.CreateProduct (MyFirstApi)'
+2025-10-21 22:33:53.414 +05:00 [INF] Request finished HTTP/1.1 POST http://localhost:5065/api/products - 201 null application/json; charset=utf-8 7.8541ms
+2025-10-21 22:33:57.324 +05:00 [INF] Application is shutting down...
+2025-10-21 22:38:16.508 +05:00 [INF] Now listening on: http://localhost:5065
+2025-10-21 22:38:16.543 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-10-21 22:38:16.543 +05:00 [INF] Hosting environment: Development
+2025-10-21 22:38:16.543 +05:00 [INF] Content root path: C:\Users\hp\Desktop\Coursera\.NET-Course\MyFirstApi
+2025-10-21 22:38:16.687 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5065/api/products - null null
+2025-10-21 22:38:16.724 +05:00 [INF] Executing endpoint 'MyFirstApi.Controllers.ProductsController.GetProducts (MyFirstApi)'
+2025-10-21 22:38:16.734 +05:00 [INF] Route matched with {action = "GetProducts", controller = "Products"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[MyFirstApi.Models.Product]] GetProducts() on controller MyFirstApi.Controllers.ProductsController (MyFirstApi).
+2025-10-21 22:38:16.737 +05:00 [INF] Fetched all products, count: 3
+2025-10-21 22:38:16.757 +05:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[MyFirstApi.Models.Product, MyFirstApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-10-21 22:38:16.794 +05:00 [INF] Executed action MyFirstApi.Controllers.ProductsController.GetProducts (MyFirstApi) in 56.119ms
+2025-10-21 22:38:16.809 +05:00 [INF] Executed endpoint 'MyFirstApi.Controllers.ProductsController.GetProducts (MyFirstApi)'
+2025-10-21 22:38:16.811 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5065/api/products - 200 null application/json; charset=utf-8 126.4626ms
+2025-10-21 22:55:50.013 +05:00 [INF] Application is shutting down...
+2025-10-21 22:56:02.601 +05:00 [INF] Now listening on: http://localhost:5065
+2025-10-21 22:56:02.648 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-10-21 22:56:02.649 +05:00 [INF] Hosting environment: Development
+2025-10-21 22:56:02.649 +05:00 [INF] Content root path: C:\Users\hp\Desktop\Coursera\.NET-Course\MyFirstApi
+2025-10-21 22:56:02.949 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5065/api/products - null null
+2025-10-21 22:56:02.993 +05:00 [INF] Executing endpoint 'MyFirstApi.Controllers.ProductsController.GetProducts (MyFirstApi)'
+2025-10-21 22:56:03.004 +05:00 [INF] Route matched with {action = "GetProducts", controller = "Products"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[MyFirstApi.Models.Product]] GetProducts() on controller MyFirstApi.Controllers.ProductsController (MyFirstApi).
+2025-10-21 22:56:03.006 +05:00 [INF] Fetched all products, count: 3
+2025-10-21 22:56:03.026 +05:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[MyFirstApi.Models.Product, MyFirstApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-10-21 22:56:03.077 +05:00 [INF] Executed action MyFirstApi.Controllers.ProductsController.GetProducts (MyFirstApi) in 68.6454ms
+2025-10-21 22:56:03.090 +05:00 [INF] Executed endpoint 'MyFirstApi.Controllers.ProductsController.GetProducts (MyFirstApi)'
+2025-10-21 22:56:03.091 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5065/api/products - 200 null application/json; charset=utf-8 144.8077ms
+2025-10-21 22:57:06.285 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5065/api/products/-1 - null null
+2025-10-21 22:57:06.288 +05:00 [INF] Executing endpoint 'MyFirstApi.Controllers.ProductsController.GetProduct (MyFirstApi)'
+2025-10-21 22:57:06.293 +05:00 [INF] Route matched with {action = "GetProduct", controller = "Products"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[MyFirstApi.Models.Product] GetProduct(Int32) on controller MyFirstApi.Controllers.ProductsController (MyFirstApi).
+2025-10-21 22:57:06.298 +05:00 [INF] Executed action MyFirstApi.Controllers.ProductsController.GetProduct (MyFirstApi) in 4.9258ms
+2025-10-21 22:57:06.298 +05:00 [INF] Executed endpoint 'MyFirstApi.Controllers.ProductsController.GetProduct (MyFirstApi)'
+2025-10-21 22:57:06.298 +05:00 [ERR] An error occurred while processing the request.
+System.ArgumentException: Invalid product ID.
+   at MyFirstApi.Controllers.ProductsController.GetProduct(Int32 id) in C:\Users\hp\Desktop\Coursera\.NET-Course\MyFirstApi\Controllers\ProductsController.cs:line 47
+   at lambda_method7(Closure, Object, Object[])
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Program.<>c.<<<Main>$>b__0_0>d.MoveNext() in C:\Users\hp\Desktop\Coursera\.NET-Course\MyFirstApi\Program.cs:line 45
+2025-10-21 22:57:06.332 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5065/api/products/-1 - 500 null null 46.8307ms
+2025-10-21 23:04:42.761 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5065/api/products/-1 - null null
+2025-10-21 23:04:42.763 +05:00 [INF] Executing endpoint 'MyFirstApi.Controllers.ProductsController.GetProduct (MyFirstApi)'
+2025-10-21 23:04:42.765 +05:00 [INF] Route matched with {action = "GetProduct", controller = "Products"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[MyFirstApi.Models.Product] GetProduct(Int32) on controller MyFirstApi.Controllers.ProductsController (MyFirstApi).
+2025-10-21 23:04:42.776 +05:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ProblemDetails'.
+2025-10-21 23:04:42.788 +05:00 [INF] Executed action MyFirstApi.Controllers.ProductsController.GetProduct (MyFirstApi) in 21.9242ms
+2025-10-21 23:04:42.788 +05:00 [INF] Executed endpoint 'MyFirstApi.Controllers.ProductsController.GetProduct (MyFirstApi)'
+2025-10-21 23:04:42.788 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5065/api/products/-1 - 404 null application/problem+json; charset=utf-8 26.694ms

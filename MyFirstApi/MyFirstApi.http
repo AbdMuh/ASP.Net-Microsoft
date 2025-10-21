@@ -1,6 +1,6 @@
 @MyFirstApi_HostAddress = http://localhost:5065
 
-GET {{MyFirstApi_HostAddress}}/api/products/-1
+GET {{MyFirstApi_HostAddress}}/api/products/5
 Accept: application/json
 
 ###
@@ -45,3 +45,68 @@ Content-Type: application/json
 GET {{MyFirstApi_HostAddress}}/minimal/store/electronic/laptop/101?inStock=true
 Content-Type: application/json
 ###
+
+GET {{MyFirstApi_HostAddress}}/manual-json
+Accept: application/json
+###
+
+GET {{MyFirstApi_HostAddress}}/custom-json
+Accept: application/json
+###
+
+GET {{MyFirstApi_HostAddress}}/auto
+Accept: application/json
+###
+
+GET {{MyFirstApi_HostAddress}}/json
+Accept: application/json
+###
+
+GET {{MyFirstApi_HostAddress}}/xml
+Accept: application/xml
+###
+
+POST {{MyFirstApi_HostAddress}}/auto
+Content-Type: application/json
+Accept: application/json
+
+{
+  "Id": 2,
+  "Name": "Alice"
+}
+###
+
+POST {{MyFirstApi_HostAddress}}/json
+Content-Type: application/json
+Accept: application/json
+
+{
+  "Name": "Alice",
+  "Id": 2,
+  "City": "New York"
+  
+}
+###
+
+POST {{MyFirstApi_HostAddress}}/custom-json
+Content-Type: application/json
+Accept: application/json
+
+{
+  "Name": "Alice",
+  "Id": 2,
+  "City": "New York"
+  
+}
+###
+POST {{MyFirstApi_HostAddress}}/xml
+Content-Type: application/xml
+Accept: application/json
+
+<Person>
+  <Id>2</Id>
+  <Name>Alice</Name>
+</Person>
+###
+
+

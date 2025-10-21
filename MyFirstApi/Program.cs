@@ -1,3 +1,6 @@
+using System.Text.Json;
+using System.Text.Json.Serialization;
+using System.Xml.Serialization;
 using Microsoft.AspNetCore.Http.HttpResults;
 using Serilog;
 
@@ -37,6 +40,7 @@ app.UseAuthorization();
 app.Use(async (context, next) =>
 {
     var myService = context.RequestServices.GetRequiredService<IMyService>();
+    var _logger=context.RequestServices.GetRequiredService<ILogger<Program>>();
     Console.WriteLine($"Request: {context.Request.Method} {context.Request.Path}");
     myService.LogCreation("middleware");
     try
@@ -45,7 +49,7 @@ app.Use(async (context, next) =>
     }
     catch (Exception ex)
     {
-        Console.WriteLine($"Exception caught in middleware: {ex.Message}");
+        _logger.LogError(ex, "An error occurred while processing the request.");
         context.Response.StatusCode = 500;
         await context.Response.WriteAsync("An unexpected fault happened. Try again later.");
     }
@@ -79,7 +83,78 @@ app.MapGet("/minimal/{id:int}", (int id) => $"Hello Minimal API {id}");
 // {
 //     return $"Category: {category}, Item Name: {itemName ?? "N/A"}, Item ID: {itemId?.ToString() ?? "N/A"}, In Stock: {inStock?.ToString() ?? "N/A"}";
 // });
+
+var samplePerson = new Person { Id = 1, Name = "John Doe" };
+app.MapGet("/manual-json", () =>
+{
+    var json = JsonSerializer.Serialize(samplePerson);
+    return TypedResults.Text(json, "application/json");
+});
+
+app.MapGet("/custom-json", () =>
+{
+    var options = new JsonSerializerOptions
+    {
+        PropertyNamingPolicy = JsonNamingPolicy.SnakeCaseUpper,
+        WriteIndented = true
+    };
+    var json = JsonSerializer.Serialize(samplePerson, options);
+    return TypedResults.Text(json, "application/json");
+});
+
+app.MapGet("/json", () => TypedResults.Json(samplePerson));
+app.MapGet("/auto", () => samplePerson);
+
+app.MapGet("/xml", () =>
+{
+    var xmlSerializer = new XmlSerializer(typeof(Person));
+    var stringWriter = new StringWriter();
+    xmlSerializer.Serialize(stringWriter, samplePerson);
+    var xml = stringWriter.ToString();
+    return TypedResults.Text(xml, "application/xml");
+});
+
+app.MapPost("/auto", (Person person) =>
+{
+    return TypedResults.Ok(person);
+});
+
+app.MapPost("/json", async (HttpContext context) =>
+{
+    var person = await context.Request.ReadFromJsonAsync<Person>();
+    return TypedResults.Json(person);
+});
+
+app.MapPost("/custom-json", async (HttpContext context) =>
+{
+    var options = new JsonSerializerOptions
+    {
+        PropertyNamingPolicy = JsonNamingPolicy.SnakeCaseUpper,
+        UnmappedMemberHandling = JsonUnmappedMemberHandling.Disallow,
+    };
+    var person = await context.Request.ReadFromJsonAsync<Person>(options);
+    return TypedResults.Json(person);
+});
+
+app.MapPost("/xml", async (HttpContext context) =>
+{
+    var xmlSerializer = new XmlSerializer(typeof(Person));
+    var reader = new StreamReader(context.Request.Body);
+    var body = await reader.ReadToEndAsync();
+    var stringReader = new StringReader(body);
+    var person = xmlSerializer.Deserialize(stringReader);
+    return TypedResults.Ok(person);
+});
+
+
+
 app.Run();
+
+public class Person
+{
+    public int Id { get; set; }
+    public required string Name { get; set; }
+}
 
 
 
