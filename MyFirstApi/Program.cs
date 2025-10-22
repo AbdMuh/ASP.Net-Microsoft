@@ -140,8 +140,8 @@ app.MapPost("/xml", async (HttpContext context) =>
 {
     var xmlSerializer = new XmlSerializer(typeof(Person));
     var reader = new StreamReader(context.Request.Body);
-    var body = await reader.ReadToEndAsync();
-    var stringReader = new StringReader(body);
+    var body = await reader.ReadToEndAsync(); //body contains the xml string
+    var stringReader = new StringReader(body); //xml string passed to StringReader
     var person = xmlSerializer.Deserialize(stringReader);
     return TypedResults.Ok(person);
 });

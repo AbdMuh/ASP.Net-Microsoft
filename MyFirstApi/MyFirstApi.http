@@ -93,10 +93,8 @@ Content-Type: application/json
 Accept: application/json
 
 {
-  "Name": "Alice",
-  "Id": 2,
-  "City": "New York"
-  
+  "ID": 3,
+  "NAME": "Alice"
 }
 ###
 POST {{MyFirstApi_HostAddress}}/xml

@@ -1,0 +1,499 @@
+2025-10-23 02:12:05.374 +05:00 [INF] Now listening on: http://localhost:5065
+2025-10-23 02:12:05.412 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-10-23 02:12:05.412 +05:00 [INF] Hosting environment: Development
+2025-10-23 02:12:05.413 +05:00 [INF] Content root path: C:\Users\hp\Desktop\Coursera\.NET-Course\MyFirstApi
+2025-10-23 02:12:05.578 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5065/api/products - null null
+2025-10-23 02:12:05.623 +05:00 [INF] Executing endpoint 'MyFirstApi.Controllers.ProductsController.GetProducts (MyFirstApi)'
+2025-10-23 02:12:05.633 +05:00 [INF] Route matched with {action = "GetProducts", controller = "Products"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[MyFirstApi.Models.Product]] GetProducts() on controller MyFirstApi.Controllers.ProductsController (MyFirstApi).
+2025-10-23 02:12:05.636 +05:00 [INF] Fetched all products, count: 3
+2025-10-23 02:12:05.651 +05:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[MyFirstApi.Models.Product, MyFirstApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-10-23 02:12:05.685 +05:00 [INF] Executed action MyFirstApi.Controllers.ProductsController.GetProducts (MyFirstApi) in 45.1617ms
+2025-10-23 02:12:05.700 +05:00 [INF] Executed endpoint 'MyFirstApi.Controllers.ProductsController.GetProducts (MyFirstApi)'
+2025-10-23 02:12:05.702 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5065/api/products - 200 null application/json; charset=utf-8 125.9229ms
+2025-10-23 02:12:05.783 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5065/favicon.ico - null null
+2025-10-23 02:12:05.788 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5065/favicon.ico - 404 0 null 5.2648ms
+2025-10-23 02:12:05.788 +05:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5065/favicon.ico, Response status code: 404
+2025-10-23 02:12:29.250 +05:00 [INF] Request starting HTTP/1.1 POST http://localhost:5065/custom-json - application/json 62
+2025-10-23 02:12:29.251 +05:00 [INF] Executing endpoint 'HTTP: POST /custom-json'
+2025-10-23 02:12:29.261 +05:00 [INF] Executed endpoint 'HTTP: POST /custom-json'
+2025-10-23 02:12:29.262 +05:00 [ERR] An error occurred while processing the request.
+System.Text.Json.JsonException: The JSON property 'Name' could not be mapped to any .NET member contained in type 'Person'.
+   at System.Text.Json.ThrowHelper.ThrowJsonException_UnmappedJsonProperty(Type type, String unmappedPropertyName)
+   at System.Text.Json.JsonSerializer.LookupProperty(Object obj, ReadOnlySpan`1 unescapedPropertyName, ReadStack& state, JsonSerializerOptions options, Boolean& useExtensionProperty, Boolean createExtensionProperty)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value)
+   at System.Text.Json.Serialization.JsonConverter`1.TryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value, Boolean& isPopulatedValue)
+   at System.Text.Json.Serialization.JsonConverter`1.ReadCore(Utf8JsonReader& reader, T& value, JsonSerializerOptions options, ReadStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.ContinueDeserialize(ReadBufferState& bufferState, JsonReaderState& jsonReaderState, ReadStack& readStack, T& value)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.DeserializeAsync(Stream utf8Json, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Http.HttpRequestJsonExtensions.ReadFromJsonAsync[TValue](HttpRequest request, JsonSerializerOptions options, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Http.HttpRequestJsonExtensions.ReadFromJsonAsync[TValue](HttpRequest request, JsonSerializerOptions options, CancellationToken cancellationToken)
+   at Program.<>c.<<<Main>$>b__0_10>d.MoveNext() in C:\Users\hp\Desktop\Coursera\.NET-Course\MyFirstApi\Program.cs:line 135
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.ExecuteTaskResult[T](Task`1 task, HttpContext httpContext)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Program.<>c.<<<Main>$>b__0_0>d.MoveNext() in C:\Users\hp\Desktop\Coursera\.NET-Course\MyFirstApi\Program.cs:line 48
+2025-10-23 02:12:29.298 +05:00 [INF] Request finished HTTP/1.1 POST http://localhost:5065/custom-json - 500 null null 47.8978ms
+2025-10-23 02:12:59.098 +05:00 [INF] Request starting HTTP/1.1 POST http://localhost:5065/custom-json - application/json 40
+2025-10-23 02:12:59.098 +05:00 [INF] Executing endpoint 'HTTP: POST /custom-json'
+2025-10-23 02:12:59.099 +05:00 [INF] Executed endpoint 'HTTP: POST /custom-json'
+2025-10-23 02:12:59.100 +05:00 [ERR] An error occurred while processing the request.
+System.Text.Json.JsonException: The JSON property 'Name' could not be mapped to any .NET member contained in type 'Person'.
+   at System.Text.Json.ThrowHelper.ThrowJsonException_UnmappedJsonProperty(Type type, String unmappedPropertyName)
+   at System.Text.Json.JsonSerializer.LookupProperty(Object obj, ReadOnlySpan`1 unescapedPropertyName, ReadStack& state, JsonSerializerOptions options, Boolean& useExtensionProperty, Boolean createExtensionProperty)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value)
+   at System.Text.Json.Serialization.JsonConverter`1.TryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value, Boolean& isPopulatedValue)
+   at System.Text.Json.Serialization.JsonConverter`1.ReadCore(Utf8JsonReader& reader, T& value, JsonSerializerOptions options, ReadStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.ContinueDeserialize(ReadBufferState& bufferState, JsonReaderState& jsonReaderState, ReadStack& readStack, T& value)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.DeserializeAsync(Stream utf8Json, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Http.HttpRequestJsonExtensions.ReadFromJsonAsync[TValue](HttpRequest request, JsonSerializerOptions options, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Http.HttpRequestJsonExtensions.ReadFromJsonAsync[TValue](HttpRequest request, JsonSerializerOptions options, CancellationToken cancellationToken)
+   at Program.<>c.<<<Main>$>b__0_10>d.MoveNext() in C:\Users\hp\Desktop\Coursera\.NET-Course\MyFirstApi\Program.cs:line 135
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.ExecuteTaskResult[T](Task`1 task, HttpContext httpContext)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Program.<>c.<<<Main>$>b__0_0>d.MoveNext() in C:\Users\hp\Desktop\Coursera\.NET-Course\MyFirstApi\Program.cs:line 48
+2025-10-23 02:12:59.101 +05:00 [INF] Request finished HTTP/1.1 POST http://localhost:5065/custom-json - 500 null null 2.9672ms
+2025-10-23 02:13:02.125 +05:00 [INF] Request starting HTTP/1.1 POST http://localhost:5065/custom-json - application/json 40
+2025-10-23 02:13:02.126 +05:00 [INF] Executing endpoint 'HTTP: POST /custom-json'
+2025-10-23 02:13:02.126 +05:00 [INF] Executed endpoint 'HTTP: POST /custom-json'
+2025-10-23 02:13:02.127 +05:00 [ERR] An error occurred while processing the request.
+System.Text.Json.JsonException: The JSON property 'Name' could not be mapped to any .NET member contained in type 'Person'.
+   at System.Text.Json.ThrowHelper.ThrowJsonException_UnmappedJsonProperty(Type type, String unmappedPropertyName)
+   at System.Text.Json.JsonSerializer.LookupProperty(Object obj, ReadOnlySpan`1 unescapedPropertyName, ReadStack& state, JsonSerializerOptions options, Boolean& useExtensionProperty, Boolean createExtensionProperty)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value)
+   at System.Text.Json.Serialization.JsonConverter`1.TryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value, Boolean& isPopulatedValue)
+   at System.Text.Json.Serialization.JsonConverter`1.ReadCore(Utf8JsonReader& reader, T& value, JsonSerializerOptions options, ReadStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.ContinueDeserialize(ReadBufferState& bufferState, JsonReaderState& jsonReaderState, ReadStack& readStack, T& value)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.DeserializeAsync(Stream utf8Json, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Http.HttpRequestJsonExtensions.ReadFromJsonAsync[TValue](HttpRequest request, JsonSerializerOptions options, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Http.HttpRequestJsonExtensions.ReadFromJsonAsync[TValue](HttpRequest request, JsonSerializerOptions options, CancellationToken cancellationToken)
+   at Program.<>c.<<<Main>$>b__0_10>d.MoveNext() in C:\Users\hp\Desktop\Coursera\.NET-Course\MyFirstApi\Program.cs:line 135
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.ExecuteTaskResult[T](Task`1 task, HttpContext httpContext)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Program.<>c.<<<Main>$>b__0_0>d.MoveNext() in C:\Users\hp\Desktop\Coursera\.NET-Course\MyFirstApi\Program.cs:line 48
+2025-10-23 02:13:02.130 +05:00 [INF] Request finished HTTP/1.1 POST http://localhost:5065/custom-json - 500 null null 5.0613ms
+2025-10-23 02:13:03.337 +05:00 [INF] Request starting HTTP/1.1 POST http://localhost:5065/custom-json - application/json 40
+2025-10-23 02:13:03.338 +05:00 [INF] Executing endpoint 'HTTP: POST /custom-json'
+2025-10-23 02:13:03.338 +05:00 [INF] Executed endpoint 'HTTP: POST /custom-json'
+2025-10-23 02:13:03.338 +05:00 [ERR] An error occurred while processing the request.
+System.Text.Json.JsonException: The JSON property 'Name' could not be mapped to any .NET member contained in type 'Person'.
+   at System.Text.Json.ThrowHelper.ThrowJsonException_UnmappedJsonProperty(Type type, String unmappedPropertyName)
+   at System.Text.Json.JsonSerializer.LookupProperty(Object obj, ReadOnlySpan`1 unescapedPropertyName, ReadStack& state, JsonSerializerOptions options, Boolean& useExtensionProperty, Boolean createExtensionProperty)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value)
+   at System.Text.Json.Serialization.JsonConverter`1.TryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value, Boolean& isPopulatedValue)
+   at System.Text.Json.Serialization.JsonConverter`1.ReadCore(Utf8JsonReader& reader, T& value, JsonSerializerOptions options, ReadStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.ContinueDeserialize(ReadBufferState& bufferState, JsonReaderState& jsonReaderState, ReadStack& readStack, T& value)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.DeserializeAsync(Stream utf8Json, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Http.HttpRequestJsonExtensions.ReadFromJsonAsync[TValue](HttpRequest request, JsonSerializerOptions options, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Http.HttpRequestJsonExtensions.ReadFromJsonAsync[TValue](HttpRequest request, JsonSerializerOptions options, CancellationToken cancellationToken)
+   at Program.<>c.<<<Main>$>b__0_10>d.MoveNext() in C:\Users\hp\Desktop\Coursera\.NET-Course\MyFirstApi\Program.cs:line 135
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.ExecuteTaskResult[T](Task`1 task, HttpContext httpContext)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Program.<>c.<<<Main>$>b__0_0>d.MoveNext() in C:\Users\hp\Desktop\Coursera\.NET-Course\MyFirstApi\Program.cs:line 48
+2025-10-23 02:13:03.339 +05:00 [INF] Request finished HTTP/1.1 POST http://localhost:5065/custom-json - 500 null null 2.1815ms
+2025-10-23 02:13:03.635 +05:00 [INF] Request starting HTTP/1.1 POST http://localhost:5065/custom-json - application/json 40
+2025-10-23 02:13:03.635 +05:00 [INF] Executing endpoint 'HTTP: POST /custom-json'
+2025-10-23 02:13:03.636 +05:00 [INF] Executed endpoint 'HTTP: POST /custom-json'
+2025-10-23 02:13:03.636 +05:00 [ERR] An error occurred while processing the request.
+System.Text.Json.JsonException: The JSON property 'Name' could not be mapped to any .NET member contained in type 'Person'.
+   at System.Text.Json.ThrowHelper.ThrowJsonException_UnmappedJsonProperty(Type type, String unmappedPropertyName)
+   at System.Text.Json.JsonSerializer.LookupProperty(Object obj, ReadOnlySpan`1 unescapedPropertyName, ReadStack& state, JsonSerializerOptions options, Boolean& useExtensionProperty, Boolean createExtensionProperty)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value)
+   at System.Text.Json.Serialization.JsonConverter`1.TryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value, Boolean& isPopulatedValue)
+   at System.Text.Json.Serialization.JsonConverter`1.ReadCore(Utf8JsonReader& reader, T& value, JsonSerializerOptions options, ReadStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.ContinueDeserialize(ReadBufferState& bufferState, JsonReaderState& jsonReaderState, ReadStack& readStack, T& value)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.DeserializeAsync(Stream utf8Json, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Http.HttpRequestJsonExtensions.ReadFromJsonAsync[TValue](HttpRequest request, JsonSerializerOptions options, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Http.HttpRequestJsonExtensions.ReadFromJsonAsync[TValue](HttpRequest request, JsonSerializerOptions options, CancellationToken cancellationToken)
+   at Program.<>c.<<<Main>$>b__0_10>d.MoveNext() in C:\Users\hp\Desktop\Coursera\.NET-Course\MyFirstApi\Program.cs:line 135
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.ExecuteTaskResult[T](Task`1 task, HttpContext httpContext)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Program.<>c.<<<Main>$>b__0_0>d.MoveNext() in C:\Users\hp\Desktop\Coursera\.NET-Course\MyFirstApi\Program.cs:line 48
+2025-10-23 02:13:03.638 +05:00 [INF] Request finished HTTP/1.1 POST http://localhost:5065/custom-json - 500 null null 3.0855ms
+2025-10-23 02:13:06.513 +05:00 [INF] Request starting HTTP/1.1 POST http://localhost:5065/xml - application/xml 55
+2025-10-23 02:13:06.514 +05:00 [INF] Executing endpoint 'HTTP: POST /xml'
+2025-10-23 02:13:06.573 +05:00 [INF] Setting HTTP status code 200.
+2025-10-23 02:13:06.575 +05:00 [INF] Writing value of type 'Person' as Json.
+2025-10-23 02:13:06.576 +05:00 [INF] Executed endpoint 'HTTP: POST /xml'
+2025-10-23 02:13:06.577 +05:00 [INF] Request finished HTTP/1.1 POST http://localhost:5065/xml - 200 null application/json; charset=utf-8 63.3386ms
+2025-10-23 02:13:12.965 +05:00 [INF] Request starting HTTP/1.1 POST http://localhost:5065/json - application/json 62
+2025-10-23 02:13:12.965 +05:00 [INF] Executing endpoint 'HTTP: POST /json'
+2025-10-23 02:13:12.974 +05:00 [INF] Writing value of type 'Person' as Json.
+2025-10-23 02:13:12.976 +05:00 [INF] Executed endpoint 'HTTP: POST /json'
+2025-10-23 02:13:12.977 +05:00 [INF] Request finished HTTP/1.1 POST http://localhost:5065/json - 200 null application/json; charset=utf-8 12.073ms
+2025-10-23 02:13:17.415 +05:00 [INF] Request starting HTTP/1.1 POST http://localhost:5065/json - application/json 62
+2025-10-23 02:13:17.416 +05:00 [INF] Executing endpoint 'HTTP: POST /json'
+2025-10-23 02:13:17.416 +05:00 [INF] Writing value of type 'Person' as Json.
+2025-10-23 02:13:17.417 +05:00 [INF] Executed endpoint 'HTTP: POST /json'
+2025-10-23 02:13:17.417 +05:00 [INF] Request finished HTTP/1.1 POST http://localhost:5065/json - 200 null application/json; charset=utf-8 1.8854ms
+2025-10-23 02:13:18.325 +05:00 [INF] Request starting HTTP/1.1 POST http://localhost:5065/json - application/json 62
+2025-10-23 02:13:18.325 +05:00 [INF] Executing endpoint 'HTTP: POST /json'
+2025-10-23 02:13:18.325 +05:00 [INF] Writing value of type 'Person' as Json.
+2025-10-23 02:13:18.325 +05:00 [INF] Executed endpoint 'HTTP: POST /json'
+2025-10-23 02:13:18.326 +05:00 [INF] Request finished HTTP/1.1 POST http://localhost:5065/json - 200 null application/json; charset=utf-8 1.0452ms
+2025-10-23 02:13:22.208 +05:00 [INF] Request starting HTTP/1.1 POST http://localhost:5065/custom-json - application/json 40
+2025-10-23 02:13:22.208 +05:00 [INF] Executing endpoint 'HTTP: POST /custom-json'
+2025-10-23 02:13:22.208 +05:00 [INF] Executed endpoint 'HTTP: POST /custom-json'
+2025-10-23 02:13:22.209 +05:00 [ERR] An error occurred while processing the request.
+System.Text.Json.JsonException: The JSON property 'Name' could not be mapped to any .NET member contained in type 'Person'.
+   at System.Text.Json.ThrowHelper.ThrowJsonException_UnmappedJsonProperty(Type type, String unmappedPropertyName)
+   at System.Text.Json.JsonSerializer.LookupProperty(Object obj, ReadOnlySpan`1 unescapedPropertyName, ReadStack& state, JsonSerializerOptions options, Boolean& useExtensionProperty, Boolean createExtensionProperty)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value)
+   at System.Text.Json.Serialization.JsonConverter`1.TryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value, Boolean& isPopulatedValue)
+   at System.Text.Json.Serialization.JsonConverter`1.ReadCore(Utf8JsonReader& reader, T& value, JsonSerializerOptions options, ReadStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.ContinueDeserialize(ReadBufferState& bufferState, JsonReaderState& jsonReaderState, ReadStack& readStack, T& value)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.DeserializeAsync(Stream utf8Json, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Http.HttpRequestJsonExtensions.ReadFromJsonAsync[TValue](HttpRequest request, JsonSerializerOptions options, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Http.HttpRequestJsonExtensions.ReadFromJsonAsync[TValue](HttpRequest request, JsonSerializerOptions options, CancellationToken cancellationToken)
+   at Program.<>c.<<<Main>$>b__0_10>d.MoveNext() in C:\Users\hp\Desktop\Coursera\.NET-Course\MyFirstApi\Program.cs:line 135
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.ExecuteTaskResult[T](Task`1 task, HttpContext httpContext)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Program.<>c.<<<Main>$>b__0_0>d.MoveNext() in C:\Users\hp\Desktop\Coursera\.NET-Course\MyFirstApi\Program.cs:line 48
+2025-10-23 02:13:22.210 +05:00 [INF] Request finished HTTP/1.1 POST http://localhost:5065/custom-json - 500 null null 1.8994ms
+2025-10-23 02:14:09.479 +05:00 [INF] Request starting HTTP/1.1 POST http://localhost:5065/custom-json - application/json 62
+2025-10-23 02:14:09.480 +05:00 [INF] Executing endpoint 'HTTP: POST /custom-json'
+2025-10-23 02:14:09.481 +05:00 [INF] Executed endpoint 'HTTP: POST /custom-json'
+2025-10-23 02:14:09.481 +05:00 [ERR] An error occurred while processing the request.
+System.Text.Json.JsonException: The JSON property 'Name' could not be mapped to any .NET member contained in type 'Person'.
+   at System.Text.Json.ThrowHelper.ThrowJsonException_UnmappedJsonProperty(Type type, String unmappedPropertyName)
+   at System.Text.Json.JsonSerializer.LookupProperty(Object obj, ReadOnlySpan`1 unescapedPropertyName, ReadStack& state, JsonSerializerOptions options, Boolean& useExtensionProperty, Boolean createExtensionProperty)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value)
+   at System.Text.Json.Serialization.JsonConverter`1.TryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value, Boolean& isPopulatedValue)
+   at System.Text.Json.Serialization.JsonConverter`1.ReadCore(Utf8JsonReader& reader, T& value, JsonSerializerOptions options, ReadStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.ContinueDeserialize(ReadBufferState& bufferState, JsonReaderState& jsonReaderState, ReadStack& readStack, T& value)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.DeserializeAsync(Stream utf8Json, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Http.HttpRequestJsonExtensions.ReadFromJsonAsync[TValue](HttpRequest request, JsonSerializerOptions options, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Http.HttpRequestJsonExtensions.ReadFromJsonAsync[TValue](HttpRequest request, JsonSerializerOptions options, CancellationToken cancellationToken)
+   at Program.<>c.<<<Main>$>b__0_10>d.MoveNext() in C:\Users\hp\Desktop\Coursera\.NET-Course\MyFirstApi\Program.cs:line 135
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.ExecuteTaskResult[T](Task`1 task, HttpContext httpContext)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Program.<>c.<<<Main>$>b__0_0>d.MoveNext() in C:\Users\hp\Desktop\Coursera\.NET-Course\MyFirstApi\Program.cs:line 48
+2025-10-23 02:14:09.482 +05:00 [INF] Request finished HTTP/1.1 POST http://localhost:5065/custom-json - 500 null null 1.938ms
+2025-10-23 02:14:10.311 +05:00 [INF] Request starting HTTP/1.1 POST http://localhost:5065/custom-json - application/json 62
+2025-10-23 02:14:10.311 +05:00 [INF] Executing endpoint 'HTTP: POST /custom-json'
+2025-10-23 02:14:10.311 +05:00 [INF] Executed endpoint 'HTTP: POST /custom-json'
+2025-10-23 02:14:10.311 +05:00 [ERR] An error occurred while processing the request.
+System.Text.Json.JsonException: The JSON property 'Name' could not be mapped to any .NET member contained in type 'Person'.
+   at System.Text.Json.ThrowHelper.ThrowJsonException_UnmappedJsonProperty(Type type, String unmappedPropertyName)
+   at System.Text.Json.JsonSerializer.LookupProperty(Object obj, ReadOnlySpan`1 unescapedPropertyName, ReadStack& state, JsonSerializerOptions options, Boolean& useExtensionProperty, Boolean createExtensionProperty)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value)
+   at System.Text.Json.Serialization.JsonConverter`1.TryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value, Boolean& isPopulatedValue)
+   at System.Text.Json.Serialization.JsonConverter`1.ReadCore(Utf8JsonReader& reader, T& value, JsonSerializerOptions options, ReadStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.ContinueDeserialize(ReadBufferState& bufferState, JsonReaderState& jsonReaderState, ReadStack& readStack, T& value)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.DeserializeAsync(Stream utf8Json, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Http.HttpRequestJsonExtensions.ReadFromJsonAsync[TValue](HttpRequest request, JsonSerializerOptions options, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Http.HttpRequestJsonExtensions.ReadFromJsonAsync[TValue](HttpRequest request, JsonSerializerOptions options, CancellationToken cancellationToken)
+   at Program.<>c.<<<Main>$>b__0_10>d.MoveNext() in C:\Users\hp\Desktop\Coursera\.NET-Course\MyFirstApi\Program.cs:line 135
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.ExecuteTaskResult[T](Task`1 task, HttpContext httpContext)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Program.<>c.<<<Main>$>b__0_0>d.MoveNext() in C:\Users\hp\Desktop\Coursera\.NET-Course\MyFirstApi\Program.cs:line 48
+2025-10-23 02:14:10.327 +05:00 [INF] Request finished HTTP/1.1 POST http://localhost:5065/custom-json - 500 null null 16.0675ms
+2025-10-23 02:14:10.942 +05:00 [INF] Request starting HTTP/1.1 POST http://localhost:5065/custom-json - application/json 62
+2025-10-23 02:14:10.942 +05:00 [INF] Executing endpoint 'HTTP: POST /custom-json'
+2025-10-23 02:14:10.944 +05:00 [INF] Executed endpoint 'HTTP: POST /custom-json'
+2025-10-23 02:14:10.944 +05:00 [ERR] An error occurred while processing the request.
+System.Text.Json.JsonException: The JSON property 'Name' could not be mapped to any .NET member contained in type 'Person'.
+   at System.Text.Json.ThrowHelper.ThrowJsonException_UnmappedJsonProperty(Type type, String unmappedPropertyName)
+   at System.Text.Json.JsonSerializer.LookupProperty(Object obj, ReadOnlySpan`1 unescapedPropertyName, ReadStack& state, JsonSerializerOptions options, Boolean& useExtensionProperty, Boolean createExtensionProperty)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value)
+   at System.Text.Json.Serialization.JsonConverter`1.TryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value, Boolean& isPopulatedValue)
+   at System.Text.Json.Serialization.JsonConverter`1.ReadCore(Utf8JsonReader& reader, T& value, JsonSerializerOptions options, ReadStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.ContinueDeserialize(ReadBufferState& bufferState, JsonReaderState& jsonReaderState, ReadStack& readStack, T& value)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.DeserializeAsync(Stream utf8Json, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Http.HttpRequestJsonExtensions.ReadFromJsonAsync[TValue](HttpRequest request, JsonSerializerOptions options, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Http.HttpRequestJsonExtensions.ReadFromJsonAsync[TValue](HttpRequest request, JsonSerializerOptions options, CancellationToken cancellationToken)
+   at Program.<>c.<<<Main>$>b__0_10>d.MoveNext() in C:\Users\hp\Desktop\Coursera\.NET-Course\MyFirstApi\Program.cs:line 135
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.ExecuteTaskResult[T](Task`1 task, HttpContext httpContext)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Program.<>c.<<<Main>$>b__0_0>d.MoveNext() in C:\Users\hp\Desktop\Coursera\.NET-Course\MyFirstApi\Program.cs:line 48
+2025-10-23 02:14:10.944 +05:00 [INF] Request finished HTTP/1.1 POST http://localhost:5065/custom-json - 500 null null 2.2303ms
+2025-10-23 02:16:30.301 +05:00 [INF] Request starting HTTP/1.1 POST http://localhost:5065/custom-json - application/json 39
+2025-10-23 02:16:30.302 +05:00 [INF] Executing endpoint 'HTTP: POST /custom-json'
+2025-10-23 02:16:30.303 +05:00 [INF] Executed endpoint 'HTTP: POST /custom-json'
+2025-10-23 02:16:30.303 +05:00 [ERR] An error occurred while processing the request.
+System.Text.Json.JsonException: The JSON property 'Name' could not be mapped to any .NET member contained in type 'Person'.
+   at System.Text.Json.ThrowHelper.ThrowJsonException_UnmappedJsonProperty(Type type, String unmappedPropertyName)
+   at System.Text.Json.JsonSerializer.LookupProperty(Object obj, ReadOnlySpan`1 unescapedPropertyName, ReadStack& state, JsonSerializerOptions options, Boolean& useExtensionProperty, Boolean createExtensionProperty)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value)
+   at System.Text.Json.Serialization.JsonConverter`1.TryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value, Boolean& isPopulatedValue)
+   at System.Text.Json.Serialization.JsonConverter`1.ReadCore(Utf8JsonReader& reader, T& value, JsonSerializerOptions options, ReadStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.ContinueDeserialize(ReadBufferState& bufferState, JsonReaderState& jsonReaderState, ReadStack& readStack, T& value)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.DeserializeAsync(Stream utf8Json, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Http.HttpRequestJsonExtensions.ReadFromJsonAsync[TValue](HttpRequest request, JsonSerializerOptions options, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Http.HttpRequestJsonExtensions.ReadFromJsonAsync[TValue](HttpRequest request, JsonSerializerOptions options, CancellationToken cancellationToken)
+   at Program.<>c.<<<Main>$>b__0_10>d.MoveNext() in C:\Users\hp\Desktop\Coursera\.NET-Course\MyFirstApi\Program.cs:line 135
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.ExecuteTaskResult[T](Task`1 task, HttpContext httpContext)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Program.<>c.<<<Main>$>b__0_0>d.MoveNext() in C:\Users\hp\Desktop\Coursera\.NET-Course\MyFirstApi\Program.cs:line 48
+2025-10-23 02:16:30.304 +05:00 [INF] Request finished HTTP/1.1 POST http://localhost:5065/custom-json - 500 null null 2.2785ms
+2025-10-23 02:17:07.196 +05:00 [INF] Now listening on: http://localhost:5065
+2025-10-23 02:17:07.238 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-10-23 02:17:07.239 +05:00 [INF] Hosting environment: Development
+2025-10-23 02:17:07.239 +05:00 [INF] Content root path: C:\Users\hp\Desktop\Coursera\.NET-Course\MyFirstApi
+2025-10-23 02:17:07.373 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5065/api/products - null null
+2025-10-23 02:17:07.423 +05:00 [INF] Executing endpoint 'MyFirstApi.Controllers.ProductsController.GetProducts (MyFirstApi)'
+2025-10-23 02:17:07.432 +05:00 [INF] Route matched with {action = "GetProducts", controller = "Products"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[MyFirstApi.Models.Product]] GetProducts() on controller MyFirstApi.Controllers.ProductsController (MyFirstApi).
+2025-10-23 02:17:07.434 +05:00 [INF] Fetched all products, count: 3
+2025-10-23 02:17:07.451 +05:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[MyFirstApi.Models.Product, MyFirstApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-10-23 02:17:07.475 +05:00 [INF] Executed action MyFirstApi.Controllers.ProductsController.GetProducts (MyFirstApi) in 39.1683ms
+2025-10-23 02:17:07.486 +05:00 [INF] Executed endpoint 'MyFirstApi.Controllers.ProductsController.GetProducts (MyFirstApi)'
+2025-10-23 02:17:07.489 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5065/api/products - 200 null application/json; charset=utf-8 119.6403ms
+2025-10-23 02:17:13.099 +05:00 [INF] Request starting HTTP/1.1 POST http://localhost:5065/custom-json - application/json 43
+2025-10-23 02:17:13.103 +05:00 [INF] Executing endpoint 'HTTP: POST /custom-json'
+2025-10-23 02:17:13.111 +05:00 [INF] Executed endpoint 'HTTP: POST /custom-json'
+2025-10-23 02:17:13.111 +05:00 [ERR] An error occurred while processing the request.
+System.Text.Json.JsonException: The JSON property 'Id' could not be mapped to any .NET member contained in type 'Person'.
+   at System.Text.Json.ThrowHelper.ThrowJsonException_UnmappedJsonProperty(Type type, String unmappedPropertyName)
+   at System.Text.Json.JsonSerializer.LookupProperty(Object obj, ReadOnlySpan`1 unescapedPropertyName, ReadStack& state, JsonSerializerOptions options, Boolean& useExtensionProperty, Boolean createExtensionProperty)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value)
+   at System.Text.Json.Serialization.JsonConverter`1.TryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value, Boolean& isPopulatedValue)
+   at System.Text.Json.Serialization.JsonConverter`1.ReadCore(Utf8JsonReader& reader, T& value, JsonSerializerOptions options, ReadStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.ContinueDeserialize(ReadBufferState& bufferState, JsonReaderState& jsonReaderState, ReadStack& readStack, T& value)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.DeserializeAsync(Stream utf8Json, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Http.HttpRequestJsonExtensions.ReadFromJsonAsync[TValue](HttpRequest request, JsonSerializerOptions options, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Http.HttpRequestJsonExtensions.ReadFromJsonAsync[TValue](HttpRequest request, JsonSerializerOptions options, CancellationToken cancellationToken)
+   at Program.<>c.<<<Main>$>b__0_10>d.MoveNext() in C:\Users\hp\Desktop\Coursera\.NET-Course\MyFirstApi\Program.cs:line 135
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.ExecuteTaskResult[T](Task`1 task, HttpContext httpContext)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Program.<>c.<<<Main>$>b__0_0>d.MoveNext() in C:\Users\hp\Desktop\Coursera\.NET-Course\MyFirstApi\Program.cs:line 48
+2025-10-23 02:17:13.127 +05:00 [INF] Request finished HTTP/1.1 POST http://localhost:5065/custom-json - 500 null null 28.1719ms
+2025-10-23 02:17:26.121 +05:00 [INF] Request starting HTTP/1.1 POST http://localhost:5065/json - application/json 62
+2025-10-23 02:17:26.123 +05:00 [INF] Executing endpoint 'HTTP: POST /json'
+2025-10-23 02:17:26.127 +05:00 [INF] Writing value of type 'Person' as Json.
+2025-10-23 02:17:26.130 +05:00 [INF] Executed endpoint 'HTTP: POST /json'
+2025-10-23 02:17:26.130 +05:00 [INF] Request finished HTTP/1.1 POST http://localhost:5065/json - 200 null application/json; charset=utf-8 9.1431ms
+2025-10-23 02:18:26.830 +05:00 [INF] Request starting HTTP/1.1 POST http://localhost:5065/auto - application/json 35
+2025-10-23 02:18:26.831 +05:00 [INF] Executing endpoint 'HTTP: POST /auto'
+2025-10-23 02:18:26.842 +05:00 [INF] Setting HTTP status code 200.
+2025-10-23 02:18:26.843 +05:00 [INF] Writing value of type 'Person' as Json.
+2025-10-23 02:18:26.843 +05:00 [INF] Executed endpoint 'HTTP: POST /auto'
+2025-10-23 02:18:26.844 +05:00 [INF] Request finished HTTP/1.1 POST http://localhost:5065/auto - 200 null application/json; charset=utf-8 13.4317ms
+2025-10-23 02:19:55.258 +05:00 [INF] Request starting HTTP/1.1 POST http://localhost:5065/auto - application/json 35
+2025-10-23 02:19:55.259 +05:00 [INF] Executing endpoint 'HTTP: POST /auto'
+2025-10-23 02:19:55.259 +05:00 [INF] Setting HTTP status code 200.
+2025-10-23 02:19:55.259 +05:00 [INF] Writing value of type 'Person' as Json.
+2025-10-23 02:19:55.260 +05:00 [INF] Executed endpoint 'HTTP: POST /auto'
+2025-10-23 02:19:55.260 +05:00 [INF] Request finished HTTP/1.1 POST http://localhost:5065/auto - 200 null application/json; charset=utf-8 1.6724ms
+2025-10-23 02:20:01.379 +05:00 [INF] Request starting HTTP/1.1 POST http://localhost:5065/custom-json - application/json 43
+2025-10-23 02:20:01.380 +05:00 [INF] Executing endpoint 'HTTP: POST /custom-json'
+2025-10-23 02:20:01.381 +05:00 [INF] Executed endpoint 'HTTP: POST /custom-json'
+2025-10-23 02:20:01.381 +05:00 [ERR] An error occurred while processing the request.
+System.Text.Json.JsonException: The JSON property 'Id' could not be mapped to any .NET member contained in type 'Person'.
+   at System.Text.Json.ThrowHelper.ThrowJsonException_UnmappedJsonProperty(Type type, String unmappedPropertyName)
+   at System.Text.Json.JsonSerializer.LookupProperty(Object obj, ReadOnlySpan`1 unescapedPropertyName, ReadStack& state, JsonSerializerOptions options, Boolean& useExtensionProperty, Boolean createExtensionProperty)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value)
+   at System.Text.Json.Serialization.JsonConverter`1.TryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value, Boolean& isPopulatedValue)
+   at System.Text.Json.Serialization.JsonConverter`1.ReadCore(Utf8JsonReader& reader, T& value, JsonSerializerOptions options, ReadStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.ContinueDeserialize(ReadBufferState& bufferState, JsonReaderState& jsonReaderState, ReadStack& readStack, T& value)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.DeserializeAsync(Stream utf8Json, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Http.HttpRequestJsonExtensions.ReadFromJsonAsync[TValue](HttpRequest request, JsonSerializerOptions options, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Http.HttpRequestJsonExtensions.ReadFromJsonAsync[TValue](HttpRequest request, JsonSerializerOptions options, CancellationToken cancellationToken)
+   at Program.<>c.<<<Main>$>b__0_10>d.MoveNext() in C:\Users\hp\Desktop\Coursera\.NET-Course\MyFirstApi\Program.cs:line 135
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.ExecuteTaskResult[T](Task`1 task, HttpContext httpContext)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Program.<>c.<<<Main>$>b__0_0>d.MoveNext() in C:\Users\hp\Desktop\Coursera\.NET-Course\MyFirstApi\Program.cs:line 48
+2025-10-23 02:20:01.383 +05:00 [INF] Request finished HTTP/1.1 POST http://localhost:5065/custom-json - 500 null null 4.5563ms
+2025-10-23 02:20:31.647 +05:00 [INF] Request starting HTTP/1.1 POST http://localhost:5065/custom-json - application/json 43
+2025-10-23 02:20:31.648 +05:00 [INF] Executing endpoint 'HTTP: POST /custom-json'
+2025-10-23 02:20:31.649 +05:00 [INF] Executed endpoint 'HTTP: POST /custom-json'
+2025-10-23 02:20:31.650 +05:00 [ERR] An error occurred while processing the request.
+System.Text.Json.JsonException: The JSON property 'Id' could not be mapped to any .NET member contained in type 'Person'.
+   at System.Text.Json.ThrowHelper.ThrowJsonException_UnmappedJsonProperty(Type type, String unmappedPropertyName)
+   at System.Text.Json.JsonSerializer.LookupProperty(Object obj, ReadOnlySpan`1 unescapedPropertyName, ReadStack& state, JsonSerializerOptions options, Boolean& useExtensionProperty, Boolean createExtensionProperty)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value)
+   at System.Text.Json.Serialization.JsonConverter`1.TryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value, Boolean& isPopulatedValue)
+   at System.Text.Json.Serialization.JsonConverter`1.ReadCore(Utf8JsonReader& reader, T& value, JsonSerializerOptions options, ReadStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.ContinueDeserialize(ReadBufferState& bufferState, JsonReaderState& jsonReaderState, ReadStack& readStack, T& value)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.DeserializeAsync(Stream utf8Json, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Http.HttpRequestJsonExtensions.ReadFromJsonAsync[TValue](HttpRequest request, JsonSerializerOptions options, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Http.HttpRequestJsonExtensions.ReadFromJsonAsync[TValue](HttpRequest request, JsonSerializerOptions options, CancellationToken cancellationToken)
+   at Program.<>c.<<<Main>$>b__0_10>d.MoveNext() in C:\Users\hp\Desktop\Coursera\.NET-Course\MyFirstApi\Program.cs:line 135
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.ExecuteTaskResult[T](Task`1 task, HttpContext httpContext)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Program.<>c.<<<Main>$>b__0_0>d.MoveNext() in C:\Users\hp\Desktop\Coursera\.NET-Course\MyFirstApi\Program.cs:line 48
+2025-10-23 02:20:31.652 +05:00 [INF] Request finished HTTP/1.1 POST http://localhost:5065/custom-json - 500 null null 4.9148ms
+2025-10-23 02:20:32.854 +05:00 [INF] Request starting HTTP/1.1 POST http://localhost:5065/custom-json - application/json 43
+2025-10-23 02:20:32.855 +05:00 [INF] Executing endpoint 'HTTP: POST /custom-json'
+2025-10-23 02:20:32.855 +05:00 [INF] Executed endpoint 'HTTP: POST /custom-json'
+2025-10-23 02:20:32.856 +05:00 [ERR] An error occurred while processing the request.
+System.Text.Json.JsonException: The JSON property 'Id' could not be mapped to any .NET member contained in type 'Person'.
+   at System.Text.Json.ThrowHelper.ThrowJsonException_UnmappedJsonProperty(Type type, String unmappedPropertyName)
+   at System.Text.Json.JsonSerializer.LookupProperty(Object obj, ReadOnlySpan`1 unescapedPropertyName, ReadStack& state, JsonSerializerOptions options, Boolean& useExtensionProperty, Boolean createExtensionProperty)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value)
+   at System.Text.Json.Serialization.JsonConverter`1.TryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value, Boolean& isPopulatedValue)
+   at System.Text.Json.Serialization.JsonConverter`1.ReadCore(Utf8JsonReader& reader, T& value, JsonSerializerOptions options, ReadStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.ContinueDeserialize(ReadBufferState& bufferState, JsonReaderState& jsonReaderState, ReadStack& readStack, T& value)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.DeserializeAsync(Stream utf8Json, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Http.HttpRequestJsonExtensions.ReadFromJsonAsync[TValue](HttpRequest request, JsonSerializerOptions options, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Http.HttpRequestJsonExtensions.ReadFromJsonAsync[TValue](HttpRequest request, JsonSerializerOptions options, CancellationToken cancellationToken)
+   at Program.<>c.<<<Main>$>b__0_10>d.MoveNext() in C:\Users\hp\Desktop\Coursera\.NET-Course\MyFirstApi\Program.cs:line 135
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.ExecuteTaskResult[T](Task`1 task, HttpContext httpContext)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Program.<>c.<<<Main>$>b__0_0>d.MoveNext() in C:\Users\hp\Desktop\Coursera\.NET-Course\MyFirstApi\Program.cs:line 48
+2025-10-23 02:20:32.857 +05:00 [INF] Request finished HTTP/1.1 POST http://localhost:5065/custom-json - 500 null null 2.4467ms
+2025-10-23 02:22:58.361 +05:00 [INF] Request starting HTTP/1.1 POST http://localhost:5065/custom-json - application/json 43
+2025-10-23 02:22:58.361 +05:00 [INF] Executing endpoint 'HTTP: POST /custom-json'
+2025-10-23 02:22:58.362 +05:00 [INF] Executed endpoint 'HTTP: POST /custom-json'
+2025-10-23 02:22:58.362 +05:00 [ERR] An error occurred while processing the request.
+System.Text.Json.JsonException: The JSON property 'id' could not be mapped to any .NET member contained in type 'Person'.
+   at System.Text.Json.ThrowHelper.ThrowJsonException_UnmappedJsonProperty(Type type, String unmappedPropertyName)
+   at System.Text.Json.JsonSerializer.LookupProperty(Object obj, ReadOnlySpan`1 unescapedPropertyName, ReadStack& state, JsonSerializerOptions options, Boolean& useExtensionProperty, Boolean createExtensionProperty)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value)
+   at System.Text.Json.Serialization.JsonConverter`1.TryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value, Boolean& isPopulatedValue)
+   at System.Text.Json.Serialization.JsonConverter`1.ReadCore(Utf8JsonReader& reader, T& value, JsonSerializerOptions options, ReadStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.ContinueDeserialize(ReadBufferState& bufferState, JsonReaderState& jsonReaderState, ReadStack& readStack, T& value)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.DeserializeAsync(Stream utf8Json, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Http.HttpRequestJsonExtensions.ReadFromJsonAsync[TValue](HttpRequest request, JsonSerializerOptions options, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Http.HttpRequestJsonExtensions.ReadFromJsonAsync[TValue](HttpRequest request, JsonSerializerOptions options, CancellationToken cancellationToken)
+   at Program.<>c.<<<Main>$>b__0_10>d.MoveNext() in C:\Users\hp\Desktop\Coursera\.NET-Course\MyFirstApi\Program.cs:line 135
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.ExecuteTaskResult[T](Task`1 task, HttpContext httpContext)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Program.<>c.<<<Main>$>b__0_0>d.MoveNext() in C:\Users\hp\Desktop\Coursera\.NET-Course\MyFirstApi\Program.cs:line 48
+2025-10-23 02:22:58.363 +05:00 [INF] Request finished HTTP/1.1 POST http://localhost:5065/custom-json - 500 null null 1.5529ms
+2025-10-23 02:23:07.184 +05:00 [INF] Now listening on: http://localhost:5065
+2025-10-23 02:23:07.217 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-10-23 02:23:07.217 +05:00 [INF] Hosting environment: Development
+2025-10-23 02:23:07.218 +05:00 [INF] Content root path: C:\Users\hp\Desktop\Coursera\.NET-Course\MyFirstApi
+2025-10-23 02:23:07.320 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5065/api/products - null null
+2025-10-23 02:23:07.363 +05:00 [INF] Executing endpoint 'MyFirstApi.Controllers.ProductsController.GetProducts (MyFirstApi)'
+2025-10-23 02:23:07.370 +05:00 [INF] Route matched with {action = "GetProducts", controller = "Products"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[MyFirstApi.Models.Product]] GetProducts() on controller MyFirstApi.Controllers.ProductsController (MyFirstApi).
+2025-10-23 02:23:07.372 +05:00 [INF] Fetched all products, count: 3
+2025-10-23 02:23:07.385 +05:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[MyFirstApi.Models.Product, MyFirstApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-10-23 02:23:07.407 +05:00 [INF] Executed action MyFirstApi.Controllers.ProductsController.GetProducts (MyFirstApi) in 32.5203ms
+2025-10-23 02:23:07.417 +05:00 [INF] Executed endpoint 'MyFirstApi.Controllers.ProductsController.GetProducts (MyFirstApi)'
+2025-10-23 02:23:07.420 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5065/api/products - 200 null application/json; charset=utf-8 101.9073ms
+2025-10-23 02:24:04.892 +05:00 [INF] Request starting HTTP/1.1 POST http://localhost:5065/custom-json - application/json 35
+2025-10-23 02:24:04.895 +05:00 [INF] Executing endpoint 'HTTP: POST /custom-json'
+2025-10-23 02:24:04.902 +05:00 [INF] Executed endpoint 'HTTP: POST /custom-json'
+2025-10-23 02:24:04.902 +05:00 [ERR] An error occurred while processing the request.
+System.Text.Json.JsonException: The JSON property 'id' could not be mapped to any .NET member contained in type 'Person'.
+   at System.Text.Json.ThrowHelper.ThrowJsonException_UnmappedJsonProperty(Type type, String unmappedPropertyName)
+   at System.Text.Json.JsonSerializer.LookupProperty(Object obj, ReadOnlySpan`1 unescapedPropertyName, ReadStack& state, JsonSerializerOptions options, Boolean& useExtensionProperty, Boolean createExtensionProperty)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value)
+   at System.Text.Json.Serialization.JsonConverter`1.TryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value, Boolean& isPopulatedValue)
+   at System.Text.Json.Serialization.JsonConverter`1.ReadCore(Utf8JsonReader& reader, T& value, JsonSerializerOptions options, ReadStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.ContinueDeserialize(ReadBufferState& bufferState, JsonReaderState& jsonReaderState, ReadStack& readStack, T& value)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.DeserializeAsync(Stream utf8Json, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Http.HttpRequestJsonExtensions.ReadFromJsonAsync[TValue](HttpRequest request, JsonSerializerOptions options, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Http.HttpRequestJsonExtensions.ReadFromJsonAsync[TValue](HttpRequest request, JsonSerializerOptions options, CancellationToken cancellationToken)
+   at Program.<>c.<<<Main>$>b__0_10>d.MoveNext() in C:\Users\hp\Desktop\Coursera\.NET-Course\MyFirstApi\Program.cs:line 135
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.ExecuteTaskResult[T](Task`1 task, HttpContext httpContext)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Program.<>c.<<<Main>$>b__0_0>d.MoveNext() in C:\Users\hp\Desktop\Coursera\.NET-Course\MyFirstApi\Program.cs:line 48
+2025-10-23 02:24:04.918 +05:00 [INF] Request finished HTTP/1.1 POST http://localhost:5065/custom-json - 500 null null 26.8392ms
+2025-10-23 02:24:12.697 +05:00 [INF] Request starting HTTP/1.1 POST http://localhost:5065/custom-json - application/json 35
+2025-10-23 02:24:12.699 +05:00 [INF] Executing endpoint 'HTTP: POST /custom-json'
+2025-10-23 02:24:12.700 +05:00 [INF] Executed endpoint 'HTTP: POST /custom-json'
+2025-10-23 02:24:12.700 +05:00 [ERR] An error occurred while processing the request.
+System.Text.Json.JsonException: The JSON property 'id' could not be mapped to any .NET member contained in type 'Person'.
+   at System.Text.Json.ThrowHelper.ThrowJsonException_UnmappedJsonProperty(Type type, String unmappedPropertyName)
+   at System.Text.Json.JsonSerializer.LookupProperty(Object obj, ReadOnlySpan`1 unescapedPropertyName, ReadStack& state, JsonSerializerOptions options, Boolean& useExtensionProperty, Boolean createExtensionProperty)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value)
+   at System.Text.Json.Serialization.JsonConverter`1.TryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value, Boolean& isPopulatedValue)
+   at System.Text.Json.Serialization.JsonConverter`1.ReadCore(Utf8JsonReader& reader, T& value, JsonSerializerOptions options, ReadStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.ContinueDeserialize(ReadBufferState& bufferState, JsonReaderState& jsonReaderState, ReadStack& readStack, T& value)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.DeserializeAsync(Stream utf8Json, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Http.HttpRequestJsonExtensions.ReadFromJsonAsync[TValue](HttpRequest request, JsonSerializerOptions options, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Http.HttpRequestJsonExtensions.ReadFromJsonAsync[TValue](HttpRequest request, JsonSerializerOptions options, CancellationToken cancellationToken)
+   at Program.<>c.<<<Main>$>b__0_10>d.MoveNext() in C:\Users\hp\Desktop\Coursera\.NET-Course\MyFirstApi\Program.cs:line 135
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.ExecuteTaskResult[T](Task`1 task, HttpContext httpContext)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Program.<>c.<<<Main>$>b__0_0>d.MoveNext() in C:\Users\hp\Desktop\Coursera\.NET-Course\MyFirstApi\Program.cs:line 48
+2025-10-23 02:24:12.703 +05:00 [INF] Request finished HTTP/1.1 POST http://localhost:5065/custom-json - 500 null null 5.7486ms
+2025-10-23 02:25:39.188 +05:00 [INF] Now listening on: http://localhost:5065
+2025-10-23 02:25:39.228 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-10-23 02:25:39.228 +05:00 [INF] Hosting environment: Development
+2025-10-23 02:25:39.228 +05:00 [INF] Content root path: C:\Users\hp\Desktop\Coursera\.NET-Course\MyFirstApi
+2025-10-23 02:25:39.343 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5065/api/products - null null
+2025-10-23 02:25:39.388 +05:00 [INF] Executing endpoint 'MyFirstApi.Controllers.ProductsController.GetProducts (MyFirstApi)'
+2025-10-23 02:25:39.398 +05:00 [INF] Route matched with {action = "GetProducts", controller = "Products"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[MyFirstApi.Models.Product]] GetProducts() on controller MyFirstApi.Controllers.ProductsController (MyFirstApi).
+2025-10-23 02:25:39.400 +05:00 [INF] Fetched all products, count: 3
+2025-10-23 02:25:39.418 +05:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[MyFirstApi.Models.Product, MyFirstApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-10-23 02:25:39.442 +05:00 [INF] Executed action MyFirstApi.Controllers.ProductsController.GetProducts (MyFirstApi) in 41.282ms
+2025-10-23 02:25:39.453 +05:00 [INF] Executed endpoint 'MyFirstApi.Controllers.ProductsController.GetProducts (MyFirstApi)'
+2025-10-23 02:25:39.455 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5065/api/products - 200 null application/json; charset=utf-8 113.8365ms
+2025-10-23 02:25:44.841 +05:00 [INF] Request starting HTTP/1.1 POST http://localhost:5065/custom-json - application/json 35
+2025-10-23 02:25:44.843 +05:00 [INF] Executing endpoint 'HTTP: POST /custom-json'
+2025-10-23 02:25:44.852 +05:00 [INF] Executed endpoint 'HTTP: POST /custom-json'
+2025-10-23 02:25:44.852 +05:00 [ERR] An error occurred while processing the request.
+System.Text.Json.JsonException: The JSON property 'id' could not be mapped to any .NET member contained in type 'Person'.
+   at System.Text.Json.ThrowHelper.ThrowJsonException_UnmappedJsonProperty(Type type, String unmappedPropertyName)
+   at System.Text.Json.JsonSerializer.LookupProperty(Object obj, ReadOnlySpan`1 unescapedPropertyName, ReadStack& state, JsonSerializerOptions options, Boolean& useExtensionProperty, Boolean createExtensionProperty)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value)
+   at System.Text.Json.Serialization.JsonConverter`1.TryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value, Boolean& isPopulatedValue)
+   at System.Text.Json.Serialization.JsonConverter`1.ReadCore(Utf8JsonReader& reader, T& value, JsonSerializerOptions options, ReadStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.ContinueDeserialize(ReadBufferState& bufferState, JsonReaderState& jsonReaderState, ReadStack& readStack, T& value)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.DeserializeAsync(Stream utf8Json, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Http.HttpRequestJsonExtensions.ReadFromJsonAsync[TValue](HttpRequest request, JsonSerializerOptions options, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Http.HttpRequestJsonExtensions.ReadFromJsonAsync[TValue](HttpRequest request, JsonSerializerOptions options, CancellationToken cancellationToken)
+   at Program.<>c.<<<Main>$>b__0_10>d.MoveNext() in C:\Users\hp\Desktop\Coursera\.NET-Course\MyFirstApi\Program.cs:line 135
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.ExecuteTaskResult[T](Task`1 task, HttpContext httpContext)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Program.<>c.<<<Main>$>b__0_0>d.MoveNext() in C:\Users\hp\Desktop\Coursera\.NET-Course\MyFirstApi\Program.cs:line 48
+2025-10-23 02:25:44.887 +05:00 [INF] Request finished HTTP/1.1 POST http://localhost:5065/custom-json - 500 null null 46.8636ms
+2025-10-23 02:28:52.535 +05:00 [INF] Request starting HTTP/1.1 POST http://localhost:5065/custom-json - application/json 35
+2025-10-23 02:28:52.540 +05:00 [INF] Executing endpoint 'HTTP: POST /custom-json'
+2025-10-23 02:28:52.544 +05:00 [INF] Writing value of type 'Person' as Json.
+2025-10-23 02:28:52.545 +05:00 [INF] Executed endpoint 'HTTP: POST /custom-json'
+2025-10-23 02:28:52.546 +05:00 [INF] Request finished HTTP/1.1 POST http://localhost:5065/custom-json - 200 null application/json; charset=utf-8 11.1357ms
+2025-10-23 02:32:56.219 +05:00 [INF] Request starting HTTP/1.1 POST http://localhost:5065/custom-json - application/json 35
+2025-10-23 02:32:56.221 +05:00 [INF] Executing endpoint 'HTTP: POST /custom-json'
+2025-10-23 02:32:56.222 +05:00 [INF] Writing value of type 'Person' as Json.
+2025-10-23 02:32:56.223 +05:00 [INF] Executed endpoint 'HTTP: POST /custom-json'
+2025-10-23 02:32:56.223 +05:00 [INF] Request finished HTTP/1.1 POST http://localhost:5065/custom-json - 200 null application/json; charset=utf-8 4.0602ms
+2025-10-23 02:33:17.482 +05:00 [INF] Now listening on: http://localhost:5065
+2025-10-23 02:33:17.518 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-10-23 02:33:17.518 +05:00 [INF] Hosting environment: Development
+2025-10-23 02:33:17.518 +05:00 [INF] Content root path: C:\Users\hp\Desktop\Coursera\.NET-Course\MyFirstApi
+2025-10-23 02:33:17.653 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5065/api/products - null null
+2025-10-23 02:33:17.700 +05:00 [INF] Executing endpoint 'MyFirstApi.Controllers.ProductsController.GetProducts (MyFirstApi)'
+2025-10-23 02:33:17.707 +05:00 [INF] Route matched with {action = "GetProducts", controller = "Products"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[MyFirstApi.Models.Product]] GetProducts() on controller MyFirstApi.Controllers.ProductsController (MyFirstApi).
+2025-10-23 02:33:17.712 +05:00 [INF] Fetched all products, count: 3
+2025-10-23 02:33:17.722 +05:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[MyFirstApi.Models.Product, MyFirstApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-10-23 02:33:17.749 +05:00 [INF] Executed action MyFirstApi.Controllers.ProductsController.GetProducts (MyFirstApi) in 35.164ms
+2025-10-23 02:33:17.763 +05:00 [INF] Executed endpoint 'MyFirstApi.Controllers.ProductsController.GetProducts (MyFirstApi)'
+2025-10-23 02:33:17.765 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5065/api/products - 200 null application/json; charset=utf-8 113.6289ms
+2025-10-23 02:33:21.420 +05:00 [INF] Request starting HTTP/1.1 POST http://localhost:5065/custom-json - application/json 35
+2025-10-23 02:33:21.422 +05:00 [INF] Executing endpoint 'HTTP: POST /custom-json'
+2025-10-23 02:33:21.436 +05:00 [INF] Writing value of type 'Person' as Json.
+2025-10-23 02:33:21.438 +05:00 [INF] Executed endpoint 'HTTP: POST /custom-json'
+2025-10-23 02:33:21.439 +05:00 [INF] Request finished HTTP/1.1 POST http://localhost:5065/custom-json - 200 null application/json; charset=utf-8 19.5861ms
+2025-10-23 02:33:23.075 +05:00 [INF] Request starting HTTP/1.1 POST http://localhost:5065/custom-json - application/json 35
+2025-10-23 02:33:23.077 +05:00 [INF] Executing endpoint 'HTTP: POST /custom-json'
+2025-10-23 02:33:23.078 +05:00 [INF] Writing value of type 'Person' as Json.
+2025-10-23 02:33:23.078 +05:00 [INF] Executed endpoint 'HTTP: POST /custom-json'
+2025-10-23 02:33:23.078 +05:00 [INF] Request finished HTTP/1.1 POST http://localhost:5065/custom-json - 200 null application/json; charset=utf-8 3.1956ms
+2025-10-23 02:33:23.901 +05:00 [INF] Request starting HTTP/1.1 POST http://localhost:5065/custom-json - application/json 35
+2025-10-23 02:33:23.901 +05:00 [INF] Executing endpoint 'HTTP: POST /custom-json'
+2025-10-23 02:33:23.902 +05:00 [INF] Writing value of type 'Person' as Json.
+2025-10-23 02:33:23.902 +05:00 [INF] Executed endpoint 'HTTP: POST /custom-json'
+2025-10-23 02:33:23.902 +05:00 [INF] Request finished HTTP/1.1 POST http://localhost:5065/custom-json - 200 null application/json; charset=utf-8 1.1925ms
+2025-10-23 02:33:39.803 +05:00 [INF] Now listening on: http://localhost:5065
+2025-10-23 02:33:39.848 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-10-23 02:33:39.848 +05:00 [INF] Hosting environment: Development
+2025-10-23 02:33:39.848 +05:00 [INF] Content root path: C:\Users\hp\Desktop\Coursera\.NET-Course\MyFirstApi
+2025-10-23 02:33:39.967 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5065/api/products - null null
+2025-10-23 02:33:40.023 +05:00 [INF] Executing endpoint 'MyFirstApi.Controllers.ProductsController.GetProducts (MyFirstApi)'
+2025-10-23 02:33:40.032 +05:00 [INF] Route matched with {action = "GetProducts", controller = "Products"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[MyFirstApi.Models.Product]] GetProducts() on controller MyFirstApi.Controllers.ProductsController (MyFirstApi).
+2025-10-23 02:33:40.036 +05:00 [INF] Fetched all products, count: 3
+2025-10-23 02:33:40.046 +05:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[MyFirstApi.Models.Product, MyFirstApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-10-23 02:33:40.075 +05:00 [INF] Executed action MyFirstApi.Controllers.ProductsController.GetProducts (MyFirstApi) in 40.0557ms
+2025-10-23 02:33:40.090 +05:00 [INF] Executed endpoint 'MyFirstApi.Controllers.ProductsController.GetProducts (MyFirstApi)'
+2025-10-23 02:33:40.092 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5065/api/products - 200 null application/json; charset=utf-8 126.4499ms
+2025-10-23 04:10:41.323 +05:00 [INF] Application is shutting down...

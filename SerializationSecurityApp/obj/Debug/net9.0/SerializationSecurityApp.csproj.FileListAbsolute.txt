@@ -1,0 +1,15 @@
+C:\Users\hp\Desktop\Coursera\.NET-Course\SerializationSecurityApp\bin\Debug\net9.0\SerializationSecurityApp.exe
+C:\Users\hp\Desktop\Coursera\.NET-Course\SerializationSecurityApp\bin\Debug\net9.0\SerializationSecurityApp.deps.json
+C:\Users\hp\Desktop\Coursera\.NET-Course\SerializationSecurityApp\bin\Debug\net9.0\SerializationSecurityApp.runtimeconfig.json
+C:\Users\hp\Desktop\Coursera\.NET-Course\SerializationSecurityApp\bin\Debug\net9.0\SerializationSecurityApp.dll
+C:\Users\hp\Desktop\Coursera\.NET-Course\SerializationSecurityApp\bin\Debug\net9.0\SerializationSecurityApp.pdb
+C:\Users\hp\Desktop\Coursera\.NET-Course\SerializationSecurityApp\obj\Debug\net9.0\SerializationSecurityApp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\hp\Desktop\Coursera\.NET-Course\SerializationSecurityApp\obj\Debug\net9.0\SerializationSecurityApp.AssemblyInfoInputs.cache
+C:\Users\hp\Desktop\Coursera\.NET-Course\SerializationSecurityApp\obj\Debug\net9.0\SerializationSecurityApp.AssemblyInfo.cs
+C:\Users\hp\Desktop\Coursera\.NET-Course\SerializationSecurityApp\obj\Debug\net9.0\SerializationSecurityApp.csproj.CoreCompileInputs.cache
+C:\Users\hp\Desktop\Coursera\.NET-Course\SerializationSecurityApp\obj\Debug\net9.0\SerializationSecurityApp.sourcelink.json
+C:\Users\hp\Desktop\Coursera\.NET-Course\SerializationSecurityApp\obj\Debug\net9.0\SerializationSecurityApp.dll
+C:\Users\hp\Desktop\Coursera\.NET-Course\SerializationSecurityApp\obj\Debug\net9.0\refint\SerializationSecurityApp.dll
+C:\Users\hp\Desktop\Coursera\.NET-Course\SerializationSecurityApp\obj\Debug\net9.0\SerializationSecurityApp.pdb
+C:\Users\hp\Desktop\Coursera\.NET-Course\SerializationSecurityApp\obj\Debug\net9.0\SerializationSecurityApp.genruntimeconfig.cache
+C:\Users\hp\Desktop\Coursera\.NET-Course\SerializationSecurityApp\obj\Debug\net9.0\ref\SerializationSecurityApp.dll
