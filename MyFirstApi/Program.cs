@@ -25,7 +25,7 @@ var app = builder.Build();
 // app.UseHttpsRedirection();
 
 app.UseAuthorization();
-
+// app.UseHttpLogging();
 
 
 // app.Use(async (context, next) =>
@@ -73,7 +73,7 @@ app.MapGet("/dependency", (IMyService myService) =>
 
 
 
-// app.UseHttpLogging();
+
 
 app.MapGet("/minimal/{id:int}", (int id) => $"Hello Minimal API {id}");
 // app.MapGet("/minimal/{id:int:min(2)}/{name}", (int id, string name) => $"Hello Minimal API {id} {name}");
