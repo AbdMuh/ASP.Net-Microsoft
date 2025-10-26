@@ -1,0 +1,7 @@
+Activity 1: 
+Copilot helped me understand the best practices for creating a Minimal API CRUD, since I previously only had experience working with controller-based APIs.
+It also introduced me to using is null and is not null for null checks. Before this, I was relying on == and != to compare against null, but now I understand the safer and more modern approach.
+Another way Copilot supported my learning was by encouraging me to add comments to each line of code I was unfamiliar with. This way, whenever I revisit my project, I’m reminded of the new concepts I learned. It has become a great method for me to revise and reinforce my understanding.
+
+Activity 2: 
+I enhanced my minimal API by adding robust error handling and input validation. I implemented try-catch blocks in all routes—including GET by ID, POST, PUT, and DELETE—to handle unexpected exceptions gracefully. I also validated incoming user data before insertion or manipulation in the in-memory list to prevent invalid entries. For global exception management, I used the built-in ASP.NET Core error handling middleware, ensuring that unhandled errors return structured responses via Results.Problem instead of crashing the application. Copilot guided me on best practices, explained the purpose and usage of Results.Problem, suggested where to add try-catch blocks, and helped me structure my middleware and validation efficiently, improving the reliability and maintainability of my API.

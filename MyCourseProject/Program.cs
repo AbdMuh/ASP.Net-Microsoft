@@ -6,55 +6,122 @@ using System.Collections.Generic;
 var builder = WebApplication.CreateBuilder(args);
 var app = builder.Build();
 
+
+app.UseExceptionHandler("/error");
+app.Map("/error", (HttpContext context) =>
+{
+    var error = context.Features.Get<Microsoft.AspNetCore.Diagnostics.IExceptionHandlerFeature>()?.Error;
+    Console.WriteLine($"Unhandled exception: {error?.Message}");
+    return Results.Problem("An unexpected error occurred. Please try again later.");
+});
+
 // In-memory list to simulate a database
 var users = new List<User>();
 
 // CREATE - Add a new user
 app.MapPost("/users", (User user) =>
 {
-    user.Id = users.Count > 0 ? users.Max(u => u.Id) + 1 : 1; // Auto-increment Id using Max
-    users.Add(user);
-    return Results.Created($"/users/{user.Id}", user);
+    try
+    {
+        if (string.IsNullOrWhiteSpace(user.Username))
+            return Results.BadRequest("Username is required.");
+        if (user.Age <= 0)
+            return Results.BadRequest("Age must be a positive integer.");
+
+        user.Id = users.Count > 0 ? users.Max(u => u.Id) + 1 : 1;
+        users.Add(user);
+        return Results.Created($"/users/{user.Id}", user);
+    }
+    catch (Exception ex)
+    {
+        Console.WriteLine($"Error adding user: {ex.Message}");
+        return Results.Problem("An unexpected error occurred while adding the user.");
+    }
 });
+
 
 // READ - Get all users
 app.MapGet("/users", () =>
 {
-    if(!users.Any())
-        return Results.NotFound("No users exist in List.");
-    return Results.Ok(users);
+    try
+    {
+        if (!users.Any())
+            return Results.NotFound("No users exist in the list.");
+
+        return Results.Ok(users);
+    }
+    catch (Exception ex)
+    {
+        Console.WriteLine($"Error fetching users: {ex.Message}");
+        return Results.Problem("An unexpected error occurred while fetching users.");
+    }
 });
+
 
 // READ - Get user by Id
 app.MapGet("/users/{id:int}", (int id) =>
 {
-    var user = users.Find(u => u.Id == id);
-    return user is not null ? Results.Ok(user) : Results.NotFound("No User with this id found.");
+    try
+    {
+        var user = users.Find(u => u.Id == id);
+        return user is not null ? Results.Ok(user) : Results.NotFound("No User with this id found.");
+    }
+    catch (Exception ex)
+    {
+        Console.WriteLine($"Error retrieving user: {ex.Message}");
+        return Results.Problem("An unexpected error occurred while fetching user data.");
+    }
 });
+
 
 // UPDATE - Update user by Id
 app.MapPut("/users/{id:int}", (int id, User updatedUser) =>
 {
-    var user = users.Find(u => u.Id == id);
-    if (user is null)
-        return Results.NotFound("No User with this id found.");
+    try
+    {
+        var user = users.FirstOrDefault(u => u.Id == id);
+        if (user == null)
+            return Results.NotFound($"No user with id {id} found.");
 
-    user.Username = updatedUser.Username;
-    user.Age = updatedUser.Age;
+        if (string.IsNullOrWhiteSpace(updatedUser.Username))
+            return Results.BadRequest("Username cannot be empty.");
 
-    return Results.Ok(user);
+        user.Username = updatedUser.Username;
+        user.Age = updatedUser.Age;
+        return Results.Ok(user);
+    }
+    catch (Exception ex)
+    {
+        Console.WriteLine($"Error updating user: {ex.Message}");
+        return Results.Problem("An unexpected error occurred while updating user.");
+    }
 });
 
 // DELETE - Delete user by Id
 app.MapDelete("/users/{id:int}", (int id) =>
 {
-    var user = users.Find(u => u.Id == id);
-    if (user == null)
-        return Results.NotFound("No User with this id found.");
+    try
+    {
+        var user = users.Find(u => u.Id == id);
+        if (user == null)
+            return Results.NotFound("No User with this id found.");
 
-    users.Remove(user);
-    return Results.NoContent();
+        users.Remove(user);
+        return Results.NoContent();
+    }
+    catch (Exception ex)
+    {
+        Console.WriteLine($"Error deleting user: {ex.Message}");
+        return Results.Problem("An unexpected error occurred while deleting user.");
+    }
 });
+
+
+app.MapGet("/test-error", () =>
+{
+    return Results.Problem("Something went wrong while processing your request.");
+});
+
 
 app.Run();
 
