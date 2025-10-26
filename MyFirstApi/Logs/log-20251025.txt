@@ -1,0 +1,381 @@
+2025-10-25 07:29:13.874 +05:00 [INF] Now listening on: http://localhost:5065
+2025-10-25 07:29:13.921 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-10-25 07:29:13.921 +05:00 [INF] Hosting environment: Development
+2025-10-25 07:29:13.921 +05:00 [INF] Content root path: C:\Users\hp\Desktop\Coursera\.NET-Course\MyFirstApi
+2025-10-25 07:29:14.121 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5065/api/products - null null
+2025-10-25 07:29:14.202 +05:00 [INF] Executing endpoint 'MyFirstApi.Controllers.ProductsController.GetProducts (MyFirstApi)'
+2025-10-25 07:29:14.212 +05:00 [INF] Route matched with {action = "GetProducts", controller = "Products"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[MyFirstApi.Models.Product]] GetProducts() on controller MyFirstApi.Controllers.ProductsController (MyFirstApi).
+2025-10-25 07:29:14.216 +05:00 [INF] Fetched all products, count: 3
+2025-10-25 07:29:14.233 +05:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[MyFirstApi.Models.Product, MyFirstApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-10-25 07:29:14.263 +05:00 [INF] Executed action MyFirstApi.Controllers.ProductsController.GetProducts (MyFirstApi) in 46.5279ms
+2025-10-25 07:29:14.279 +05:00 [INF] Executed endpoint 'MyFirstApi.Controllers.ProductsController.GetProducts (MyFirstApi)'
+2025-10-25 07:29:14.281 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5065/api/products - 200 null application/json; charset=utf-8 162.2568ms
+2025-10-25 07:29:14.358 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5065/favicon.ico - null null
+2025-10-25 07:29:14.363 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5065/favicon.ico - 404 0 null 5.797ms
+2025-10-25 07:29:14.365 +05:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5065/favicon.ico, Response status code: 404
+2025-10-25 07:29:22.756 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5065/swagger - null null
+2025-10-25 07:29:22.761 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5065/swagger - 301 0 null 5.1269ms
+2025-10-25 07:29:22.766 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5065/swagger/index.html - null null
+2025-10-25 07:29:22.904 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5065/swagger/index.html - 200 null text/html;charset=utf-8 137.4101ms
+2025-10-25 07:29:22.930 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5065/swagger/swagger-ui.css - null null
+2025-10-25 07:29:22.930 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5065/swagger/index.css - null null
+2025-10-25 07:29:22.931 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5065/swagger/swagger-ui-bundle.js - null null
+2025-10-25 07:29:22.931 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5065/swagger/swagger-ui-standalone-preset.js - null null
+2025-10-25 07:29:22.932 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5065/swagger/index.js - null null
+2025-10-25 07:29:22.934 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5065/_framework/aspnetcore-browser-refresh.js - null null
+2025-10-25 07:29:22.935 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5065/swagger/index.js - 200 null application/javascript;charset=utf-8 2.2586ms
+2025-10-25 07:29:22.941 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5065/_framework/aspnetcore-browser-refresh.js - 200 16481 application/javascript; charset=utf-8 6.3578ms
+2025-10-25 07:29:22.958 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5065/swagger/swagger-ui.css - 200 23647 text/css 28.8165ms
+2025-10-25 07:29:22.958 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5065/swagger/index.css - 200 152 text/css 28.4047ms
+2025-10-25 07:29:22.962 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5065/swagger/swagger-ui-standalone-preset.js - 200 77352 text/javascript 30.2119ms
+2025-10-25 07:29:22.977 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5065/swagger/swagger-ui-bundle.js - 200 424767 text/javascript 46.2532ms
+2025-10-25 07:29:23.147 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5065/swagger/v1/swagger.json - null null
+2025-10-25 07:29:23.176 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5065/swagger/favicon-32x32.png - null null
+2025-10-25 07:29:23.178 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5065/swagger/favicon-32x32.png - 200 628 image/png 2.6023ms
+2025-10-25 07:29:23.426 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5065/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 279.5173ms
+2025-10-25 07:29:37.556 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5065/swagger/v1/swagger.json - null null
+2025-10-25 07:29:37.566 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5065/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 10.245ms
+2025-10-25 07:35:43.322 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5065/manual-json - null null
+2025-10-25 07:35:43.325 +05:00 [INF] Executing endpoint 'HTTP: GET /manual-json'
+2025-10-25 07:35:43.332 +05:00 [INF] Write content with HTTP Response ContentType of application/json
+2025-10-25 07:35:43.332 +05:00 [INF] Executed endpoint 'HTTP: GET /manual-json'
+2025-10-25 07:35:43.332 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5065/manual-json - 200 26 application/json 9.7419ms
+2025-10-25 07:36:05.351 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5065/api/Products - null null
+2025-10-25 07:36:05.352 +05:00 [INF] Executing endpoint 'MyFirstApi.Controllers.ProductsController.GetProducts (MyFirstApi)'
+2025-10-25 07:36:05.353 +05:00 [INF] Route matched with {action = "GetProducts", controller = "Products"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[MyFirstApi.Models.Product]] GetProducts() on controller MyFirstApi.Controllers.ProductsController (MyFirstApi).
+2025-10-25 07:36:05.353 +05:00 [INF] Fetched all products, count: 3
+2025-10-25 07:36:05.361 +05:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[MyFirstApi.Models.Product, MyFirstApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-10-25 07:36:05.363 +05:00 [INF] Executed action MyFirstApi.Controllers.ProductsController.GetProducts (MyFirstApi) in 10.2723ms
+2025-10-25 07:36:05.364 +05:00 [INF] Executed endpoint 'MyFirstApi.Controllers.ProductsController.GetProducts (MyFirstApi)'
+2025-10-25 07:36:05.365 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5065/api/Products - 200 null application/json; charset=utf-8 13.5679ms
+2025-10-25 07:37:02.156 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5065/api/Products/2 - null null
+2025-10-25 07:37:02.157 +05:00 [INF] Executing endpoint 'MyFirstApi.Controllers.ProductsController.GetProduct (MyFirstApi)'
+2025-10-25 07:37:02.173 +05:00 [INF] Route matched with {action = "GetProduct", controller = "Products"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[MyFirstApi.Models.Product] GetProduct(Int32) on controller MyFirstApi.Controllers.ProductsController (MyFirstApi).
+2025-10-25 07:37:02.184 +05:00 [INF] Fetched product details, Id: 2
+2025-10-25 07:37:02.185 +05:00 [INF] Executing OkObjectResult, writing value of type 'MyFirstApi.Models.Product'.
+2025-10-25 07:37:02.185 +05:00 [INF] Executed action MyFirstApi.Controllers.ProductsController.GetProduct (MyFirstApi) in 11.9085ms
+2025-10-25 07:37:02.185 +05:00 [INF] Executed endpoint 'MyFirstApi.Controllers.ProductsController.GetProduct (MyFirstApi)'
+2025-10-25 07:37:02.185 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5065/api/Products/2 - 200 null application/json; charset=utf-8 29.9131ms
+2025-10-25 07:40:38.671 +05:00 [INF] Application is shutting down...
+2025-10-25 07:43:09.594 +05:00 [INF] Now listening on: http://localhost:5065
+2025-10-25 07:43:09.625 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-10-25 07:43:09.625 +05:00 [INF] Hosting environment: Development
+2025-10-25 07:43:09.625 +05:00 [INF] Content root path: C:\Users\hp\Desktop\Coursera\.NET-Course\MyFirstApi
+2025-10-25 07:43:09.776 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5065/api/products - null null
+2025-10-25 07:43:09.824 +05:00 [INF] Executing endpoint 'MyFirstApi.Controllers.ProductsController.GetProducts (MyFirstApi)'
+2025-10-25 07:43:09.829 +05:00 [INF] Route matched with {action = "GetProducts", controller = "Products"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[MyFirstApi.Models.Product]] GetProducts() on controller MyFirstApi.Controllers.ProductsController (MyFirstApi).
+2025-10-25 07:43:09.831 +05:00 [INF] Fetched all products, count: 3
+2025-10-25 07:43:09.846 +05:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[MyFirstApi.Models.Product, MyFirstApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-10-25 07:43:09.869 +05:00 [INF] Executed action MyFirstApi.Controllers.ProductsController.GetProducts (MyFirstApi) in 36.5459ms
+2025-10-25 07:43:09.882 +05:00 [INF] Executed endpoint 'MyFirstApi.Controllers.ProductsController.GetProducts (MyFirstApi)'
+2025-10-25 07:43:09.884 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5065/api/products - 200 null application/json; charset=utf-8 108.5934ms
+2025-10-25 07:43:16.337 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5065/_framework/aspnetcore-browser-refresh.js - null null
+2025-10-25 07:43:16.341 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5065/_framework/aspnetcore-browser-refresh.js - 200 16481 application/javascript; charset=utf-8 4.297ms
+2025-10-25 07:43:16.506 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5065/swagger/v1/swagger.json - null null
+2025-10-25 07:43:16.607 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5065/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 100.7986ms
+2025-10-25 07:47:16.372 +05:00 [INF] Now listening on: http://localhost:5065
+2025-10-25 07:47:16.439 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-10-25 07:47:16.439 +05:00 [INF] Hosting environment: Development
+2025-10-25 07:47:16.439 +05:00 [INF] Content root path: C:\Users\hp\Desktop\Coursera\.NET-Course\MyFirstApi
+2025-10-25 07:47:16.635 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5065/api/products - null null
+2025-10-25 07:47:16.729 +05:00 [INF] Executing endpoint 'MyFirstApi.Controllers.ProductsController.GetProducts (MyFirstApi)'
+2025-10-25 07:47:16.744 +05:00 [INF] Route matched with {action = "GetProducts", controller = "Products"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[MyFirstApi.Models.Product]] GetProducts() on controller MyFirstApi.Controllers.ProductsController (MyFirstApi).
+2025-10-25 07:47:16.747 +05:00 [INF] Fetched all products, count: 3
+2025-10-25 07:47:16.764 +05:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[MyFirstApi.Models.Product, MyFirstApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-10-25 07:47:16.795 +05:00 [INF] Executed action MyFirstApi.Controllers.ProductsController.GetProducts (MyFirstApi) in 46.6908ms
+2025-10-25 07:47:16.807 +05:00 [INF] Executed endpoint 'MyFirstApi.Controllers.ProductsController.GetProducts (MyFirstApi)'
+2025-10-25 07:47:16.809 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5065/api/products - 200 null application/json; charset=utf-8 175.9953ms
+2025-10-25 07:47:19.901 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5065/swagger/index.html - null null
+2025-10-25 07:47:19.945 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5065/swagger/index.html - 200 null text/html;charset=utf-8 43.7214ms
+2025-10-25 07:47:19.964 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5065/_framework/aspnetcore-browser-refresh.js - null null
+2025-10-25 07:47:19.970 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5065/_framework/aspnetcore-browser-refresh.js - 200 16481 application/javascript; charset=utf-8 5.3081ms
+2025-10-25 07:47:20.067 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5065/swagger/v1/swagger.json - null null
+2025-10-25 07:47:20.169 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5065/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 101.1241ms
+2025-10-25 07:47:32.058 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5065/custom-json - null null
+2025-10-25 07:47:32.059 +05:00 [INF] Executing endpoint 'HTTP: GET /custom-json'
+2025-10-25 07:47:32.065 +05:00 [INF] Write content with HTTP Response ContentType of application/json
+2025-10-25 07:47:32.067 +05:00 [INF] Executed endpoint 'HTTP: GET /custom-json'
+2025-10-25 07:47:32.067 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5065/custom-json - 200 38 application/json 9.0499ms
+2025-10-25 08:13:43.067 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5065/swagger/index.html - null null
+2025-10-25 08:13:43.069 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5065/swagger/index.html - 200 null text/html;charset=utf-8 1.8977ms
+2025-10-25 08:13:43.111 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5065/_framework/aspnetcore-browser-refresh.js - null null
+2025-10-25 08:13:43.111 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5065/_framework/aspnetcore-browser-refresh.js - 200 16481 application/javascript; charset=utf-8 0.4528ms
+2025-10-25 08:13:43.230 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5065/swagger/v1/swagger.json - null null
+2025-10-25 08:13:43.242 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5065/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 12.1049ms
+2025-10-25 08:13:52.819 +05:00 [INF] Now listening on: http://localhost:5065
+2025-10-25 08:13:52.853 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-10-25 08:13:52.853 +05:00 [INF] Hosting environment: Development
+2025-10-25 08:13:52.853 +05:00 [INF] Content root path: C:\Users\hp\Desktop\Coursera\.NET-Course\MyFirstApi
+2025-10-25 08:13:52.961 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5065/api/products - null null
+2025-10-25 08:13:53.007 +05:00 [INF] Executing endpoint 'MyFirstApi.Controllers.ProductsController.GetProducts (MyFirstApi)'
+2025-10-25 08:13:53.016 +05:00 [INF] Route matched with {action = "GetProducts", controller = "Products"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[MyFirstApi.Models.Product]] GetProducts() on controller MyFirstApi.Controllers.ProductsController (MyFirstApi).
+2025-10-25 08:13:53.019 +05:00 [INF] Fetched all products, count: 3
+2025-10-25 08:13:53.032 +05:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[MyFirstApi.Models.Product, MyFirstApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-10-25 08:13:53.052 +05:00 [INF] Executed action MyFirstApi.Controllers.ProductsController.GetProducts (MyFirstApi) in 32.8202ms
+2025-10-25 08:13:53.064 +05:00 [INF] Executed endpoint 'MyFirstApi.Controllers.ProductsController.GetProducts (MyFirstApi)'
+2025-10-25 08:13:53.066 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5065/api/products - 200 null application/json; charset=utf-8 106.7913ms
+2025-10-25 08:13:56.325 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5065/swagger/index.html - null null
+2025-10-25 08:13:56.367 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5065/swagger/index.html - 200 null text/html;charset=utf-8 41.7701ms
+2025-10-25 08:13:56.386 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5065/_framework/aspnetcore-browser-refresh.js - null null
+2025-10-25 08:13:56.390 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5065/_framework/aspnetcore-browser-refresh.js - 200 16481 application/javascript; charset=utf-8 3.2425ms
+2025-10-25 08:13:56.449 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5065/swagger/v1/swagger.json - null null
+2025-10-25 08:13:56.549 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5065/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 99.7237ms
+2025-10-25 08:14:24.825 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5065/swagger/index.html - null null
+2025-10-25 08:14:24.826 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5065/swagger/index.html - 200 null text/html;charset=utf-8 1.5017ms
+2025-10-25 08:14:24.846 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5065/_framework/aspnetcore-browser-refresh.js - null null
+2025-10-25 08:14:24.846 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5065/_framework/aspnetcore-browser-refresh.js - 200 16481 application/javascript; charset=utf-8 0.4923ms
+2025-10-25 08:14:24.937 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5065/swagger/v1/swagger.json - null null
+2025-10-25 08:14:24.945 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5065/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 8.0835ms
+2025-10-25 08:14:32.088 +05:00 [INF] Now listening on: http://localhost:5065
+2025-10-25 08:14:32.121 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-10-25 08:14:32.121 +05:00 [INF] Hosting environment: Development
+2025-10-25 08:14:32.121 +05:00 [INF] Content root path: C:\Users\hp\Desktop\Coursera\.NET-Course\MyFirstApi
+2025-10-25 08:14:32.235 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5065/api/products - null null
+2025-10-25 08:14:32.284 +05:00 [INF] Executing endpoint 'MyFirstApi.Controllers.ProductsController.GetProducts (MyFirstApi)'
+2025-10-25 08:14:32.290 +05:00 [INF] Route matched with {action = "GetProducts", controller = "Products"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[MyFirstApi.Models.Product]] GetProducts() on controller MyFirstApi.Controllers.ProductsController (MyFirstApi).
+2025-10-25 08:14:32.292 +05:00 [INF] Fetched all products, count: 3
+2025-10-25 08:14:32.307 +05:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[MyFirstApi.Models.Product, MyFirstApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-10-25 08:14:32.326 +05:00 [INF] Executed action MyFirstApi.Controllers.ProductsController.GetProducts (MyFirstApi) in 33.6631ms
+2025-10-25 08:14:32.337 +05:00 [INF] Executed endpoint 'MyFirstApi.Controllers.ProductsController.GetProducts (MyFirstApi)'
+2025-10-25 08:14:32.339 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5065/api/products - 200 null application/json; charset=utf-8 105.4617ms
+2025-10-25 08:14:35.421 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5065/swagger/index.html - null null
+2025-10-25 08:14:35.463 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5065/swagger/index.html - 200 null text/html;charset=utf-8 42.9007ms
+2025-10-25 08:14:35.475 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5065/_framework/aspnetcore-browser-refresh.js - null null
+2025-10-25 08:14:35.477 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5065/_framework/aspnetcore-browser-refresh.js - 200 16481 application/javascript; charset=utf-8 1.9318ms
+2025-10-25 08:14:35.548 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5065/swagger/v1/swagger.json - null null
+2025-10-25 08:14:35.645 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5065/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 96.7746ms
+2025-10-25 08:14:52.959 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5065/swagger/index.html - null null
+2025-10-25 08:14:52.961 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5065/swagger/index.html - 200 null text/html;charset=utf-8 2.0186ms
+2025-10-25 08:14:52.989 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5065/_framework/aspnetcore-browser-refresh.js - null null
+2025-10-25 08:14:52.989 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5065/_framework/aspnetcore-browser-refresh.js - 200 16481 application/javascript; charset=utf-8 8.9774ms
+2025-10-25 08:14:53.085 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5065/swagger/v1/swagger.json - null null
+2025-10-25 08:14:53.094 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5065/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 8.9091ms
+2025-10-25 08:15:05.019 +05:00 [INF] Now listening on: http://localhost:5065
+2025-10-25 08:15:05.054 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-10-25 08:15:05.054 +05:00 [INF] Hosting environment: Development
+2025-10-25 08:15:05.054 +05:00 [INF] Content root path: C:\Users\hp\Desktop\Coursera\.NET-Course\MyFirstApi
+2025-10-25 08:15:05.158 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5065/api/products - null null
+2025-10-25 08:15:05.208 +05:00 [INF] Executing endpoint 'MyFirstApi.Controllers.ProductsController.GetProducts (MyFirstApi)'
+2025-10-25 08:15:05.214 +05:00 [INF] Route matched with {action = "GetProducts", controller = "Products"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[MyFirstApi.Models.Product]] GetProducts() on controller MyFirstApi.Controllers.ProductsController (MyFirstApi).
+2025-10-25 08:15:05.217 +05:00 [INF] Fetched all products, count: 3
+2025-10-25 08:15:05.230 +05:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[MyFirstApi.Models.Product, MyFirstApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-10-25 08:15:05.251 +05:00 [INF] Executed action MyFirstApi.Controllers.ProductsController.GetProducts (MyFirstApi) in 33.7825ms
+2025-10-25 08:15:05.262 +05:00 [INF] Executed endpoint 'MyFirstApi.Controllers.ProductsController.GetProducts (MyFirstApi)'
+2025-10-25 08:15:05.264 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5065/api/products - 200 null application/json; charset=utf-8 106.4339ms
+2025-10-25 08:15:09.992 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5065/swagger/index.html - null null
+2025-10-25 08:15:10.036 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5065/swagger/index.html - 200 null text/html;charset=utf-8 43.7249ms
+2025-10-25 08:15:10.052 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5065/_framework/aspnetcore-browser-refresh.js - null null
+2025-10-25 08:15:10.055 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5065/_framework/aspnetcore-browser-refresh.js - 200 16481 application/javascript; charset=utf-8 2.417ms
+2025-10-25 08:15:10.115 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5065/swagger/v1/swagger.json - null null
+2025-10-25 08:15:10.214 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5065/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 99.1633ms
+2025-10-25 09:37:14.073 +05:00 [INF] Application is shutting down...
+2025-10-25 09:51:25.575 +05:00 [INF] Now listening on: http://localhost:5065
+2025-10-25 09:51:25.613 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-10-25 09:51:25.613 +05:00 [INF] Hosting environment: Development
+2025-10-25 09:51:25.613 +05:00 [INF] Content root path: C:\Users\hp\Desktop\Coursera\.NET-Course\MyFirstApi
+2025-10-25 09:51:25.764 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5065/api/products - null null
+2025-10-25 09:51:25.817 +05:00 [INF] Executing endpoint 'MyFirstApi.Controllers.ProductsController.GetProducts (MyFirstApi)'
+2025-10-25 09:51:25.824 +05:00 [INF] Route matched with {action = "GetProducts", controller = "Products"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[MyFirstApi.Models.Product]] GetProducts() on controller MyFirstApi.Controllers.ProductsController (MyFirstApi).
+2025-10-25 09:51:25.826 +05:00 [INF] Fetched all products, count: 3
+2025-10-25 09:51:25.836 +05:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[MyFirstApi.Models.Product, MyFirstApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-10-25 09:51:25.856 +05:00 [INF] Executed action MyFirstApi.Controllers.ProductsController.GetProducts (MyFirstApi) in 28.2371ms
+2025-10-25 09:51:25.866 +05:00 [INF] Executed endpoint 'MyFirstApi.Controllers.ProductsController.GetProducts (MyFirstApi)'
+2025-10-25 09:51:25.868 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5065/api/products - 200 null application/json; charset=utf-8 105.3211ms
+2025-10-25 09:51:41.183 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5065/api/products - null null
+2025-10-25 09:51:41.186 +05:00 [INF] Executing endpoint 'MyFirstApi.Controllers.ProductsController.GetProducts (MyFirstApi)'
+2025-10-25 09:51:41.186 +05:00 [INF] Route matched with {action = "GetProducts", controller = "Products"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[MyFirstApi.Models.Product]] GetProducts() on controller MyFirstApi.Controllers.ProductsController (MyFirstApi).
+2025-10-25 09:51:41.187 +05:00 [INF] Fetched all products, count: 3
+2025-10-25 09:51:41.187 +05:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[MyFirstApi.Models.Product, MyFirstApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-10-25 09:51:41.188 +05:00 [INF] Executed action MyFirstApi.Controllers.ProductsController.GetProducts (MyFirstApi) in 1.8009ms
+2025-10-25 09:51:41.189 +05:00 [INF] Executed endpoint 'MyFirstApi.Controllers.ProductsController.GetProducts (MyFirstApi)'
+2025-10-25 09:51:41.189 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5065/api/products - 200 null application/json; charset=utf-8 7.6474ms
+2025-10-25 09:52:02.194 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5065/api/products - null null
+2025-10-25 09:52:02.196 +05:00 [INF] Executing endpoint 'MyFirstApi.Controllers.ProductsController.GetProducts (MyFirstApi)'
+2025-10-25 09:52:02.196 +05:00 [INF] Route matched with {action = "GetProducts", controller = "Products"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[MyFirstApi.Models.Product]] GetProducts() on controller MyFirstApi.Controllers.ProductsController (MyFirstApi).
+2025-10-25 09:52:02.197 +05:00 [INF] Fetched all products, count: 3
+2025-10-25 09:52:02.197 +05:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[MyFirstApi.Models.Product, MyFirstApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-10-25 09:52:02.197 +05:00 [INF] Executed action MyFirstApi.Controllers.ProductsController.GetProducts (MyFirstApi) in 0.8159ms
+2025-10-25 09:52:02.198 +05:00 [INF] Executed endpoint 'MyFirstApi.Controllers.ProductsController.GetProducts (MyFirstApi)'
+2025-10-25 09:52:02.198 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5065/api/products - 200 null application/json; charset=utf-8 4.207ms
+2025-10-25 09:52:08.430 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5065/api/products - null null
+2025-10-25 09:52:08.431 +05:00 [INF] Executing endpoint 'MyFirstApi.Controllers.ProductsController.GetProducts (MyFirstApi)'
+2025-10-25 09:52:08.431 +05:00 [INF] Route matched with {action = "GetProducts", controller = "Products"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[MyFirstApi.Models.Product]] GetProducts() on controller MyFirstApi.Controllers.ProductsController (MyFirstApi).
+2025-10-25 09:52:08.432 +05:00 [INF] Fetched all products, count: 3
+2025-10-25 09:52:08.432 +05:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[MyFirstApi.Models.Product, MyFirstApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-10-25 09:52:08.432 +05:00 [INF] Executed action MyFirstApi.Controllers.ProductsController.GetProducts (MyFirstApi) in 0.6995ms
+2025-10-25 09:52:08.432 +05:00 [INF] Executed endpoint 'MyFirstApi.Controllers.ProductsController.GetProducts (MyFirstApi)'
+2025-10-25 09:52:08.432 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5065/api/products - 200 null application/json; charset=utf-8 1.9816ms
+2025-10-25 09:52:14.203 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5065/api/products - null null
+2025-10-25 09:52:14.203 +05:00 [INF] Executing endpoint 'MyFirstApi.Controllers.ProductsController.GetProducts (MyFirstApi)'
+2025-10-25 09:52:14.203 +05:00 [INF] Route matched with {action = "GetProducts", controller = "Products"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[MyFirstApi.Models.Product]] GetProducts() on controller MyFirstApi.Controllers.ProductsController (MyFirstApi).
+2025-10-25 09:52:14.203 +05:00 [INF] Fetched all products, count: 3
+2025-10-25 09:52:14.204 +05:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[MyFirstApi.Models.Product, MyFirstApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-10-25 09:52:14.204 +05:00 [INF] Executed action MyFirstApi.Controllers.ProductsController.GetProducts (MyFirstApi) in 0.4038ms
+2025-10-25 09:52:14.204 +05:00 [INF] Executed endpoint 'MyFirstApi.Controllers.ProductsController.GetProducts (MyFirstApi)'
+2025-10-25 09:52:14.204 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5065/api/products - 200 null application/json; charset=utf-8 1.4629ms
+2025-10-25 09:52:20.194 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5065/api/products - null null
+2025-10-25 09:52:20.195 +05:00 [INF] Executing endpoint 'MyFirstApi.Controllers.ProductsController.GetProducts (MyFirstApi)'
+2025-10-25 09:52:20.195 +05:00 [INF] Route matched with {action = "GetProducts", controller = "Products"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[MyFirstApi.Models.Product]] GetProducts() on controller MyFirstApi.Controllers.ProductsController (MyFirstApi).
+2025-10-25 09:52:20.195 +05:00 [INF] Fetched all products, count: 3
+2025-10-25 09:52:20.195 +05:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[MyFirstApi.Models.Product, MyFirstApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-10-25 09:52:20.196 +05:00 [INF] Executed action MyFirstApi.Controllers.ProductsController.GetProducts (MyFirstApi) in 0.4674ms
+2025-10-25 09:52:20.196 +05:00 [INF] Executed endpoint 'MyFirstApi.Controllers.ProductsController.GetProducts (MyFirstApi)'
+2025-10-25 09:52:20.196 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5065/api/products - 200 null application/json; charset=utf-8 1.5389ms
+2025-10-25 09:52:26.279 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5065/api/products - null null
+2025-10-25 09:52:26.280 +05:00 [INF] Executing endpoint 'MyFirstApi.Controllers.ProductsController.GetProducts (MyFirstApi)'
+2025-10-25 09:52:26.280 +05:00 [INF] Route matched with {action = "GetProducts", controller = "Products"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[MyFirstApi.Models.Product]] GetProducts() on controller MyFirstApi.Controllers.ProductsController (MyFirstApi).
+2025-10-25 09:52:26.280 +05:00 [INF] Fetched all products, count: 3
+2025-10-25 09:52:26.281 +05:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[MyFirstApi.Models.Product, MyFirstApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-10-25 09:52:26.281 +05:00 [INF] Executed action MyFirstApi.Controllers.ProductsController.GetProducts (MyFirstApi) in 0.394ms
+2025-10-25 09:52:26.281 +05:00 [INF] Executed endpoint 'MyFirstApi.Controllers.ProductsController.GetProducts (MyFirstApi)'
+2025-10-25 09:52:26.281 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5065/api/products - 200 null application/json; charset=utf-8 1.6073ms
+2025-10-25 09:52:56.691 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5065/api/products - null null
+2025-10-25 09:52:56.691 +05:00 [INF] Executing endpoint 'MyFirstApi.Controllers.ProductsController.GetProducts (MyFirstApi)'
+2025-10-25 09:52:56.692 +05:00 [INF] Route matched with {action = "GetProducts", controller = "Products"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[MyFirstApi.Models.Product]] GetProducts() on controller MyFirstApi.Controllers.ProductsController (MyFirstApi).
+2025-10-25 09:52:56.692 +05:00 [INF] Fetched all products, count: 3
+2025-10-25 09:52:56.692 +05:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[MyFirstApi.Models.Product, MyFirstApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-10-25 09:52:56.692 +05:00 [INF] Executed action MyFirstApi.Controllers.ProductsController.GetProducts (MyFirstApi) in 0.4281ms
+2025-10-25 09:52:56.692 +05:00 [INF] Executed endpoint 'MyFirstApi.Controllers.ProductsController.GetProducts (MyFirstApi)'
+2025-10-25 09:52:56.692 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5065/api/products - 200 null application/json; charset=utf-8 1.3864ms
+2025-10-25 09:58:22.175 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5065/api/products - null null
+2025-10-25 09:58:22.175 +05:00 [INF] Executing endpoint 'MyFirstApi.Controllers.ProductsController.GetProducts (MyFirstApi)'
+2025-10-25 09:58:22.176 +05:00 [INF] Route matched with {action = "GetProducts", controller = "Products"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[MyFirstApi.Models.Product]] GetProducts() on controller MyFirstApi.Controllers.ProductsController (MyFirstApi).
+2025-10-25 09:58:22.176 +05:00 [INF] Fetched all products, count: 3
+2025-10-25 09:58:22.176 +05:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[MyFirstApi.Models.Product, MyFirstApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-10-25 09:58:22.176 +05:00 [INF] Executed action MyFirstApi.Controllers.ProductsController.GetProducts (MyFirstApi) in 0.5626ms
+2025-10-25 09:58:22.176 +05:00 [INF] Executed endpoint 'MyFirstApi.Controllers.ProductsController.GetProducts (MyFirstApi)'
+2025-10-25 09:58:22.177 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5065/api/products - 200 null application/json; charset=utf-8 1.7555ms
+2025-10-25 09:58:44.829 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5065/api/products - null null
+2025-10-25 09:58:44.829 +05:00 [INF] Executing endpoint 'MyFirstApi.Controllers.ProductsController.GetProducts (MyFirstApi)'
+2025-10-25 09:58:44.829 +05:00 [INF] Route matched with {action = "GetProducts", controller = "Products"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[MyFirstApi.Models.Product]] GetProducts() on controller MyFirstApi.Controllers.ProductsController (MyFirstApi).
+2025-10-25 09:58:44.829 +05:00 [INF] Fetched all products, count: 3
+2025-10-25 09:58:44.829 +05:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[MyFirstApi.Models.Product, MyFirstApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-10-25 09:58:44.829 +05:00 [INF] Executed action MyFirstApi.Controllers.ProductsController.GetProducts (MyFirstApi) in 0.2768ms
+2025-10-25 09:58:44.829 +05:00 [INF] Executed endpoint 'MyFirstApi.Controllers.ProductsController.GetProducts (MyFirstApi)'
+2025-10-25 09:58:44.829 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5065/api/products - 200 null application/json; charset=utf-8 0.9482ms
+2025-10-25 10:02:08.818 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5065/api/products - null null
+2025-10-25 10:02:08.818 +05:00 [INF] Executing endpoint 'MyFirstApi.Controllers.ProductsController.GetProducts (MyFirstApi)'
+2025-10-25 10:02:08.819 +05:00 [INF] Route matched with {action = "GetProducts", controller = "Products"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[MyFirstApi.Models.Product]] GetProducts() on controller MyFirstApi.Controllers.ProductsController (MyFirstApi).
+2025-10-25 10:02:08.819 +05:00 [INF] Fetched all products, count: 3
+2025-10-25 10:02:08.819 +05:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[MyFirstApi.Models.Product, MyFirstApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-10-25 10:02:08.819 +05:00 [INF] Executed action MyFirstApi.Controllers.ProductsController.GetProducts (MyFirstApi) in 0.4556ms
+2025-10-25 10:02:08.819 +05:00 [INF] Executed endpoint 'MyFirstApi.Controllers.ProductsController.GetProducts (MyFirstApi)'
+2025-10-25 10:02:08.819 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5065/api/products - 200 null application/json; charset=utf-8 1.4536ms
+2025-10-25 10:02:46.347 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5065/api/products - null null
+2025-10-25 10:02:46.347 +05:00 [INF] Executing endpoint 'MyFirstApi.Controllers.ProductsController.GetProducts (MyFirstApi)'
+2025-10-25 10:02:46.347 +05:00 [INF] Route matched with {action = "GetProducts", controller = "Products"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[MyFirstApi.Models.Product]] GetProducts() on controller MyFirstApi.Controllers.ProductsController (MyFirstApi).
+2025-10-25 10:02:46.348 +05:00 [INF] Fetched all products, count: 3
+2025-10-25 10:02:46.348 +05:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[MyFirstApi.Models.Product, MyFirstApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-10-25 10:02:46.348 +05:00 [INF] Executed action MyFirstApi.Controllers.ProductsController.GetProducts (MyFirstApi) in 0.3078ms
+2025-10-25 10:02:46.348 +05:00 [INF] Executed endpoint 'MyFirstApi.Controllers.ProductsController.GetProducts (MyFirstApi)'
+2025-10-25 10:02:46.348 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5065/api/products - 200 null application/json; charset=utf-8 0.9823ms
+2025-10-25 10:08:25.220 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5065/api/products - null null
+2025-10-25 10:08:25.221 +05:00 [INF] Executing endpoint 'MyFirstApi.Controllers.ProductsController.GetProducts (MyFirstApi)'
+2025-10-25 10:08:25.221 +05:00 [INF] Route matched with {action = "GetProducts", controller = "Products"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[MyFirstApi.Models.Product]] GetProducts() on controller MyFirstApi.Controllers.ProductsController (MyFirstApi).
+2025-10-25 10:08:25.221 +05:00 [INF] Fetched all products, count: 3
+2025-10-25 10:08:25.222 +05:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[MyFirstApi.Models.Product, MyFirstApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-10-25 10:08:25.222 +05:00 [INF] Executed action MyFirstApi.Controllers.ProductsController.GetProducts (MyFirstApi) in 1.0643ms
+2025-10-25 10:08:25.223 +05:00 [INF] Executed endpoint 'MyFirstApi.Controllers.ProductsController.GetProducts (MyFirstApi)'
+2025-10-25 10:08:25.223 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5065/api/products - 200 null application/json; charset=utf-8 3.3322ms
+2025-10-25 10:09:43.860 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5065/api/products - null null
+2025-10-25 10:09:43.860 +05:00 [INF] Executing endpoint 'MyFirstApi.Controllers.ProductsController.GetProducts (MyFirstApi)'
+2025-10-25 10:09:43.860 +05:00 [INF] Route matched with {action = "GetProducts", controller = "Products"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[MyFirstApi.Models.Product]] GetProducts() on controller MyFirstApi.Controllers.ProductsController (MyFirstApi).
+2025-10-25 10:09:43.860 +05:00 [INF] Fetched all products, count: 3
+2025-10-25 10:09:43.860 +05:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[MyFirstApi.Models.Product, MyFirstApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-10-25 10:09:43.860 +05:00 [INF] Executed action MyFirstApi.Controllers.ProductsController.GetProducts (MyFirstApi) in 0.2393ms
+2025-10-25 10:09:43.861 +05:00 [INF] Executed endpoint 'MyFirstApi.Controllers.ProductsController.GetProducts (MyFirstApi)'
+2025-10-25 10:09:43.861 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5065/api/products - 200 null application/json; charset=utf-8 0.8505ms
+2025-10-25 10:10:50.537 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5065/swagger/v1/swagger.json - null null
+2025-10-25 10:10:50.641 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5065/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 103.7165ms
+2025-10-25 10:18:07.553 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5065/api/Products - null null
+2025-10-25 10:18:07.554 +05:00 [INF] Executing endpoint 'MyFirstApi.Controllers.ProductsController.GetProducts (MyFirstApi)'
+2025-10-25 10:18:07.555 +05:00 [INF] Route matched with {action = "GetProducts", controller = "Products"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[MyFirstApi.Models.Product]] GetProducts() on controller MyFirstApi.Controllers.ProductsController (MyFirstApi).
+2025-10-25 10:18:07.556 +05:00 [INF] Fetched all products, count: 3
+2025-10-25 10:18:07.556 +05:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[MyFirstApi.Models.Product, MyFirstApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-10-25 10:18:07.557 +05:00 [INF] Executed action MyFirstApi.Controllers.ProductsController.GetProducts (MyFirstApi) in 1.2316ms
+2025-10-25 10:18:07.557 +05:00 [INF] Executed endpoint 'MyFirstApi.Controllers.ProductsController.GetProducts (MyFirstApi)'
+2025-10-25 10:18:07.557 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5065/api/Products - 200 null application/json; charset=utf-8 3.9461ms
+2025-10-25 10:19:54.017 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5065/api/Products - null null
+2025-10-25 10:19:54.017 +05:00 [INF] Executing endpoint 'MyFirstApi.Controllers.ProductsController.GetProducts (MyFirstApi)'
+2025-10-25 10:19:54.017 +05:00 [INF] Route matched with {action = "GetProducts", controller = "Products"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[MyFirstApi.Models.Product]] GetProducts() on controller MyFirstApi.Controllers.ProductsController (MyFirstApi).
+2025-10-25 10:19:54.017 +05:00 [INF] Fetched all products, count: 3
+2025-10-25 10:19:54.017 +05:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[MyFirstApi.Models.Product, MyFirstApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-10-25 10:19:54.017 +05:00 [INF] Executed action MyFirstApi.Controllers.ProductsController.GetProducts (MyFirstApi) in 0.3339ms
+2025-10-25 10:19:54.018 +05:00 [INF] Executed endpoint 'MyFirstApi.Controllers.ProductsController.GetProducts (MyFirstApi)'
+2025-10-25 10:19:54.018 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5065/api/Products - 200 null application/json; charset=utf-8 1.0634ms
+2025-10-25 10:19:54.135 +05:00 [INF] Request starting HTTP/1.1 POST http://localhost:5065/api/Products - application/json 43
+2025-10-25 10:19:54.135 +05:00 [INF] Executing endpoint 'MyFirstApi.Controllers.ProductsController.CreateProduct (MyFirstApi)'
+2025-10-25 10:19:54.141 +05:00 [INF] Route matched with {action = "CreateProduct", controller = "Products"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[MyFirstApi.Models.Product] CreateProduct(MyFirstApi.Models.Product) on controller MyFirstApi.Controllers.ProductsController (MyFirstApi).
+2025-10-25 10:19:54.167 +05:00 [INF] Executing CreatedAtActionResult, writing value of type 'MyFirstApi.Models.Product'.
+2025-10-25 10:19:54.181 +05:00 [INF] Executed action MyFirstApi.Controllers.ProductsController.CreateProduct (MyFirstApi) in 39.1535ms
+2025-10-25 10:19:54.181 +05:00 [INF] Executed endpoint 'MyFirstApi.Controllers.ProductsController.CreateProduct (MyFirstApi)'
+2025-10-25 10:19:54.181 +05:00 [INF] Request finished HTTP/1.1 POST http://localhost:5065/api/Products - 201 null application/json; charset=utf-8 46.2598ms
+2025-10-25 10:20:36.271 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5065/_framework/aspnetcore-browser-refresh.js - null null
+2025-10-25 10:20:36.286 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5065/_framework/aspnetcore-browser-refresh.js - 200 16481 application/javascript; charset=utf-8 14.941ms
+2025-10-25 10:20:36.437 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5065/swagger/v1/swagger.json - null null
+2025-10-25 10:20:36.446 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5065/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 8.3662ms
+2025-10-25 10:21:23.117 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5065/swagger/index.html - null null
+2025-10-25 10:21:23.162 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5065/swagger/index.html - 200 null text/html;charset=utf-8 45.7843ms
+2025-10-25 10:21:23.203 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5065/_framework/aspnetcore-browser-refresh.js - null null
+2025-10-25 10:21:23.203 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5065/_framework/aspnetcore-browser-refresh.js - 200 16481 application/javascript; charset=utf-8 0.2861ms
+2025-10-25 10:21:23.317 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5065/swagger/v1/swagger.json - null null
+2025-10-25 10:21:23.325 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5065/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 7.217ms
+2025-10-25 10:21:29.445 +05:00 [INF] Now listening on: http://localhost:5065
+2025-10-25 10:21:29.483 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-10-25 10:21:29.483 +05:00 [INF] Hosting environment: Development
+2025-10-25 10:21:29.483 +05:00 [INF] Content root path: C:\Users\hp\Desktop\Coursera\.NET-Course\MyFirstApi
+2025-10-25 10:21:29.598 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5065/api/products - null null
+2025-10-25 10:21:29.644 +05:00 [INF] Executing endpoint 'MyFirstApi.Controllers.ProductsController.GetProducts (MyFirstApi)'
+2025-10-25 10:21:29.650 +05:00 [INF] Route matched with {action = "GetProducts", controller = "Products"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[MyFirstApi.Models.Product]] GetProducts() on controller MyFirstApi.Controllers.ProductsController (MyFirstApi).
+2025-10-25 10:21:29.652 +05:00 [INF] Fetched all products, count: 3
+2025-10-25 10:21:29.663 +05:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[MyFirstApi.Models.Product, MyFirstApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-10-25 10:21:29.685 +05:00 [INF] Executed action MyFirstApi.Controllers.ProductsController.GetProducts (MyFirstApi) in 31.5172ms
+2025-10-25 10:21:29.695 +05:00 [INF] Executed endpoint 'MyFirstApi.Controllers.ProductsController.GetProducts (MyFirstApi)'
+2025-10-25 10:21:29.696 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5065/api/products - 200 null application/json; charset=utf-8 100.0149ms
+2025-10-25 10:21:34.365 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5065/swagger/index.html - null null
+2025-10-25 10:21:34.407 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5065/swagger/index.html - 200 null text/html;charset=utf-8 42.0824ms
+2025-10-25 10:21:34.424 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5065/_framework/aspnetcore-browser-refresh.js - null null
+2025-10-25 10:21:34.425 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5065/_framework/aspnetcore-browser-refresh.js - 200 16481 application/javascript; charset=utf-8 1.795ms
+2025-10-25 10:21:34.487 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5065/swagger/v1/swagger.json - null null
+2025-10-25 10:21:34.578 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5065/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 91.1188ms
+2025-10-25 10:22:19.729 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5065/swagger/v1/swagger.json - null null
+2025-10-25 10:22:19.741 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5065/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 11.1835ms
+2025-10-25 10:22:40.355 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5065/api/Products - null null
+2025-10-25 10:22:40.356 +05:00 [INF] Executing endpoint 'MyFirstApi.Controllers.ProductsController.GetProducts (MyFirstApi)'
+2025-10-25 10:22:40.357 +05:00 [INF] Route matched with {action = "GetProducts", controller = "Products"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[MyFirstApi.Models.Product]] GetProducts() on controller MyFirstApi.Controllers.ProductsController (MyFirstApi).
+2025-10-25 10:22:40.357 +05:00 [INF] Fetched all products, count: 3
+2025-10-25 10:22:40.358 +05:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[MyFirstApi.Models.Product, MyFirstApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-10-25 10:22:40.358 +05:00 [INF] Executed action MyFirstApi.Controllers.ProductsController.GetProducts (MyFirstApi) in 1.3702ms
+2025-10-25 10:22:40.358 +05:00 [INF] Executed endpoint 'MyFirstApi.Controllers.ProductsController.GetProducts (MyFirstApi)'
+2025-10-25 10:22:40.359 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5065/api/Products - 200 null application/json; charset=utf-8 3.2794ms
+2025-10-25 10:22:40.515 +05:00 [INF] Request starting HTTP/1.1 POST http://localhost:5065/api/Products - application/json 43
+2025-10-25 10:22:40.516 +05:00 [INF] Executing endpoint 'MyFirstApi.Controllers.ProductsController.CreateProduct (MyFirstApi)'
+2025-10-25 10:22:40.522 +05:00 [INF] Route matched with {action = "CreateProduct", controller = "Products"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[MyFirstApi.Models.Product] CreateProduct(MyFirstApi.Models.Product) on controller MyFirstApi.Controllers.ProductsController (MyFirstApi).
+2025-10-25 10:22:40.553 +05:00 [INF] Executing CreatedAtActionResult, writing value of type 'MyFirstApi.Models.Product'.
+2025-10-25 10:22:40.567 +05:00 [INF] Executed action MyFirstApi.Controllers.ProductsController.CreateProduct (MyFirstApi) in 44.8497ms
+2025-10-25 10:22:40.567 +05:00 [INF] Executed endpoint 'MyFirstApi.Controllers.ProductsController.CreateProduct (MyFirstApi)'
+2025-10-25 10:22:40.567 +05:00 [INF] Request finished HTTP/1.1 POST http://localhost:5065/api/Products - 201 null application/json; charset=utf-8 52.1735ms
+2025-10-25 10:22:58.038 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5065/api/Products - null null
+2025-10-25 10:22:58.038 +05:00 [INF] Executing endpoint 'MyFirstApi.Controllers.ProductsController.GetProducts (MyFirstApi)'
+2025-10-25 10:22:58.038 +05:00 [INF] Route matched with {action = "GetProducts", controller = "Products"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[MyFirstApi.Models.Product]] GetProducts() on controller MyFirstApi.Controllers.ProductsController (MyFirstApi).
+2025-10-25 10:22:58.039 +05:00 [INF] Fetched all products, count: 4
+2025-10-25 10:22:58.039 +05:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[MyFirstApi.Models.Product, MyFirstApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-10-25 10:22:58.039 +05:00 [INF] Executed action MyFirstApi.Controllers.ProductsController.GetProducts (MyFirstApi) in 0.4609ms
+2025-10-25 10:22:58.039 +05:00 [INF] Executed endpoint 'MyFirstApi.Controllers.ProductsController.GetProducts (MyFirstApi)'
+2025-10-25 10:22:58.039 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5065/api/Products - 200 null application/json; charset=utf-8 1.4073ms
+2025-10-25 10:23:16.227 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5065/api/Products - null null
+2025-10-25 10:23:16.228 +05:00 [INF] Executing endpoint 'MyFirstApi.Controllers.ProductsController.GetProducts (MyFirstApi)'
+2025-10-25 10:23:16.228 +05:00 [INF] Route matched with {action = "GetProducts", controller = "Products"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[MyFirstApi.Models.Product]] GetProducts() on controller MyFirstApi.Controllers.ProductsController (MyFirstApi).
+2025-10-25 10:23:16.228 +05:00 [INF] Fetched all products, count: 4
+2025-10-25 10:23:16.228 +05:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[MyFirstApi.Models.Product, MyFirstApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-10-25 10:23:16.228 +05:00 [INF] Executed action MyFirstApi.Controllers.ProductsController.GetProducts (MyFirstApi) in 0.3852ms
+2025-10-25 10:23:16.228 +05:00 [INF] Executed endpoint 'MyFirstApi.Controllers.ProductsController.GetProducts (MyFirstApi)'
+2025-10-25 10:23:16.228 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5065/api/Products - 200 null application/json; charset=utf-8 1.4508ms
+2025-10-25 10:33:54.166 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5065/api/Products - null null
+2025-10-25 10:33:54.167 +05:00 [INF] Executing endpoint 'MyFirstApi.Controllers.ProductsController.GetProducts (MyFirstApi)'
+2025-10-25 10:33:54.167 +05:00 [INF] Route matched with {action = "GetProducts", controller = "Products"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[MyFirstApi.Models.Product]] GetProducts() on controller MyFirstApi.Controllers.ProductsController (MyFirstApi).
+2025-10-25 10:33:54.168 +05:00 [INF] Fetched all products, count: 4
+2025-10-25 10:33:54.168 +05:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[MyFirstApi.Models.Product, MyFirstApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-10-25 10:33:54.169 +05:00 [INF] Executed action MyFirstApi.Controllers.ProductsController.GetProducts (MyFirstApi) in 1.0423ms
+2025-10-25 10:33:54.169 +05:00 [INF] Executed endpoint 'MyFirstApi.Controllers.ProductsController.GetProducts (MyFirstApi)'
+2025-10-25 10:33:54.169 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5065/api/Products - 200 null application/json; charset=utf-8 2.8994ms

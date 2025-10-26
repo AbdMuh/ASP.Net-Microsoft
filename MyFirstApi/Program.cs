@@ -3,6 +3,7 @@ using System.Text.Json.Serialization;
 using System.Xml.Serialization;
 using Microsoft.AspNetCore.Http.HttpResults;
 using Serilog;
+using Swashbuckle.AspNetCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -19,8 +20,21 @@ builder.Host.UseSerilog();
 builder.Services.AddControllers();
 // builder.Services.AddHttpLogging((options) => { });
 
+builder.Services.AddEndpointsApiExplorer(); 
+builder.Services.AddSwaggerGen(c =>
+{
+    c.EnableAnnotations();
+});
+ 
+
 builder.Services.AddScoped<IMyService, MyService>();
 var app = builder.Build();
+
+if(app.Environment.IsDevelopment())
+{
+    app.UseSwagger();       // generate /swagger/v1/swagger.json
+    app.UseSwaggerUI(); 
+}
 
 // app.UseHttpsRedirection();
 
@@ -100,6 +114,11 @@ app.MapGet("/custom-json", () =>
     };
     var json = JsonSerializer.Serialize(samplePerson, options);
     return TypedResults.Text(json, "application/json");
+}).WithOpenApi(operation =>
+{
+    operation.Summary = "Get Person serialized in Custom JSON Format";
+    operation.Description = "Returns a Person object serialized with custom JSON options (snake_case_upper).";
+    return operation;
 });
 
 app.MapGet("/json", () => TypedResults.Json(samplePerson));

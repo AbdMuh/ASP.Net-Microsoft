@@ -42,3 +42,7 @@ C:\Users\hp\Desktop\Coursera\.NET-Course\MyFirstApi\bin\Debug\net9.0\Serilog.Sin
 C:\Users\hp\Desktop\Coursera\.NET-Course\MyFirstApi\bin\Debug\net9.0\Serilog.Sinks.Debug.dll
 C:\Users\hp\Desktop\Coursera\.NET-Course\MyFirstApi\bin\Debug\net9.0\Serilog.Sinks.File.dll
 C:\Users\hp\Desktop\Coursera\.NET-Course\MyFirstApi\obj\Debug\net9.0\MyFirstApi.sourcelink.json
+C:\Users\hp\Desktop\Coursera\.NET-Course\MyFirstApi\bin\Debug\net9.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\hp\Desktop\Coursera\.NET-Course\MyFirstApi\bin\Debug\net9.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\hp\Desktop\Coursera\.NET-Course\MyFirstApi\bin\Debug\net9.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\hp\Desktop\Coursera\.NET-Course\MyFirstApi\bin\Debug\net9.0\Swashbuckle.AspNetCore.Annotations.dll

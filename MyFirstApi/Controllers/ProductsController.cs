@@ -2,6 +2,7 @@ using Microsoft.AspNetCore.Mvc;
 
 using System.Collections.Generic;
 using MyFirstApi.Models;
+using Swashbuckle.AspNetCore.Annotations;
 
 namespace MyFirstApi.Controllers
 {
@@ -39,7 +40,11 @@ namespace MyFirstApi.Controllers
         }
 
         [HttpGet("{id}")]
-        public ActionResult<Product> GetProduct(int id)
+        [SwaggerOperation(Summary = "Get a product by ID", Description = "Retrieves a product's details using its unique ID.")]
+        [SwaggerResponse(StatusCodes.Status200OK, "Returns the requested product.")]
+        [SwaggerResponse(StatusCodes.Status404NotFound, "Product not found.")]
+        public ActionResult<Product> GetProduct(
+            [SwaggerParameter("The unique ID of the product to retrieve")] int id)
         {
             if (id < 0)
             {
@@ -56,6 +61,7 @@ namespace MyFirstApi.Controllers
         }
 
         [HttpPost]
+        [SwaggerResponse(StatusCodes.Status201Created, "Product created successfully.")]
         public ActionResult<Product> CreateProduct([FromBody] Product product)
         {
             product.Id = Products.Max(p => p.Id) + 1;
