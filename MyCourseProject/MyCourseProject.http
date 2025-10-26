@@ -6,6 +6,19 @@ Accept: application/json
 
 ###
 
+### Test GET users with valid token
+GET {{MyCourseProject_HostAddress}}/users
+Authorization: my-secret-token
+Content-Type: application/json
+
+###
+
+### Test GET users with missing/invalid token
+GET {{MyCourseProject_HostAddress}}/users
+Authorization: invalid-token
+Content-Type: application/json
+###
+
 ### GET user by Id
 GET {{MyCourseProject_HostAddress}}/users/1
 Accept: application/json
@@ -14,6 +27,7 @@ Accept: application/json
 
 ### CREATE a new user
 POST {{MyCourseProject_HostAddress}}/users
+Authorization: my-secret-token
 Content-Type: application/json
 Accept: application/json
 
@@ -26,6 +40,7 @@ Accept: application/json
 
 ### CREATE another user
 POST {{MyCourseProject_HostAddress}}/users
+Authorization: my-secret-token
 Content-Type: application/json
 Accept: application/json
 
@@ -38,6 +53,7 @@ Accept: application/json
 
 ### UPDATE user by Id
 PUT {{MyCourseProject_HostAddress}}/users/1
+Authorization: my-secret-token
 Content-Type: application/json
 Accept: application/json
 
@@ -50,4 +66,5 @@ Accept: application/json
 
 ### DELETE user by Id
 DELETE {{MyCourseProject_HostAddress}}/users/1
+Authorization: my-secret-token
 Accept: application/json

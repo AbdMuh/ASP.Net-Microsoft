@@ -6,13 +6,60 @@ using System.Collections.Generic;
 var builder = WebApplication.CreateBuilder(args);
 var app = builder.Build();
 
-
+//Error handling middleware
 app.UseExceptionHandler("/error");
-app.Map("/error", (HttpContext context) =>
+
+//Authentication middleware
+app.Use(async (context, next) =>
 {
-    var error = context.Features.Get<Microsoft.AspNetCore.Diagnostics.IExceptionHandlerFeature>()?.Error;
-    Console.WriteLine($"Unhandled exception: {error?.Message}");
-    return Results.Problem("An unexpected error occurred. Please try again later.");
+    // Extract token from request headers
+    var token = context.Request.Headers["Authorization"].ToString();
+
+    // Simple validation check (replace with real validation logic)
+    if (string.IsNullOrWhiteSpace(token) || !IsValidToken(token))
+    {
+        context.Response.StatusCode = 401;
+        await context.Response.WriteAsJsonAsync(new { error = "Unauthorized: Invalid or missing token." });
+        return; 
+    }
+    await next();
+});
+
+// Helper method to validate tokens
+static bool IsValidToken(string token)
+{
+    // Example: simple check
+    return token == "my-secret-token"; 
+}
+
+//Logging middleware
+app.Use(async (context, next) =>
+{
+    var method = context.Request.Method;
+    var path = context.Request.Path;
+
+    try
+    {
+        await next();
+    }
+    catch (Exception ex)
+    {
+        Console.WriteLine($"Exception occurred: {ex.Message}");
+        throw; // Re-throw so UseExceptionHandler handles it
+    }
+
+    var statusCode = context.Response.StatusCode;
+    Console.WriteLine($"HTTP {method} {path} responded {statusCode}");
+});
+
+
+
+
+app.Map("/error", async (HttpContext context) =>
+{
+    context.Response.StatusCode = 500;
+
+    await context.Response.WriteAsJsonAsync(new { error = "An unexpected error occurred. Please try again later." });
 });
 
 // In-memory list to simulate a database
@@ -20,7 +67,7 @@ var users = new List<User>();
 
 // CREATE - Add a new user
 app.MapPost("/users", (User user) =>
-{
+{           
     try
     {
         if (string.IsNullOrWhiteSpace(user.Username))
@@ -120,6 +167,11 @@ app.MapDelete("/users/{id:int}", (int id) =>
 app.MapGet("/test-error", () =>
 {
     return Results.Problem("Something went wrong while processing your request.");
+});
+
+app.MapGet("/throw-error", () =>
+{
+    throw new Exception("This is a test exception.");
 });
 
 
