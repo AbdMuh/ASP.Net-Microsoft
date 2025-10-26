@@ -1,0 +1,53 @@
+@MyCourseProject_HostAddress = http://localhost:5020
+
+### GET all users
+GET {{MyCourseProject_HostAddress}}/users
+Accept: application/json
+
+###
+
+### GET user by Id
+GET {{MyCourseProject_HostAddress}}/users/1
+Accept: application/json
+
+###
+
+### CREATE a new user
+POST {{MyCourseProject_HostAddress}}/users
+Content-Type: application/json
+Accept: application/json
+
+{
+  "username": "Alice",
+  "age": 25
+}
+
+###
+
+### CREATE another user
+POST {{MyCourseProject_HostAddress}}/users
+Content-Type: application/json
+Accept: application/json
+
+{
+  "username": "Bob",
+  "age": 30
+}
+
+###
+
+### UPDATE user by Id
+PUT {{MyCourseProject_HostAddress}}/users/1
+Content-Type: application/json
+Accept: application/json
+
+{
+  "username": "Alice Updated",
+  "age": 26
+}
+
+###
+
+### DELETE user by Id
+DELETE {{MyCourseProject_HostAddress}}/users/1
+Accept: application/json
